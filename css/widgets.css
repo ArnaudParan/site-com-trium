@@ -1,0 +1,35 @@
+body{
+	background-color:white;
+}
+
+.separateur{
+	background-color:black;
+	padding-top:2px;
+	margin-left:10%;
+	margin-right:10%;
+}
+
+.img{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	max-width:100%;
+	max-height:100%;
+}
+
+.cadre_bas{
+	height:200px;
+}
+
+.cadre_bas div div{
+	height:100px;
+}
+
+@media screen and (min-width: 992px){
+	header{
+		height:120px;
+	}
+	header nav{
+		margin-top:70px;
+	}
+}
