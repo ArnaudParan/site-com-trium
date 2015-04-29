@@ -6,11 +6,22 @@
 	display:inline-block;
 }
 
+@keyframes hide{
+	from{opacity:1.0;}
+	to{opacity:0.0;}
+}
+
 @media screen and (min-width:768px){
 	.ent{
 		position:absolute;
 		text-align:center;
 		color:white;
+		z-index:1;
+	}
+	.ent:hover{
+		animation-name:hide;
+		animation-duration:0.5s;
+		opacity:0.0;
 	}
 
 	.sent{
@@ -18,6 +29,7 @@
 		position:absolute;
 		text-align:center;
 		color:white;
+		z-index:0;
 	}
 
 	#btn1,#sbtn11,#sbtn12,#sbtn13{
@@ -45,7 +57,7 @@
 	}
 }
 
-@media screen and (min-width:1200px){
+@media screen and (min-width:768px){
 	.ent{
 		width:160px;
 		height:160px;
@@ -53,9 +65,9 @@
 	}
 
 	.sent{
-		width:80px;
-		height:80px;
-		border-radius:40px;
+		width:110px;
+		height:110px;
+		border-radius:55px;
 	}
 
 	/********** btn1 **********/
@@ -65,18 +77,18 @@
 	}
 
 	#sbtn11{
-		left:260px;
-		top:0px;
+		left:245px;
+		top:-30px;
 	}
 
 	#sbtn12{
-		left:300px;
-		top:69px;
+		left:190px;
+		top:65px;
 	}
 
 	#sbtn13{
-		left:220px;
-		top:69px;
+		left:300px;
+		top:65px;
 	}
 
 	/********** btn2 **********/
@@ -86,18 +98,18 @@
 	}
 
 	#sbtn21{
-		left:480px;
-		top:93px;
+		left:470px;
+		top:63px;
 	}
 
 	#sbtn22{
-		left:520px;
-		top:162px;
+		left:525px;
+		top:158px;
 	}
 
 	#sbtn23{
-		left:440px;
-		top:162px;
+		left:415px;
+		top:158px;
 	}
 
 	/********** btn3 **********/
@@ -107,18 +119,18 @@
 	}
 
 	#sbtn31{
-		left:480px;
-		top:280px;
+		left:470px;
+		top:250px;
 	}
 
 	#sbtn32{
-		left:520px;
-		top:349px;
+		left:525px;
+		top:345px;
 	}
 
 	#sbtn33{
-		left:440px;
-		top:349px;
+		left:415px;
+		top:345px;
 	}
 
 	/********** btn4 **********/
@@ -128,18 +140,18 @@
 	}
 
 	#sbtn41{
-		left:260px;
-		top:373px;
+		left:245px;
+		top:343px;
 	}
 
 	#sbtn42{
 		left:300px;
-		top:442px;
+		top:438px;
 	}
 
 	#sbtn43{
-		left:220px;
-		top:442px;
+		left:190px;
+		top:438px;
 	}
 
 	/********** btn5 **********/
@@ -149,18 +161,18 @@
 	}
 
 	#sbtn51{
-		left:40px;
-		top:280px;
+		left:30px;
+		top:250px;
 	}
 
 	#sbtn52{
-		left:80px;
-		top:349px;
+		left:85px;
+		top:345px;
 	}
 
 	#sbtn53{
-		left:0px;
-		top:349px;
+		left:-25px;
+		top:345px;
 	}
 
 	/********** btn6 **********/
@@ -170,93 +182,17 @@
 	}
 
 	#sbtn61{
-		left:40px;
-		top:93px;
+		left:30px;
+		top:63px;
 	}
 
 	#sbtn62{
-		left:80px;
-		top:162px;
+		left:85px;
+		top:158px;
 	}
 
 	#sbtn63{
-		left:0px;
-		top:162px;
-	}
-}
-
-@media screen and (min-width:992px) and (max-width:1200px){
-	.ent{
-		width:160px;
-		height:160px;
-		border-radius:80px;
-	}
-
-	#btn1{
-		left:220px;
-		top:0px;
-	}
-
-	#btn2{
-		left:440px;
-		top:93px;
-	}
-
-	#btn3{
-		left:440px;
-		top:280px;
-	}
-
-	#btn4{
-		left:220px;
-		top:373px;
-	}
-
-	#btn5{
-		left:0px;
-		top:280px;
-	}
-
-	#btn6{
-		left:0px;
-		top:93px;
-	}
-}
-
-@media screen and (min-width:768px) and (max-width:992px){
-	.ent{
-		width:160px;
-		height:160px;
-		border-radius:80px;
-	}
-
-	#btn1{
-		left:220px;
-		top:0px;
-	}
-
-	#btn2{
-		left:440px;
-		top:93px;
-	}
-
-	#btn3{
-		left:440px;
-		top:280px;
-	}
-
-	#btn4{
-		left:220px;
-		top:373px;
-	}
-
-	#btn5{
-		left:0px;
-		top:280px;
-	}
-
-	#btn6{
-		left:0px;
-		top:93px;
+		left:-25px;
+		top:158px;
 	}
 }
