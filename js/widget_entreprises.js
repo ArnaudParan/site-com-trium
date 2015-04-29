@@ -9,7 +9,7 @@ var taille_media=lg;
 //fonction principale
 $(function(){
 	$(window).resize(redimensionnement);
-	//$(window).resize(function(){console.log('blabla')});
+	$('.ent').hover(hov,dehov);
 });
 
 //fonction appelée au redimensionnement, qui détermine si on a changé de catégorie de média
@@ -39,4 +39,69 @@ function redimensionnement(){
 //fonction appelée quand on a changé de catégorie
 function chg_cat(cat){
 	console.log(categorie[cat]);
+}
+
+//fonction lancée quand on met le curseur sur un des boutons du widget
+function hov(){
+	if($(this).attr("anim")!="true" && $(this).attr("anim")!="debutfalse"){
+		$(this).attr("anim","true");
+		console.log($(this).attr("anim"));
+		var id=-1;
+		if($(this).attr("id")=="btn1"){
+			id=1;
+		}
+		else if($(this).attr("id")=="btn2"){
+			id=2;
+		}
+		else if($(this).attr("id")=="btn3"){
+			id=3;
+		}
+		else if($(this).attr("id")=="btn4"){
+		id=4;
+		}
+		else if($(this).attr("id")=="btn5"){
+			id=5;
+		}
+		else if($(this).attr("id")=="btn6"){
+			id=6;
+		}
+		$(this).animate({opacity:0.},200,function(){
+			$('#sbtn'+id+'1').animate({top:"-=60"},500);
+			$('#sbtn'+id+'2').animate({top:"+=35",left:"+=55"},500);
+		$('#sbtn'+id+'3').animate({top:"+=35",left:"-=55"},500);
+		});
+	}
+}
+
+function dehov(){
+	if($(this).attr("anim")=="true"){
+		$(this).attr("anim","debutfalse");
+		var id=-1;
+		if($(this).attr("id")=="btn1"){
+			id=1;
+		}
+		else if($(this).attr("id")=="btn2"){
+			id=2;
+		}
+		else if($(this).attr("id")=="btn3"){
+			id=3;
+		}
+		else if($(this).attr("id")=="btn4"){
+			id=4;
+		}
+		else if($(this).attr("id")=="btn5"){
+			id=5;
+		}
+		else if($(this).attr("id")=="btn6"){
+			id=6;
+		}
+		$('#sbtn'+id+'1').animate({top:"+=60"},500);
+		$('#sbtn'+id+'2').animate({top:"-=35",left:"-=55"},500);
+		$('#sbtn'+id+'3').animate({top:"-=35",left:"+=55"},500,function(){
+			$("#btn"+id).animate({opacity:1.},500, function(){
+				console.log("fin");
+				$(this).attr("anim","false");
+			});
+		});
+	}
 }
