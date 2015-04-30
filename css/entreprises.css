@@ -1,3 +1,8 @@
+.zone_btn{
+	width:0px;
+	height:0px;
+}
+
 #widget_ent{
 	list-style-type:none;
 }
@@ -12,6 +17,9 @@
 }
 
 @media screen and (min-width:768px){
+	.fond_btn{
+		position:absolute;
+	}
 	.ent{
 		position:absolute;
 		text-align:center;
@@ -54,15 +62,28 @@
 }
 
 @media screen and (min-width:768px){
-	.ent{
+	.ent, .fond_btn{
 		width:160px;
 		height:160px;
 		border-radius:80px;
+	}
+
+	.fond_btn{
+		z-index:-1;
+	}
+
+	.zone_btn{
+		position:absolute;
+		top:0px;
+		left:0px;
 	}
 
 	.sent{
 		width:110px;
 		height:110px;
 		border-radius:55px;
+	}
+	#widget_ent button:hover{
+		color:white;
 	}
 }
