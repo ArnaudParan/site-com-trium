@@ -67,67 +67,67 @@
 
 	/********** btn1 **********/
 	#btn1{
-		left:220px;
+		left:170px;
 		top:0px;
 	}
 
 	#sbtn11, #sbtn12,#sbtn13{
-		left:245px;
+		left:195px;
 		top:25px;
 	}
 
 	/********** btn2 **********/
 	#btn2{
-		left:440px;
-		top:127px;
+		left:340px;
+		top:98px;
 	}
 
 	#sbtn21,#sbtn22,#sbtn23{
-		left:465px;
-		top:152px;
+		left:365px;
+		top:123px;
 	}
 
 	/********** btn3 **********/
 	#btn3{
-		left:440px;
-		top:381px;
+		left:340px;
+		top:295px;
 	}
 
 	#sbtn31,#sbtn32,#sbtn33{
-		left:465px;
-		top:406px;
+		left:365px;
+		top:320px;
 	}
 
 	/********** btn4 **********/
 	#btn4{
-		left:220px;
-		top:508px;
+		left:170px;
+		top:393px;
 	}
 
 	#sbtn41,#sbtn42,#sbtn43{
-		left:245px;
-		top:533px;
+		left:195px;
+		top:418px;
 	}
 
 	/********** btn5 **********/
 	#btn5{
 		left:0px;
-		top:381px;
+		top:295px;
 	}
 
 	#sbtn51,#sbtn52,#sbtn53{
 		left:25px;
-		top:406px;
+		top:320px;
 	}
 
 	/********** btn6 **********/
 	#btn6{
 		left:0px;
-		top:127px;
+		top:98px;
 	}
 
 	#sbtn61,#sbtn62,#sbtn63{
 		left:25px;
-		top:152px;
+		top:123px;
 	}
 }
