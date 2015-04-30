@@ -17,10 +17,11 @@
 		text-align:center;
 		color:white;
 		z-index:1;
+		visibility:hidden;
 	}
 
 	.sent{
-		/*visibility:hidden;*/
+		visibility:hidden;
 		position:absolute;
 		text-align:center;
 		color:white;
@@ -63,71 +64,5 @@
 		width:110px;
 		height:110px;
 		border-radius:55px;
-	}
-
-	/********** btn1 **********/
-	#btn1{
-		left:170px;
-		top:0px;
-	}
-
-	#sbtn11, #sbtn12,#sbtn13{
-		left:195px;
-		top:25px;
-	}
-
-	/********** btn2 **********/
-	#btn2{
-		left:340px;
-		top:98px;
-	}
-
-	#sbtn21,#sbtn22,#sbtn23{
-		left:365px;
-		top:123px;
-	}
-
-	/********** btn3 **********/
-	#btn3{
-		left:340px;
-		top:295px;
-	}
-
-	#sbtn31,#sbtn32,#sbtn33{
-		left:365px;
-		top:320px;
-	}
-
-	/********** btn4 **********/
-	#btn4{
-		left:170px;
-		top:393px;
-	}
-
-	#sbtn41,#sbtn42,#sbtn43{
-		left:195px;
-		top:418px;
-	}
-
-	/********** btn5 **********/
-	#btn5{
-		left:0px;
-		top:295px;
-	}
-
-	#sbtn51,#sbtn52,#sbtn53{
-		left:25px;
-		top:320px;
-	}
-
-	/********** btn6 **********/
-	#btn6{
-		left:0px;
-		top:98px;
-	}
-
-	#sbtn61,#sbtn62,#sbtn63{
-		left:25px;
-		top:123px;
 	}
 }
