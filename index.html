@@ -28,7 +28,7 @@
 	<!-- Lea Header et ses widgets-->
 	<header class="row">
 		<div class="col-xs-5 col-sm-2 col-md-2 col-lg-1">
-			<div class="col-md-6 col-xs-6"><a href="index.html"><img class="lang" src="logos/french.png" alt="Français"/></a></div>
+			<div class="col-md-6 col-xs-6"><a href="#"><img class="lang" src="logos/french.png" alt="Français"/></a></div>
 			<div class="col-md-6 col-xs-6"><a href="eng/index.html"><img class="lang" src="logos/english.png" alt="Anglais"/></a></div>
 		</div>
 		<div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
@@ -37,7 +37,7 @@
 		<!-- Le nav -->
 		<div class="col-xs-offset-0 col-sm-offset-0 col-md-offset-0 col-lg-offset-2 col-xs-12 col-sm-12 col-sm-7">
 			<!-- La navbar -->
-			<nav class="navbar navbar-default">
+			<!--<nav class="navbar navbar-default">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 						<span class="sr-only">Pour la navigation</span>
@@ -45,7 +45,6 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<!--<a class="navbar-brand" href="#"><img class="img" alt="Trium" src="logos/logo_trium.png"/></a>-->
 				</div>
 
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -57,25 +56,19 @@
 						<li><a href="contact.html">CONTACT</a></li>
 					</ul>
 				</div>
-			</nav>
-			<!-- Le nav originel -->
-			<!--<nav class="row">
-				<div class="col-md-2">
-					<a href="index.html">ACCUEIL</a>
-				</div>
-				<div class="col-md-2">
-					<a href="eleves.html">ELEVES</a>
-				</div>
-				<div class="col-md-2">
-					<a href="entreprises.html">ENTREPRISES</a>
-				</div>
-				<div class="col-md-2">
-					<a href="partenaires.html">PARTENAIRES</a>
-				</div>
-				<div class="col-md-2">
-					<a href="contact.html">CONTACTS</a>
-				</div>
 			</nav>-->
+			<!-- Le nav originel -->
+			<nav class="row nav_originel">
+				<ul>
+					<li><a href="index.html">ACCUEIL</a>
+					<div class="lisere_bleu" style="margin-left:-5px;margin-right:-5px"></div></li>
+					<li><a href="eleves.html">ELEVES</a></li>
+					<li><a href="entreprises.html">ENTREPRISES</a></li>
+					<li><a href="partenaires.html">PARTENAIRES</a></li>
+					<li><a href="contact.html">CONTACTS</a></li>
+				</ul>
+				<div class="lisere_banniere" style="margin-right:0px;margin-left:0px"></div>
+			</nav>
 		</div>
 	</header>
 
@@ -131,51 +124,68 @@
 	<!-- intermède -->
 	<div class="row">
 		<div class="col-md-12" style="margin-top:20px">
-			<div class="separateur" style="background-color:#7CECC3"></div>
+			<div class="lisere_banniere"></div>
 			<div style="text-align:center;font-size:18px;">Le Trium, une rencontre entre étudiants et entreprises</span>
-			<div class="separateur" style="background-color:#7CECC3"></div>
+			<div class="lisere_banniere"></div>
 		</div>
 	</div>
 
 	<!-- bas de page -->
 	<div class="row">
 		<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 cadre_bas">
+			<h1>ECOLES</h1>
+			<div class="lisere_bleu"></div>
 			<div class="row">
-				<div class="col-xs-6 col-md-6">
-					<a href="http://www.enpc.fr/"><img class="img" src="logos/logo_enpc.png" alt="ENPC"/></a>
+				<div class="col-xs-6 col-md-6 ecole">
+					<a href="ecoles.html#enpc"><img class="img" src="logos/logo_enpc.png" alt="ENPC"/></a>
 				</div>
-				<div class="col-xs-6 col-md-6">
-					<a href="https://www.ensta-paristech.fr/"><img class="img" src="logos/logo_ensta.png" alt="ENSTA"/></a>
+				<div class="col-xs-6 col-md-6 ecole">
+					<a href="ecoles.html#ensta"><img class="img" src="logos/logo_ensta.png" alt="ENSTA"/></a>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-xs-6 col-md-6">
-					<a href="http://www.mines-paristech.fr/"><img class="img" src="logos/logo_mines.png" alt="Mines"/></a>
+				<div class="col-xs-6 col-md-6 ecole">
+					<a href="ecoles.html#mines"><img class="img" src="logos/logo_mines.png" alt="Mines"/></a>
 				</div>
-				<div class="col-xs-6 col-md-6">
-					<a href="http://www.ensae.fr/"><img class="img" src="logos/logo_ensae.png" alt="ENSAE"/></a>
+				<div class="col-xs-6 col-md-6 ecole">
+					<a href="ecoles.html#ensae"><img class="img" src="logos/logo_ensae.png" alt="ENSAE"/></a>
 				</div>
 			</div>
-			<div class="separateur" style="background-color:#A8DA8E"></div>
+			<div class="lisere_bleu"></div>
 			<div style="text-align:center">Plus de 3000 étudiants des meilleures écoles d’ingénieur françaises</div>
 		</div>
-		<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+		<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 cadre_bas">
+			<h1>FORUM</h1>
+			<div class="lisere_bleu"></div>
 			<div class="row">
-				<div class="col-md-12 cadre_bas">
+				<div class="col-md-12 cadre_image">
 					<img class="img" src="logos/logo_trium.png" alt="FORUM TRIUM"/>
 				</div>
 			</div>
-			<div class="separateur" style="background-color:#A8DA8E"></div>
+			<div class="lisere_bleu"></div>
 			<div style="text-align:center">Une journée animée par des conférences, des tables rondes, des déjeuners-rencontre </div>
 		</div>
-		<div class="col-sm-offset-3 col-md-offset-0 col-xs-12 col-sm-6 col-md-4 col-lg-4">
+		<div class="col-sm-offset-3 col-md-offset-0 col-xs-12 col-sm-6 col-md-4 col-lg-4 cadre_bas">
+			<h1>ENTREPRISES</h1>
+			<div class="lisere_bleu"></div>
 			<div class="row">
-				<div class="col-md-12 cadre_bas">
-					<img class="img" src="images/widget_entreprises.png" alt="Entreprises"/>
+				<div class="col-md-12 cadre_image">
+					<a href="entreprises.html#widget_ent"><img class="img" src="images/widget_entreprises.png" alt="Entreprises"/></a>
 				</div>
 			</div>
-			<div class="separateur" style="background-color:#A8DA8E"></div>
+			<div class="lisere_bleu"></div>
 			<div style="text-align:center">Près de 200 entreprises de tous horizons </div>
+		</div>
+	</div>
+	<div class="row" style="margin-top:20px"></div>
+	<div class="row">
+		<div class="col-lg-8">
+			<h1>GALLERIE</h1>
+			<div class="lisere_bleu"></div>
+		</div>
+		<div class="col-lg-4">
+			<h1>LA PAROLE AUX ENTREPRISES</h1>
+			<div class="lisere_bleu"></div>
 		</div>
 	</div>
 </div>

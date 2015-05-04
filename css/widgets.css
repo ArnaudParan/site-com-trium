@@ -2,11 +2,55 @@ body{
 	background-color:white;
 }
 
-.separateur{
+h1{
+	color:grey;
+	text-align:center;
+	font-weight:bold;
+	font-size:24px;
+}
+
+.nav_originel li{
+	display:inline-block;
+}
+
+.nav_originel ul{
+	list-style-type:none;
+}
+
+@media screen and (min-width:1300px){
+	.nav_originel ul{
+		margin-left:-40px;
+	}
+
+	.nav_originel li{
+		margin-left:40px;
+	}
+}
+
+.nav_originel a:link ,.nav_originel a:visited{
+	color:grey;
+}
+
+.nav_originel a:hover{
+	color:maroon;
+	text-decoration:none;
+}
+
+.separateur, [class*="lisere_"]{
 	background-color:black;
-	padding-top:2px;
+	padding-top:3px;
 	margin-left:10%;
 	margin-right:10%;
+}
+
+.lisere_bleu{
+	background:url("../liseres/Liserébleu.png");
+	background-size:100% 100%;
+}
+
+.lisere_banniere{
+	background:url("../liseres/Liserébanière1.png");
+	background-size:100% 100%;
 }
 
 .img{
@@ -26,10 +70,13 @@ body{
 
 .cadre_bas{
 	margin-top:50px;
+}
+
+.cadre_image{
 	height:200px;
 }
 
-.cadre_bas div div{
+.cadre_bas .ecole{
 	height:100px;
 }
 
