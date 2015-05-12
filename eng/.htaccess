@@ -1,0 +1,16 @@
+<IfModule mod_rewrite.c>
+Options +FollowSymlinks
+RewriteEngine On
+#RewriteOptions Inherit
+RewriteBase /site-com-trium
+RewriteRule ^blabla\.php /site-com-trium/eng/entreprises.php [L]
+#RewriteRule ^index\.php$ - [L]
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule . /site-com-trium/index.php [L]
+#RewriteCond %{REQUEST_URL} !index\.php
+#RewriteCond %{REQUEST_URL} !css/.|bootstrap/.|images/.|js/.|liseres/.|logos/.
+#RewriteRule ^(.*) /site-com-trium/index.php?req=$1 [L]
+</IfModule>
+#RewriteRule ^post/([0-9]+)?/?([0-9]+)?/?$ index.php?p=$1&page=$2
+#RewriteRule ^post/([0-9]+)?/?([0-9]+)?/?$ index.php?p=$1&page=$2
