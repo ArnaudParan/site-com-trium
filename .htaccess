@@ -1,0 +1,8 @@
+<IfModule mod_rewrite.c>
+#Options +FollowSymlinks
+RewriteEngine On
+RewriteOptions Inherit
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !(/index\.php.*|/css/.*|/js/.*|/bootstrap/.*|/images/.*|/liseres/.*|/logos/.*)
+RewriteRule ^([^/]*)(/.*)?$ /index.php?eikjfdolDZFeS546=$1&poEfurnj856oafer=$2 [L]
+</IfModule>
