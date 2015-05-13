@@ -17,7 +17,8 @@ var last_hover_id=0;
 $(function(){
 	$(window).resize(redimensionnement);
 	$('.zone_btn').hover(hov);
-	positionne_widget(510);
+	var l = parseInt($('#widget_ent').parent().css('width'))-parseInt($('#widget_ent').parent().css('padding-left'));
+	positionne_widget(l);
 });
 
 //fonction appelée au redimensionnement, qui détermine si on a changé de catégorie de média
@@ -46,7 +47,8 @@ function redimensionnement(){
 
 //fonction appelée quand on a changé de catégorie
 function chg_cat(cat){
-	console.log(categorie[cat]);
+	var l = parseInt($('#widget_ent').parent().css('width'))-parseInt($('#widget_ent').parent().css('padding-left'));
+	positionne_widget(l);
 }
 
 //fonction lancée quand on met le curseur sur un des boutons du widget
@@ -76,6 +78,8 @@ function hov(){
 
 function fonc_hov(id){
 	var l=$('#widget_ent').attr('l');
+	var c_x=$('#widget_ent').attr('center_x');
+	var c_y=$('#widget_ent').attr('center_y');
 	var l_sbtn=parseInt($('#sbtn11').css('width'));
 	if(!widget_active && $('#zone_btn'+id).attr("anim")!="true" && $('#zone_btn'+id).attr("anim")!="debutfalse"){
 		widget_active=true;
@@ -85,7 +89,7 @@ function fonc_hov(id){
 			if(last_hover_id==id){
 				$('#zone_btn'+id).attr("anim","true");
 				//met le bouton au centre
-				$('#btn'+id).animate({left:l/2,top:l/Math.sqrt(3)},300,function(){
+				$('#btn'+id).animate({left:c_x,top:c_y},300,function(){
 					//ouvre le sous menu
 					$('#sbtn'+id+'1').animate({top:"-="+(Math.sqrt(3)/2-1/(2*Math.sqrt(3)))*l_sbtn},300);
 					$('#sbtn'+id+'2').animate({top:"+="+(Math.sqrt(3)/2-2/(2*Math.sqrt(3)))*l_sbtn,left:"+="+l_sbtn/2},300);
@@ -101,7 +105,6 @@ function fonc_hov(id){
 			else{
 
 				id_active=0;
-				console.log(id_active);
 				$('#zone_btn'+id).attr("anim","false");
 				widget_active=false;
 				fonc_hov(last_hover_id);
@@ -134,17 +137,29 @@ function positionne_widget(l){
 	var l_btn=parseInt($('#btn1').css('width'));
 	var l_sbtn=parseInt($('#sbtn11').css('width'));
 	var l_zone_btn=parseInt($('#zone_btn1').css('width'));
+	l=l-2*(l_sbtn-l_btn/2);
+	//largeur de l'hexagone créé par les centres des boutons
 	var vraie_largeur=l-l_btn;
+	//écart largeur btn sbtn
 	var decalage_sbtn=(l_btn-l_sbtn)/2;
+	//décalage
+	var decalage_widget_y=(Math.sqrt(3)/2-1/(2*Math.sqrt(3)))*l_sbtn-decalage_sbtn;
+	var decalage_widget_x=15+l_sbtn-l_btn/2;
 	$('#widget_ent').attr('l',vraie_largeur+'');
+	$('#widget_ent').attr('center_x',+decalage_widget_x+vraie_largeur/2+'');
+	$('#widget_ent').attr('center_y',+decalage_widget_y+vraie_largeur/(Math.sqrt(3))+'');
+	$('#widget_ent').css('height',vraie_largeur*2/Math.sqrt(3)+l_btn+decalage_widget_y+(Math.sqrt(3)/2-2/(2*Math.sqrt(3)))*l_sbtn-decalage_sbtn+'px');
+	$('#widget_ent').css('width',l+2*(l_sbtn-l_btn/2)+'px');
 
-	pos_btn[0]=[vraie_largeur/2,0];
-	pos_btn[1]=[vraie_largeur,vraie_largeur/(2*Math.sqrt(3))];
-	pos_btn[2]=[vraie_largeur,3*vraie_largeur/(2*Math.sqrt(3))];
-	pos_btn[3]=[vraie_largeur/2,4*vraie_largeur/(2*Math.sqrt(3))];
-	pos_btn[4]=[0,3*vraie_largeur/(2*Math.sqrt(3))];
-	pos_btn[5]=[0,vraie_largeur/(2*Math.sqrt(3))];
+	//positionnement des boutons
+	pos_btn[0]=[decalage_widget_x+vraie_largeur/2,decalage_widget_y+0];
+	pos_btn[1]=[decalage_widget_x+vraie_largeur,decalage_widget_y+vraie_largeur/(2*Math.sqrt(3))];
+	pos_btn[2]=[decalage_widget_x+vraie_largeur,decalage_widget_y+3*vraie_largeur/(2*Math.sqrt(3))];
+	pos_btn[3]=[decalage_widget_x+vraie_largeur/2,decalage_widget_y+4*vraie_largeur/(2*Math.sqrt(3))];
+	pos_btn[4]=[decalage_widget_x+0,decalage_widget_y+3*vraie_largeur/(2*Math.sqrt(3))];
+	pos_btn[5]=[decalage_widget_x+0,decalage_widget_y+vraie_largeur/(2*Math.sqrt(3))];
 
+	//positionnement des sous boutons
 	for(i=0;i<6;i++){
 		$('#fond_btn'+(i+1)).css({'left':pos_btn[i][0]+'px','top':pos_btn[i][1]+'px'});
 		$('#btn'+(i+1)).css({'left':pos_btn[i][0]+'px','top':pos_btn[i][1]+'px'});

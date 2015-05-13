@@ -1,5 +1,5 @@
 	<div class="row">
-		<div class="col-sm-offset-2 col-md-offset-3 col-lg-offset-3 col-sm-10 col-md-offset-8 col-lg-6" style="margin-top:30px;">
+		<div class="col-sm-offset-2 col-md-offset-3 col-lg-offset-3 col-sm-10 col-md-8 col-lg-6" style="margin-top:30px;">
 			<ul id="widget_ent">
 				<!-------------- Construction ------------------>
 				<li class="zone_btn" id="zone_btn1"><button id="btn1" type="button" class="btn btn-default ent" aria-label="left-align">

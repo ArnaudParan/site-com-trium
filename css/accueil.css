@@ -3,3 +3,15 @@
 	height:400px;
 	border-radius:20px;
 }
+
+.cadre_bas{
+	margin-top:50px;
+}
+
+.cadre_image{
+	height:200px;
+}
+
+.cadre_bas .ecole{
+	height:100px;
+}

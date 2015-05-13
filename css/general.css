@@ -9,33 +9,6 @@ h1{
 	font-size:20px;
 }
 
-.nav_originel li{
-	display:inline-block;
-}
-
-.nav_originel ul{
-	list-style-type:none;
-}
-
-@media screen and (min-width:1300px){
-	.nav_originel ul{
-		margin-left:-40px;
-	}
-
-	.nav_originel li{
-		margin-left:40px;
-	}
-}
-
-.nav_originel a:link ,.nav_originel a:visited{
-	color:grey;
-}
-
-.nav_originel a:hover{
-	color:maroon;
-	text-decoration:none;
-}
-
 .separateur, [class*="lisere_"]{
 	background-color:black;
 	padding-top:3px;
@@ -66,25 +39,4 @@ h1{
 	margin-left:auto;
 	margin-right:auto;
 	max-width:20px;
-}
-
-.cadre_bas{
-	margin-top:50px;
-}
-
-.cadre_image{
-	height:200px;
-}
-
-.cadre_bas .ecole{
-	height:100px;
-}
-
-@media screen and (min-width: 1200px){
-	header{
-		height:120px;
-	}
-	header nav{
-		margin-top:70px;
-	}
 }

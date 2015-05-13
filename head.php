@@ -6,7 +6,9 @@
 <meta charset="utf-8">
 
 <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-<link href="/css/widgets.css" rel="stylesheet">
+<link href="/css/general.css" rel="stylesheet">
+<link href="/css/header.css" rel="stylesheet">
+<link href="/css/footer.css" rel="stylesheet">
 
 <meta name="keywords" content="forum, trium, entreprises, mines, ponts, enpc, ponts et chaussées, ensta, ensae, paristech">
 <meta name="description" content="Le site du Forum Trium, le forum entreprises de l'écoles des ponts paristech, l'école des mines paristech, l'ENSTA et l'ENSAE">
