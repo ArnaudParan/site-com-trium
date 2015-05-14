@@ -1,4 +1,5 @@
 <?php
+include('config_serveur.php');
 if(isset($_GET['eikjfdolDZFeS546'])){
 	$p1=$_GET['eikjfdolDZFeS546'];
 }
@@ -12,8 +13,6 @@ else{
 	$p2='';
 }
 
-$racine='/opt/lampp/htdocs/site-com-trium';
-$url_base='http://localhost';
 $page=$p1;
 if(preg_match('#^$|index\.html#',$p1) && $p2==''){
 	$page='index.html';
