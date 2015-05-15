@@ -9,6 +9,13 @@
 		</div>
 		<!-- Le nav -->
 		<div class="col-xs-offset-0 col-sm-offset-0 col-md-offset-0 col-lg-offset-2 col-xs-12 col-sm-12 col-sm-7">
+			<div class="row">
+				<div class="col-lg-offset-3" style="margin-top:30px">
+					<a href="http://www.forum-trium.fr"><button type="button" class="btn btn-success" aria-label="Left Align">
+						<span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Le site entreprises
+					</button></a>
+				</div>
+			</div>
 			<!-- Le nav originel -->
 			<nav class="row nav_originel">
 				<ul>
