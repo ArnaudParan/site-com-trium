@@ -20,7 +20,7 @@ if(preg_match('#^$|index\.html#',$p1) && $p2==''){
 	echo('<link href="/css/accueil.css" rel="stylesheet">');
 	echo('</head>');
 	echo('<body id="page-top" >');
-	echo('<div class="container">');
+	echo('<div class="container-fluid">');
 	include($racine.'/header.php');
 	include($racine.'/accueil.php');
 	echo('</div>');

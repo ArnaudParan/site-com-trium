@@ -6,6 +6,7 @@
 <meta charset="utf-8">
 
 <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="/css/fonts.css" rel="stylesheet">
 <link href="/css/general.css" rel="stylesheet">
 <link href="/css/header.css" rel="stylesheet">
 <link href="/css/footer.css" rel="stylesheet">

@@ -1,10 +1,12 @@
 
 .nav_originel li{
 	display:inline-block;
+	font-family : MeticulousAriel;
+	font-size : 18px;
 }
 
 .nav_originel ul{
-	list-style-type:none;
+	list-style-type : none;
 }
 
 @media screen and (min-width:1300px){
@@ -61,6 +63,6 @@
 		height:120px;
 	}
 	header nav{
-		margin-top:70px;
+		margin-top:30px;
 	}
 }

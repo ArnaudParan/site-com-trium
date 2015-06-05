@@ -1,5 +1,6 @@
 	<!-- Lea Header et ses widgets-->
 	<header class="row">
+		<div class="banniere_haut"></div>
 		<div class="col-xs-5 col-sm-2 col-md-2 col-lg-1">
 			<div class="col-md-6 col-xs-6"><a href="#"><img class="lang" src="/logos/french.png" alt="Français"/></a></div>
 			<div class="col-md-6 col-xs-6"><a href="eng/"><img class="lang" src="/logos/english.png" alt="Anglais"/></a></div>
@@ -10,7 +11,7 @@
 		<!-- Le nav -->
 		<div class="col-xs-offset-0 col-sm-offset-0 col-md-offset-0 col-lg-offset-2 col-xs-12 col-sm-12 col-sm-7">
 			<div class="row">
-				<div class="col-lg-offset-3" style="margin-top:30px">
+				<div class="col-lg-offset-1" style="margin-top:20px">
 					<a href="http://www.forum-trium.fr"><button type="button" class="btn btn-success" aria-label="Left Align">
 						<span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Le site entreprises
 					</button></a>
@@ -60,7 +61,9 @@
 					}
 					?>
 				</ul>
-				<div class="lisere_banniere" style="margin-right:0px;margin-left:0px"></div>
 			</nav>
 		</div>
+	<div class="lisere_banniere col-lg-12" style="padding-top:7px;margin-left:0px;margin-right:0px;"></div>
 	</header>
+	<div class="row" style="padding-top:20px;">
+	</div>

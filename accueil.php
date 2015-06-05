@@ -1,12 +1,13 @@
 	<!--Le carousel-->
 	<div class="row">
-		<div class="col-lg-offset-1 col-lg-10">
+		<div class="col-lg-12">
 			<div id="monCarousel" class="carousel slide" data-ride="carousel">
 				<!-- indicateurs-->
 				<ol class="carousel-indicators">
 					<li data-target="#monCarousel" data-slide-to="0" class="active"></li>
 					<li data-target="#monCarousel" data-slide-to="1"></li>
 					<li data-target="#monCarousel" data-slide-to="2"></li>
+					<li data-target="#monCarousel" data-slide-to="3"></li>
 				</ol>
 
 				<!--wrapper pour les slides-->
@@ -17,6 +18,20 @@
 						<div class="carousel-caption">
 							<h1>Slide 0</h1>
 						</div>
+						<div class="bloc_carousel col-lg-offset-2 col-lg-2" style="margin-top:60px;">
+							Vous intéressez ces entreprises, venez les découvrir.
+						</div>
+						<div class="bloc_carousel col-lg-offset-1 col-lg-5" style="margin-top:100px">
+							<div>
+								<div class="col-lg-4">
+									<a href="/ecoles.html#enpc"><img class="img" src="/logos/logo_enpc.png" alt="ENPC"/></a>
+								</div>
+								<div class="col-lg-8">
+									L'école des Ponts Paristech recrute chaque année parmi les meilleurs étudiants issus des classes préparatoires ou d'autres filières.<br/>
+									Depuis 1747, elle forme des ingénieurs qui excellent dans divers domaines tels le génie civil, les transports, la finance, le génie industriel, le génie mécanique, et l'informatique.
+								</div>
+							</div>
+						</div>
 					</div>
 					<!-- slide 1 -->
 					<div class="item">
@@ -24,12 +39,58 @@
 						<div class="carousel-caption">
 							<h1>Slide 1</h1>
 						</div>
+						<div class="bloc_carousel col-lg-offset-2 col-lg-2" style="margin-top:60px;">
+							Vous intéressez ces entreprises, venez les découvrir.
+						</div>
+						<div class="bloc_carousel col-lg-offset-1 col-lg-5" style="margin-top:100px">
+							<div>
+								<div class="col-lg-4">
+									<a href="/ecoles.html#ensta"><img class="img" src="/logos/logo_ensta.png" alt="ENSTA"/></a>
+								</div>
+								<div class="col-lg-8">
+									<!-- ENSTA -->
+								</div>
+							</div>
+						</div>
 					</div>
 					<!-- slide 2 -->
 					<div class="item">
 						<img src="" alt=""/>
 						<div class="carousel-caption">
 							<h1>Slide 2</h1>
+						</div>
+						<div class="bloc_carousel col-lg-offset-2 col-lg-2" style="margin-top:60px;">
+							Vous intéressez ces entreprises, venez les découvrir.
+						</div>
+						<div class="bloc_carousel col-lg-offset-1 col-lg-5" style="margin-top:100px">
+							<div>
+								<div class="col-lg-4">
+									<a href="/ecoles.html#mines"><img class="img" src="/logos/logo_mines.png" alt="Mines"/></a>
+								</div>
+								<div class="col-lg-8">
+									<!-- Mines -->
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- slide 3 -->
+					<div class="item">
+						<img src="" alt=""/>
+						<div class="carousel-caption">
+							<h1>Slide 2</h1>
+						</div>
+						<div class="bloc_carousel col-lg-offset-2 col-lg-2" style="margin-top:60px;">
+							Vous intéressez ces entreprises, venez les découvrir.
+						</div>
+						<div class="bloc_carousel col-lg-offset-1 col-lg-5" style="margin-top:100px">
+							<div>
+								<div class="col-lg-4">
+									<a href="/ecoles.html#ensae"><img class="img" src="/logos/logo_ensae.png" alt="ENSAE"/></a>
+								</div>
+								<div class="col-lg-8">
+									<!-- ENSAE -->
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -47,6 +108,7 @@
 		</div>
 	</div>
 	<!-- fin carousel-->
+	<div class="col-lg-offset-2 col-lg-8">
 	<!-- intermède -->
 	<div class="row">
 		<div class="col-md-12" style="margin-top:20px">
@@ -56,7 +118,7 @@
 		</div>
 	</div>
 
-	<!-- bas de page -->
+	<!-- ecoles forum entreprises -->
 	<div class="row">
 		<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 cadre_bas">
 			<h1>ECOLES</h1>
@@ -103,28 +165,30 @@
 			<div style="text-align:center">Près de 200 entreprises de tous horizons </div>
 		</div>
 	</div>
-	<div class="row" style="margin-top:40px"></div>
-	<div class="row">
-		<div class="col-lg-offset-1 col-lg-3">
-		<a href=""><img class="img" src="/logos/twitter.png" alt="Twitter"/></a>
-		</div>
-		<div class="col-lg-4">
-			<div class="row">
-				<div class="col-lg-12">
-					<a href=""><img class="img" src="/logos/apple_store.png" alt="Apple Store"/></a>
+	<!-- twitter facebook et app -->
+	<div class="col-lg-offset-2 col-lg-8">
+		<div class="row" style="margin-top:40px"></div>
+		<div class="row">
+			<div class="col-lg-offset-0 col-lg-2">
+				<a href=""><img class="img" src="/logos/twitter.png" alt="Twitter"/></a>
+			</div>
+			<div class="col-lg-8">
+				<div class="row">
+					<div class="col-lg-6">
+						<a href=""><img class="img" src="/logos/apple_store.png" alt="Apple Store"/></a>
+					</div>
+					<div class="col-lg-6">
+						<a href=""><img class="img" src="/logos/play_store.png" alt="Play Store"/></a>
+					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-lg-12">
-					<a href=""><img class="img" src="/logos/play_store.png" alt="Play Store"/></a>
-				</div>
+			<div class="col-lg-2">
+			<a href=""><img class="img" src="/logos/facebook.png" alt="Facebook"/></a>
 			</div>
-		</div>
-		<div class="col-lg-3">
-		<a href=""><img class="img" src="/logos/facebook.png" alt="Facebook"/></a>
 		</div>
 	</div>
 	<div class="row" style="margin-top:20px"></div>
+	<!-- gallerie et la parole aux entreprises -->
 	<div class="row">
 		<div class="col-lg-7">
 			<h1>GALERIE</h1>
@@ -139,6 +203,7 @@
 				 <a class="twitter-timeline" href="https://twitter.com/hashtag/ForumTRIUM" data-widget-id="598458751130193921">Tweets sur #ForumTRIUM</a>
 			</div>
 		</div>
+	</div>
 	</div>
 
 <!-- timeline twitter -->
