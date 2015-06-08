@@ -1,5 +1,9 @@
 body{
-	background-color:white;
+	background-color:grey;
+}
+
+.container-fluid {
+	background-color : white;
 }
 
 .banniere_haut {

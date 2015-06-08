@@ -22,7 +22,7 @@
 				<ul>
 					<li><a href="/index.html">ACCUEIL</a>
 					<?php
-					if($page=='index.html'){
+					if($page=='accueil.html'){
 						echo '<div class="lisere_bleu" style="margin-left:-5px;margin-right:-5px;visibility:visible"></div></li>';
 					}else{
 						echo '<div class="lisere_bleu" style="margin-left:-5px;margin-right:-5px;visibility:hidden"></div></li>';

@@ -88,7 +88,3 @@
 			</ul>
 		</div>
 	</div>
-<?php
-include($racine.'/scripts.php');
-?>
-<script src="/js/widget_entreprises.js"></script>
