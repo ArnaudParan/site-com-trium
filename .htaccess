@@ -4,7 +4,7 @@ RewriteEngine On
 RewriteOptions Inherit
 RewriteBase /
 #RewriteCond %{REMOTE_ADDR} !127.0.0.1
-RewriteCond %{REQUEST_URI} !(^/index\.php.*$|^/css/.*$|^/js/.*$|^/bootstrap/.*$|^/images/.*$|^/liseres/.*$|^/logos/.*$)
+RewriteCond %{REQUEST_URI} !(^/plaquette\.pdf|^/index\.php.*$|^/css/.*$|^/js/.*$|^/bootstrap/.*$|^/images/.*$|^/liseres/.*$|^/logos/.*$)
 RewriteRule ^([^/]*)(/.*)?$ /index.php?eikjfdolDZFeS546=$1&poEfurnj856oafer=$2 [L]
 
 </IfModule>

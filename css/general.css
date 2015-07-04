@@ -1,9 +1,14 @@
-body{
-	background-color:grey;
+.container-fluid {
+	padding : 100;
+	background-color : white;
 }
 
-.container-fluid {
-	background-color : white;
+body {
+	background-color : grey;
+}
+
+#corps {
+	min-height : 400px;
 }
 
 .banniere_haut {

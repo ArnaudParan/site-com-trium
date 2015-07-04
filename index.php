@@ -52,8 +52,10 @@ function charge_page ($nom_page)
 	echo ('<body id="page-top" >');
 	echo ('<div class="container-fluid">');
 	include ($racine . '/header.php');
+	echo ('<div id="corps">');
 	include ($racine . '/' . $nom_page . '.php');
-	include ($racine . '/footer.php');
+	echo ('</div>');
+include ($racine . '/footer.php');
 	echo ('</div>');
 	include ($racine . '/scripts.php');
 	echo ('<script src="/js/' . $nom_page . '.js"></script>');
