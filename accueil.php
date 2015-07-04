@@ -48,7 +48,7 @@
 								<a href="/ecoles.html#ensta"><img class="img" src="/logos/logo_ensta.png" alt="ENSTA"/></a>
 							</div>
 							<div class="col-lg-8">
-								<!-- ENSTA -->
+								l'École Nationale Supérieure de Techniques Avancées ParisTech est la plus jeune des trois écoles. Elle est née en 1970 de la fusion de quatre écoles d'application de l'École Polytechnique dont l'École du Génie Maritime fondée en 1741. Elle apporte à ses élèves ingénieurs les compétences leur permettant de concevoir, de réaliser et de diriger des projets industriels complexes.
 							</div>
 						</div>
 					</div>
@@ -68,7 +68,7 @@
 								<a href="/ecoles.html#mines"><img class="img" src="/logos/logo_mines.png" alt="Mines"/></a>
 							</div>
 							<div class="col-lg-8">
-								<!-- Mines -->
+								Fondée en 1783 pour former des ingénieurs des Mines, l'École des MINES ParisTech a su anticiper et s'adapter. La diversité des centres de recherche de l'École se retrouve dans la pluridisciplinarité des ingénieurs généralistes qu'elle forme et qui sont présents aussi bien dans les différents secteurs de l'industrie que dans la finance et le conseil.
 							</div>
 						</div>
 					</div>
@@ -88,7 +88,7 @@
 								<a href="/ecoles.html#ensae"><img class="img" src="/logos/logo_ensae.png" alt="ENSAE"/></a>
 							</div>
 							<div class="col-lg-8">
-								<!-- ENSAE -->
+								Fondée en 1942, l'École Nationale de la Statistique et de l'Administration Économique ParisTech assure une formation de haut niveau en économie, en statistique et en finance qui lui a permis d'acquérir une place spécifique et reconnue parmi les Grandes Écoles françaises.
 							</div>
 						</div>
 					</div>
