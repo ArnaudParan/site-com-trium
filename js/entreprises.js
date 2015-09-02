@@ -111,16 +111,45 @@ var Button = function(Id, radius, widget)
 				'top': parseInt(this.top) + parseInt(this.widget.yCenter) - parseInt(this.radius) + 'px'});
 	}
 
-	this.toCenter = function() {
+	this.toCenter = function(callback) {
 		this.left = 0;
 		this.top = 0;
-		this.animate(5000);
+		this.animate(500, callback);
+	}
+
+	this.toOriginal = function(callback) {
+		this.initPos();
+		this.animate(500, callback);
+	}
+
+	this.openSBtns = function(callback) {
+		this.sbtn[0].left -= this.sbtn[0].radius;
+		this.sbtn[1].left += this.sbtn[0].radius;
+		this.sbtn[0].animate(500);
+		this.sbtn[1].animate(500, callback);
+	}
+
+	this.closeSBtns = function(callback) {
+		this.sbtn[0].initPos();
+		this.sbtn[1].initPos();
+		this.sbtn[0].animate(500);
+		this.sbtn[1].animate(500, callback);
+	}
+
+	this.openButton = function(callback) {
+		this.DOMbtn.queue(this.toCenter());
+		this.DOMbtn.queue(this.openSBtns(callback));
+	}
+
+	this.closeButton = function(callback) {
+		this.DOMbtn.queue(this.toOriginal());
+		this.DOMbtn.queue(this.closeSBtns(callback));
 	}
 
 	this.animate = function(time, callback) 
 	{
 		this.DOMbtn.animate({'left': parseInt(this.left) + parseInt(this.widget.xCenter) - parseInt(this.radius) + 'px',
-				'top': parseInt(this.top) + parseInt(this.widget.yCenter) - parseInt(this.radius) + 'px'});
+				'top': parseInt(this.top) + parseInt(this.widget.yCenter) - parseInt(this.radius) + 'px'}, time, callback);
 	}
 }
 
@@ -170,10 +199,15 @@ var SubButton = function(Id, PId, radius, left, top, parentButton)
 				'top': parseInt(this.top) + parseInt(this.parentButton.widget.yCenter) - parseInt(this.radius) + 'px'});
 	}
 
-	this.animate = function()
+	this.toOriginal = function(callback) {
+		this.initPos();
+		this.animate(500);
+	}
+
+	this.animate = function(time, callback)
 	{
 		this.DOMsbtn.animate({'left': parseInt(this.left) + parseInt(this.parentButton.widget.xCenter) - parseInt(this.radius) + 'px',
-				'top': parseInt(this.top) + parseInt(this.parentButton.widget.yCenter) - parseInt(this.radius) + 'px'});
+				'top': parseInt(this.top) + parseInt(this.parentButton.widget.yCenter) - parseInt(this.radius) + 'px'}, time, callback);
 	}
 }
 
@@ -221,4 +255,6 @@ function getMousePos()
 	return mousePos;
 }
 
-$('document').ready(function(){createWidget();});
+var widget = createWidget();
+widget.pushAnim(widget.buttons[0].openButton());
+widget.pushAnim(widget.buttons[0].closeButton());
