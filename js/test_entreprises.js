@@ -8,7 +8,7 @@ QUnit.test("pushPullAnim", test_pushPullAnim);
 
 function test_animMutex(assert)
 {
-	var testedWidget = new Widget(0, 0, 0);
+	var testedWidget = new Widget(0);
 	assert.equal(testedWidget.animMutexState(), MutexState.Free);
 	testedWidget.lockAnimMutex();
 	assert.equal(testedWidget.animMutexState(), MutexState.Busy);
@@ -18,8 +18,8 @@ function test_animMutex(assert)
 
 function test_pushPullAnim(assert)
 {
-	$("body").append('<div id="widgetEntreprises"></div>');
-	var testedWidget = new Widget(0, 0, 0);
+	$("body").append('<div id="widget_ent"></div>');
+	var testedWidget = new Widget(0);
 	var controlNum = 0;
 	testedWidget.pushAnim(function() {controlNum = 10;});
 	testedWidget.pushAnim(function() {assert.equal(controlNum, 10, "pushAnim");});
@@ -67,11 +67,11 @@ function test_btnInitPos(assert)
 {
 	var buttonRadius = 2.;
 	var widgetWidth = 5.;
-	var testedButton = new Button(2, buttonRadius, new Widget(0., 0., widgetWidth));
+	var testedButton = new Button(2, buttonRadius, new Widget(widgetWidth));
 	btnInitPos(widgetWidth, testedButton);
 	var hexRadius = (widgetWidth - 2 * buttonRadius) / Math.sqrt(3)
-	assert.equal(testedButton.top, -hexRadius - buttonRadius, "Top");
-	assert.equal(testedButton.left, - buttonRadius, "Left");
+	assert.equal(testedButton.top, -hexRadius, "Top");
+	assert.ok(Math.abs(testedButton.left) < 1e-10, "Left");
 }
 
 function test_mousePos(assert)

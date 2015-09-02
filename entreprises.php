@@ -11,9 +11,6 @@
 				<button id="sbtn12" type="button" class="btn btn-default sent" aria-label="left-align">
 					STARTUP
 				</button>
-				<button id="sbtn13" type="button" class="btn btn-default sent" aria-label="left-align">
-					CONSEIL
-				</button>
 				<div class="fond_btn" id="fond_btn1"></div></li>
 				<!-------------- Banque ------------------>
 				<li class="zone_btn" id="zone_btn2"><button id="btn2" type="button" class="btn btn-default ent" aria-label="left-align">
@@ -25,13 +22,11 @@
 				<button id="sbtn22" type="button" class="btn btn-default sent" aria-label="left-align">
 					STARTUP
 				</button>
-				<button id="sbtn23" type="button" class="btn btn-default sent" aria-label="left-align">
-					CONSEIL
-				</button>
 				<div class="fond_btn" id="fond_btn2"></div></li>
 				<!-------------- Services ------------------>
+				<!--audit conseil services-->
 				<li class="zone_btn" id="zone_btn3"><button id="btn3" type="button" class="btn btn-default ent" aria-label="left-align">
-					SERVICES
+					AUDIT CONSEIL SERVICES
 				</button>
 				<button id="sbtn31" type="button" class="btn btn-default sent" aria-label="left-align">
 					GROUPE
@@ -39,13 +34,11 @@
 				<button id="sbtn32" type="button" class="btn btn-default sent" aria-label="left-align">
 					STARTUP
 				</button>
-				<button id="sbtn33" type="button" class="btn btn-default sent" aria-label="left-align">
-					CONSEIL
-				</button>
 				<div class="fond_btn" id="fond_btn3"></div></li>
 				<!-------------- Energie ------------------>
+				<!--énergie transport environnement-->
 				<li class="zone_btn" id="zone_btn4"><button id="btn4" type="button" class="btn btn-default ent" aria-label="left-align">
-					ENERGIE
+					ENERGIE TRANSPORT ENVIRONNEMENT
 				</button>
 				<button id="sbtn41" type="button" class="btn btn-default sent" aria-label="left-align">
 					GROUPE
@@ -53,22 +46,16 @@
 				<button id="sbtn42" type="button" class="btn btn-default sent" aria-label="left-align">
 					STARTUP
 				</button>
-				<button id="sbtn43" type="button" class="btn btn-default sent" aria-label="left-align">
-					CONSEIL
-				</button>
 				<div class="fond_btn" id="fond_btn4"></div></li>
 				<!-------------- Transports ------------------>
 				<li class="zone_btn" id="zone_btn5"><button id="btn5" type="button" class="btn btn-default ent" aria-label="left-align">
-					TRANSPORTS
+					ECOLES ET SERVICES AUX JEUNES DIPLOMÉS
 				</button>
 				<button id="sbtn51" type="button" class="btn btn-default sent" aria-label="left-align">
 					GROUPE
 				</button>
 				<button id="sbtn52" type="button" class="btn btn-default sent" aria-label="left-align">
 					STARTUP
-				</button>
-				<button id="sbtn53" type="button" class="btn btn-default sent" aria-label="left-align">
-					CONSEIL
 				</button>
 				<div class="fond_btn" id="fond_btn5"></div></li>
 				<!-------------- Industrie ------------------>
@@ -80,9 +67,6 @@
 				</button>
 				<button id="sbtn62" type="button" class="btn btn-default sent" aria-label="left-align">
 					STARTUP
-				</button>
-				<button id="sbtn63" type="button" class="btn btn-default sent" aria-label="left-align">
-					CONSEIL
 				</button>
 				<div class="fond_btn" id="fond_btn6"></div></li>
 			</ul>

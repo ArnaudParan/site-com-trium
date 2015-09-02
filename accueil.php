@@ -167,25 +167,37 @@
 			</div>
 		</div>
 		<!-- twitter facebook et app -->
-		<div class="col-lg-offset-2 col-lg-8">
-			<div class="row" style="margin-top:40px"></div>
-			<div class="row">
-				<div class="col-lg-offset-0 col-lg-2">
-					<a href=""><img class="img" src="/logos/twitter.png" alt="Twitter"/></a>
-				</div>
-				<div class="col-lg-8">
-					<div class="row">
-						<div class="col-lg-6">
-							<a href=""><img class="img" src="/logos/apple_store.png" alt="Apple Store"/></a>
-						</div>
-						<div class="col-lg-6">
-							<a href=""><img class="img" src="/logos/play_store.png" alt="Play Store"/></a>
+		<div class="row">
+			<div class="col-lg-offset-3 col-lg-6" style="color:grey;font-size:25px;text-align:center;font-weight:bold">
+				L'application permet de profiter à fond de l'évènement
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-offset-2 col-lg-8">
+				<div class="row" style="margin-top:40px"></div>
+				<div class="row">
+					<div class="col-lg-offset-0 col-lg-2">
+						<a href=""><img class="img" src="/logos/twitter.png" alt="Twitter"/></a>
+					</div>
+					<div class="col-lg-8">
+						<div class="row">
+							<div class="col-lg-6">
+								<a href=""><img class="img" src="/logos/apple_store.png" alt="Apple Store"/></a>
+							</div>
+							<div class="col-lg-6">
+								<a href=""><img class="img" src="/logos/play_store.png" alt="Play Store"/></a>
+							</div>
 						</div>
 					</div>
+					<div class="col-lg-2">
+					<a href=""><img class="img" src="/logos/facebook.png" alt="Facebook"/></a>
+					</div>
 				</div>
-				<div class="col-lg-2">
-				<a href=""><img class="img" src="/logos/facebook.png" alt="Facebook"/></a>
-				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-offset-3 col-lg-6" style="color:grey;font-size:25px;text-align:center;font-weight:bold">
+				Suivez nos entreprises et nous sur les réseaux sociaux
 			</div>
 		</div>
 		<div class="row" style="margin-top:20px"></div>
@@ -194,6 +206,19 @@
 			<div class="col-lg-7">
 				<h1>GALERIE</h1>
 				<div class="lisere_bleu"></div>
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="row">
+							<img alt="Photo du forum 1" src="">
+						</div>
+						<div class="row">
+							<img alt="Photo du forum 2" src="">
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<img alt="Photo du forum 3" src="">
+					</div>
+				</div>
 				<div class="lisere_bleu"></div>
 				<div style="text-align:center">Découvrez l'édition précédente en images</div>
 			</div>

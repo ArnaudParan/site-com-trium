@@ -1,180 +1,224 @@
-//codages pour les différentes tailles
-var xs=0, sm=1, md=2, lg=3;
-var categorie=['xs','sm','md','lg']
-//tailles minimales pour le responsive avec bootstrap
-var taille_min=[0,768,992,1300];
-//catégorie actuelle du média
-var taille_media=lg;
-//stocke les positions des boutons
-var pos_btn=[[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]];
-//stocke l'id du bouton active
-var id_active=0;
-//dit si le widget est actif
-var widget_active=false;
-var last_hover_id=0;
+//Before reading anything, you must know that here every graphical object is identified by the
+//position of its center and not the top left corner. Furthermore, the coords system's origin is
+//the center of the widget
 
-//fonction principale
-$(function(){
-	$(window).resize(redimensionnement);
-	$('.zone_btn').hover(hov);
-	var l = parseInt($('#widget_ent').parent().css('width'))-parseInt($('#widget_ent').parent().css('padding-left'));
-	positionne_widget(l);
-});
 
-//fonction appelée au redimensionnement, qui détermine si on a changé de catégorie de média
-function redimensionnement(){
-	//la catégorie actuelle du média
-	var taille_actuelle=lg;
-	//donne à taille_actuelle sa valeur
-	if(window.matchMedia('(min-width:  '+taille_min[lg]+'px)').matches){
-		taille_actuelle=lg;
-	}
-	else if(window.matchMedia('(min-width:  '+taille_min[md]+'px)').matches){
-		taille_actuelle=md;
-	}
-	else if(window.matchMedia('(min-width:  '+taille_min[sm]+'px)').matches){
-		taille_actuelle=sm;
-	}
-	else{
-		taille_actuelle=xs;
-	}
-	//si la catégorie a changé, on appelle la fonction
-	if(taille_actuelle!=taille_media){
-		taille_media=taille_actuelle;
-		chg_cat(taille_media);
-	}
+function createWidget()
+{
+	var htmlWidget = $("#widget_ent");
+	var width = parseInt(htmlWidget.css("width"));
+	var createdWidget = new Widget(width);
+	return createdWidget;
 }
 
-//fonction appelée quand on a changé de catégorie
-function chg_cat(cat){
-	var l = parseInt($('#widget_ent').parent().css('width'))-parseInt($('#widget_ent').parent().css('padding-left'));
-	positionne_widget(l);
-}
+var MutexState = {
+	Busy: 0,
+	Free: 1
+};
 
-//fonction lancée quand on met le curseur sur un des boutons du widget
-function hov(){
-	var id=-1;
-	if($(this).attr("id")=="zone_btn1"){
-		id=1;
-	}
-	else if($(this).attr("id")=="zone_btn2"){
-		id=2;
-	}
-	else if($(this).attr("id")=="zone_btn3"){
-		id=3;
-	}
-	else if($(this).attr("id")=="zone_btn4"){
-	id=4;
-	}
-	else if($(this).attr("id")=="zone_btn5"){
-		id=5;
-	}
-	else if($(this).attr("id")=="zone_btn6"){
-		id=6;
-	}
-	last_hover_id=id;
-	fonc_hov(id);
-}
+var Widget = function(width) {
+	this.animMutex = MutexState.Free;
+	this.width = width;
+	var btnRadius = getButtonsRadius();
+	this.height = 2 * (this.width - 2 * btnRadius) / Math.sqrt(3) + 2 * btnRadius;//TODO
+	this.xCenter = this.width / 2.;
+	this.yCenter = this.height / 2;
+	this.htmlWidget = $("#widget_ent");
+	this.buttons = new Array();
 
-function fonc_hov(id){
-	var l=$('#widget_ent').attr('l');
-	var c_x=$('#widget_ent').attr('center_x');
-	var c_y=$('#widget_ent').attr('center_y');
-	var l_sbtn=parseInt($('#sbtn11').css('width'));
-	if(!widget_active && $('#zone_btn'+id).attr("anim")!="true" && $('#zone_btn'+id).attr("anim")!="debutfalse"){
-		widget_active=true;
-		//Range l'élément actif
-		dehov(id_active,function(){
-			id_active=id;
-			if(last_hover_id==id){
-				$('#zone_btn'+id).attr("anim","true");
-				//met le bouton au centre
-				$('#btn'+id).animate({left:c_x,top:c_y},300,function(){
-					//ouvre le sous menu
-					$('#sbtn'+id+'1').animate({top:"-="+(Math.sqrt(3)/2-1/(2*Math.sqrt(3)))*l_sbtn},300);
-					$('#sbtn'+id+'2').animate({top:"+="+(Math.sqrt(3)/2-2/(2*Math.sqrt(3)))*l_sbtn,left:"+="+l_sbtn/2},300);
-					$('#sbtn'+id+'3').animate({top:"+="+(Math.sqrt(3)/2-2/(2*Math.sqrt(3)))*l_sbtn,left:"-="+l_sbtn/2},300,function(){
-						widget_active=false;
-						if(id!=last_hover_id){
-							//si l'utilisateur a cliqué sur un autre entre temps
-							fonc_hov(last_hover_id);
-						}
-					});
-				});
-			}
-			else{
-
-				id_active=0;
-				$('#zone_btn'+id).attr("anim","false");
-				widget_active=false;
-				fonc_hov(last_hover_id);
-			}
-		});
-	}
-}
-
-function dehov(id,fonction){
-	var l_btn=parseInt($('#btn1').css('width'));
-	var l_sbtn=parseInt($('#sbtn11').css('width'));
-	if($("#zone_btn"+id).attr("anim")=="true"){
-		$('#zone_btn'+id).attr("anim","debutfalse");
-		$('#sbtn'+id+'1').animate({top:"+="+(Math.sqrt(3)/2-1/(2*Math.sqrt(3)))*l_sbtn},300);
-		$('#sbtn'+id+'2').animate({top:"-="+(Math.sqrt(3)/2-2/(2*Math.sqrt(3)))*l_sbtn,left:"-="+l_sbtn/2},300);
-		$('#sbtn'+id+'3').animate({top:"-="+(Math.sqrt(3)/2-2/(2*Math.sqrt(3)))*l_sbtn,left:"+="+l_sbtn/2},300,function(){
-				$("#btn"+id).animate({left:pos_btn[id-1][0],top:pos_btn[id-1][1]},300, function(){
-				$('#zone_btn'+id).attr("anim","false");
-				fonction();
-			});
-		});
-	}
-	else{
-		fonction();
-	}
-}
-
-/*positionne le widget en fonction de la largeur l qui lui est allouée*/
-function positionne_widget(l){
-	var l_btn=parseInt($('#btn1').css('width'));
-	var l_sbtn=parseInt($('#sbtn11').css('width'));
-	var l_zone_btn=parseInt($('#zone_btn1').css('width'));
-	l=l-2*(l_sbtn-l_btn/2);
-	//largeur de l'hexagone créé par les centres des boutons
-	var vraie_largeur=l-l_btn;
-	//écart largeur btn sbtn
-	var decalage_sbtn=(l_btn-l_sbtn)/2;
-	//décalage
-	var decalage_widget_y=(Math.sqrt(3)/2-1/(2*Math.sqrt(3)))*l_sbtn-decalage_sbtn;
-	var decalage_widget_x=15+l_sbtn-l_btn/2;
-	$('#widget_ent').attr('l',vraie_largeur+'');
-	$('#widget_ent').attr('center_x',+decalage_widget_x+vraie_largeur/2+'');
-	$('#widget_ent').attr('center_y',+decalage_widget_y+vraie_largeur/(Math.sqrt(3))+'');
-	$('#widget_ent').css('height',vraie_largeur*2/Math.sqrt(3)+l_btn+decalage_widget_y+(Math.sqrt(3)/2-2/(2*Math.sqrt(3)))*l_sbtn-decalage_sbtn+'px');
-	$('#widget_ent').css('width',l+2*(l_sbtn-l_btn/2)+'px');
-
-	//positionnement des boutons
-	pos_btn[0]=[decalage_widget_x+vraie_largeur/2,decalage_widget_y+0];
-	pos_btn[1]=[decalage_widget_x+vraie_largeur,decalage_widget_y+vraie_largeur/(2*Math.sqrt(3))];
-	pos_btn[2]=[decalage_widget_x+vraie_largeur,decalage_widget_y+3*vraie_largeur/(2*Math.sqrt(3))];
-	pos_btn[3]=[decalage_widget_x+vraie_largeur/2,decalage_widget_y+4*vraie_largeur/(2*Math.sqrt(3))];
-	pos_btn[4]=[decalage_widget_x+0,decalage_widget_y+3*vraie_largeur/(2*Math.sqrt(3))];
-	pos_btn[5]=[decalage_widget_x+0,decalage_widget_y+vraie_largeur/(2*Math.sqrt(3))];
-
-	//positionnement des sous boutons
-	for(i=0;i<6;i++){
-		$('#fond_btn'+(i+1)).css({'left':pos_btn[i][0]+'px','top':pos_btn[i][1]+'px'});
-		$('#btn'+(i+1)).css({'left':pos_btn[i][0]+'px','top':pos_btn[i][1]+'px'});
+	var buttons = this.buttons;
+	var btnId;
+	for (btnId = 1; btnId < 7; btnId++) {
+		var newButton = new Button(btnId, 
+				btnRadius,
+				this);
+		buttons.push(newButton);
 	}
 
-	for(i=1;i<=6;i++){
-		for(j=1;j<=3;j++){
-			$('#sbtn'+i+''+j).css({'left':$('#btn'+i).css('left'),'top':$('#btn'+i).css('top')});
-			$('#sbtn'+i+''+j).css({'left':'+='+decalage_sbtn+'px','top':'+='+decalage_sbtn+'px'});
+	this.updateStyle = function()
+	{
+		var btnId;
+		for (btnId = 1; btnId < 7; btnId++) {
+			this.buttons[btnId - 1].updateStyle();
 		}
+		this.htmlWidget.css({"height" : parseInt(this.height) + "px"});
 	}
-	for(i=1;i<=6;i++){
-		$('#btn'+i).css({'visibility':'visible'});
-		for(j=1;j<=3;j++){
-			$('#sbtn'+i+''+j).css({'visibility':'visible'});
-		}
+
+	this.updateStyle();
+
+	this.animMutexState = function()
+	{
+		return this.animMutex;
+	}
+
+	this.lockAnimMutex = function()
+	{
+		this.animMutex = MutexState.Busy;
+	}
+
+	this.unlockAnimMutex = function()
+	{
+		this.animMutex = MutexState.Free;
+	}
+
+	this.pushAnim = function(animFunction)
+	{
+		this.htmlWidget.queue(animFunction);
+	}
+
+	this.pullAnim = function()
+	{
+		this.htmlWidget.dequeue();
 	}
 }
+
+var Button = function(Id, radius, widget)
+{
+	this.Id = Id;
+	this.DOMbtn = $('#btn' + this.Id);
+	this.radius = radius;
+	this.widget = widget;
+
+	var sbtnRadius = getSubButtonsRadius();
+	this.sbtn = new Array();
+	var sbtnId;
+	for (sbtnId = 1; sbtnId < 3; sbtnId++) {
+		var newSubButton = new SubButton(sbtnId, 
+				this.Id,
+				sbtnRadius,
+				this.left,
+				this.top,
+				this);
+		this.sbtn.push(newSubButton);
+	}
+
+	this.initPos = function ()
+	{
+		btnInitPos(this.widget.width, this);
+	}
+
+
+	this.initPos();
+	this.DOMbtn.css({'visibility': 'visible'});
+
+	this.updateStyle = function()
+	{
+		var sbtnId;
+		for (sbtnId = 1; sbtnId < 3; sbtnId++) {
+			this.sbtn[sbtnId - 1].updateStyle();
+		}
+		this.DOMbtn.css({'left': parseInt(this.left) + parseInt(this.widget.xCenter) - parseInt(this.radius) + 'px',
+				'top': parseInt(this.top) + parseInt(this.widget.yCenter) - parseInt(this.radius) + 'px'});
+	}
+
+	this.toCenter = function() {
+		this.left = 0;
+		this.top = 0;
+		this.animate(5000);
+	}
+
+	this.animate = function(time, callback) 
+	{
+		this.DOMbtn.animate({'left': parseInt(this.left) + parseInt(this.widget.xCenter) - parseInt(this.radius) + 'px',
+				'top': parseInt(this.top) + parseInt(this.widget.yCenter) - parseInt(this.radius) + 'px'});
+	}
+}
+
+function btnInitPos (widgetWidth, button)
+{
+	var btnWidth = 2 * button.radius;
+	var hexWidth = widgetWidth - btnWidth;
+	var hexRadius = hexWidth / Math.sqrt(3);
+	var centerPos = hexVertexPos(hexRadius, button.Id);
+	button.left = centerPos[0];
+	button.top = -centerPos[1];
+}
+
+function subBtnInitPos (widgetWidth, button)
+{
+	var btnWidth = 2 * getButtonsRadius();
+	var hexWidth = widgetWidth - btnWidth;
+	var hexRadius = hexWidth / Math.sqrt(3);
+	var centerPos = hexVertexPos(hexRadius, button.PId);
+	button.left = centerPos[0];
+	button.top = -centerPos[1];
+}
+
+var SubButton = function(Id, PId, radius, left, top, parentButton)
+{
+	this.Id = Id;
+	this.PId = PId;
+	this.DOMsbtn = $('#sbtn' + this.PId + '' + this.Id);
+	this.radius = radius;
+	this. left = left;
+	this.top = top;
+	this.parentButton = parentButton;
+
+	this.initPos = function ()
+	{
+		var widget = this.parentButton.widget;
+		subBtnInitPos(widget.width, this);
+	}
+
+	this.initPos();
+	this.DOMsbtn.css({'visibility': 'visible'});
+
+
+	this.updateStyle = function()
+	{
+		this.DOMsbtn.css({'left': parseInt(this.left) + parseInt(this.parentButton.widget.xCenter) - parseInt(this.radius) + 'px',
+				'top': parseInt(this.top) + parseInt(this.parentButton.widget.yCenter) - parseInt(this.radius) + 'px'});
+	}
+
+	this.animate = function()
+	{
+		this.DOMsbtn.animate({'left': parseInt(this.left) + parseInt(this.parentButton.widget.xCenter) - parseInt(this.radius) + 'px',
+				'top': parseInt(this.top) + parseInt(this.parentButton.widget.yCenter) - parseInt(this.radius) + 'px'});
+	}
+}
+
+function hexVertexPos(hexRadius, vertexId)
+{
+	var firstVertexAngle = 5. * Math.PI / 6.;
+	//minus because clockwise
+	var angle = -Math.PI * (vertexId - 1.) / 3. + firstVertexAngle;
+	var position = [hexRadius * Math.cos(angle), hexRadius * Math.sin(angle)];
+
+	return position;
+}
+
+function getButtonsRadius()
+{
+	var buttonWidth = parseInt(jQuery('#btn1').css('width'));
+	return buttonWidth / 2;
+}
+
+function getSubButtonsRadius()
+{
+	var subButtonWidth = parseInt(jQuery('#sbtn11').css('width'));
+	return subButtonWidth / 2;
+}
+
+var mousePos = [0, 0];
+
+function setMouseButton(btnId)
+{
+	mousePos[0] = btnId;
+}
+
+function setMouseSubButton(sbtnId)
+{
+	mousePos[1] = sbtnId;
+}
+
+function setMousePos(btnId, sbtnId)
+{
+	mousePos = [btnId, sbtnId];
+}
+
+function getMousePos()
+{
+	return mousePos;
+}
+
+$('document').ready(function(){createWidget();});

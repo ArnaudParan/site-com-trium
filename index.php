@@ -1,5 +1,6 @@
 <?php
 include('config_serveur.php');
+include('pages.php');
 if(isset($_GET['eikjfdolDZFeS546'])){
 	$p1=$_GET['eikjfdolDZFeS546'];
 }
@@ -16,6 +17,9 @@ else{
 $page=$p1;
 if(preg_match('#^$|index\.html#',$p1) && $p2==''){
 	charge_page ('accueil');
+}
+elseif ($p2 == '') {
+	charge_page($p1);
 }
 elseif(preg_match('#entreprises\.html#',$p1) && $p2==''){
 	charge_page ('entreprises');
@@ -45,20 +49,42 @@ else{
 function charge_page ($nom_page)
 {
 	global $racine;
-	$page = $nom_page . '.html';
-	include ($racine . '/head.php');
-	echo ('<link href="/css/' . $nom_page . '.css" rel="stylesheet">');
-	echo ('</head>');
-	echo ('<body id="page-top" >');
-	echo ('<div class="container-fluid">');
-	include ($racine . '/header.php');
-	echo ('<div id="corps">');
-	include ($racine . '/' . $nom_page . '.php');
-	echo ('</div>');
-include ($racine . '/footer.php');
-	echo ('</div>');
-	include ($racine . '/scripts.php');
-	echo ('<script src="/js/' . $nom_page . '.js"></script>');
-	echo ('</body>');
-	echo ('</html>');
+	global $pages;
+	$pageFound = false;
+
+	foreach ($pages as $pageObj) {
+		if ($pageObj["name"] == $nom_page && $pageObj["a_venir"] == false) {
+			$pageFound = true;
+			$page = $pageObj;
+			include ($racine . '/head.php');
+			makeHead($nom_page);
+			echo ('<body id="page-top" >');
+			echo ('<div class="container-fluid">');
+			include ($racine . '/header.php');
+			echo ('<div id="corps">');
+			include ($racine . '/' . $page["html"]);
+			echo ('</div>');
+			include ($racine . '/footer.php');
+			echo ('</div>');
+			include ($racine . '/scripts.php');
+			makeScripts($page);
+			echo ('</body>');
+			echo ('</html>');
+		}
+
+		elseif ($pageObj["name"] == $nom_page && $pageObj["a_venir"] == true) {
+			charge_page("a_venir");
+			$pageFound = true;
+		}
+	}
+
+	if ($pageFound == false) {
+		charge_page("404");
+	}
+}
+
+function makeScripts($page) {
+	foreach ($page["scripts"] as $script) {
+		echo ('<script src="/js/' . $script . '"></script>');
+	}
 }

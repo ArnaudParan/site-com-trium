@@ -1,13 +1,21 @@
 <footer class="row">
 	<div class="separateur_footer"></div>
-	<div class="col-lg-offset-1 col-lg-1">
-		<img src="logos/logo_trium_gris.png" alt="Trium"/>
+	<div class="col-lg-offset-1 col-lg-2">
+		<img class="img" src="/logos/logo_trium_gris_reduit.png" alt="Trium"/>
 	</div>
-	<div class="col-lg-10">
-		<li>ACCUEIL</li>
-		<li>ELEVES</li>
-		<li>ENTREPRISES</li>
-		<li>PARTENAIRES</li>
-		<li>CONTACT</li>
+	<div class="col-lg-9 nav_footer" style="margin-top:50px">
+		<ul>
+			<li><a href="/">ACCUEIL</a>
+<?php
+global $pages;
+foreach ($pages as $actualPage) {
+if (($actualPage["visible"] == true) && ($actualPage["name"] != "accueil")) {
+echo '<li><a href="/' . $actualPage["name"] . '">' . strtoupper($actualPage["name"]) . '</a>
+	';
+}
+}
+?>
+		</ul>
+	</div>
 </footer>
 

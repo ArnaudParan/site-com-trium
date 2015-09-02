@@ -9,7 +9,7 @@
 			<img class="img" src="/logos/logo_trium.png" alt="FORUM TRIUM"/>
 		</div>
 		<!-- Le nav -->
-		<div class="col-xs-offset-0 col-sm-offset-0 col-md-offset-0 col-lg-offset-2 col-xs-12 col-sm-12 col-sm-7">
+		<div class="col-xs-offset-0 col-sm-offset-0 col-md-offset-0 col-lg-offset-2 col-xs-12 col-sm-12 col-sm-7 col-lg-7">
 			<div class="row">
 				<div class="col-lg-offset-1" style="margin-top:20px">
 					<a href="http://www.forum-trium.fr"><button type="button" class="btn btn-success" aria-label="Left Align">
@@ -20,46 +20,33 @@
 			<!-- Le nav originel -->
 			<nav class="row nav_originel">
 				<ul>
-					<li><a href="/index.html">ACCUEIL</a>
+					<li><a href="/">ACCUEIL</a>
 					<?php
-					if($page=='accueil.html'){
-						echo '<div class="lisere_bleu" style="margin-left:-5px;margin-right:-5px;visibility:visible"></div></li>';
+					if($page["name"]=='accueil'){
+						echo '<div class="lisere_bleu" style="margin-left:-5px;margin-right:-5px;visibility:visible"></div></li>
+							';
 					}else{
-						echo '<div class="lisere_bleu" style="margin-left:-5px;margin-right:-5px;visibility:hidden"></div></li>';
+						echo '<div class="lisere_bleu" style="margin-left:-5px;margin-right:-5px;visibility:hidden"></div></li>
+							';
 					}
 					?>
-					<li><a href="/eleves.html">ELEVES</a>
-					<?php
-					if($page=='eleves.html'){
-						echo '<div class="lisere_bleu" style="margin-left:-5px;margin-right:-5px;visibility:visible"></div></li>';
-					}else{
-						echo '<div class="lisere_bleu" style="margin-left:-5px;margin-right:-5px;visibility:hidden"></div></li>';
-					}
-					?>
-					<li><a href="/entreprises.html">ENTREPRISES</a>
-					<?php
-					if($page=='entreprises.html'){
-						echo '<div class="lisere_bleu" style="margin-left:-5px;margin-right:-5px;visibility:visible"></div></li>';
-					}else{
-						echo '<div class="lisere_bleu" style="margin-left:-5px;margin-right:-5px;visibility:hidden"></div></li>';
-					}
-					?>
-					<li><a href="/partenaires.html">PARTENAIRES</a>
-					<?php
-					if($page=='partenaires.html'){
-						echo '<div class="lisere_bleu" style="margin-left:-5px;margin-right:-5px;visibility:visible"></div></li>';
-					}else{
-						echo '<div class="lisere_bleu" style="margin-left:-5px;margin-right:-5px;visibility:hidden"></div></li>';
-					}
-					?>
-					<li><a href="/contact.html">CONTACTS</a>
-					<?php
-					if($page=='contact.html'){
-						echo '<div class="lisere_bleu" style="margin-left:-5px;margin-right:-5px;visibility:visible"></div></li>';
-					}else{
-						echo '<div class="lisere_bleu" style="margin-left:-5px;margin-right:-5px;visibility:hidden"></div></li>';
-					}
-					?>
+<?php
+global $pages;
+foreach ($pages as $actualPage) {
+	if (($actualPage["visible"] == true) && ($actualPage["name"] != "accueil")) {
+		echo '<li><a href="/' . $actualPage["name"] . '">' . strtoupper($actualPage["name"]) . '</a>
+			';
+		if ($actualPage["name"] == $page["name"]) {
+			echo '<div class="lisere_bleu" style="margin-left:-5px;margin-right:-5px;visibility:visible"></div></li>
+				';
+		}
+		else {
+			echo '<div class="lisere_bleu" style="margin-left:-5px;margin-right:-5px;visibility:hidden"></div></li>
+				';
+		}
+	}
+}
+?>
 				</ul>
 			</nav>
 		</div>
