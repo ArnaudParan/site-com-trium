@@ -2,6 +2,7 @@
 //position of its center and not the top left corner. Furthermore, the coords system's origin is
 //the center of the widget
 
+var animDur = 300;
 
 function createWidget()
 {
@@ -25,6 +26,7 @@ var Widget = function(width) {
 	this.yCenter = this.height / 2;
 	this.htmlWidget = $("#widget_ent");
 	this.buttons = new Array();
+	this.openedButton = 0;
 
 	var buttons = this.buttons;
 	var btnId;
@@ -32,7 +34,7 @@ var Widget = function(width) {
 		var newButton = new Button(btnId, 
 				btnRadius,
 				this);
-		buttons.push(newButton);
+		this.buttons.push(newButton);
 	}
 
 	this.updateStyle = function()
@@ -45,6 +47,31 @@ var Widget = function(width) {
 	}
 
 	this.updateStyle();
+
+	this.openButton = function()
+	{
+		var widget = this;
+		var hoveredButton = getMousePos()[0];
+		if(this.animMutexState() == MutexState.Busy || this.openedButton == hoveredButton) {
+			return;
+		}
+
+		this.lockAnimMutex();
+		if(this.openedButton != 0) {
+			widget.buttons[widget.openedButton - 1].closeButton();
+		}
+		widget.pushAnim(function() {
+			hoveredButton = getMousePos()[0];
+			widget.pullAnim();
+		});
+		widget.buttons[hoveredButton - 1].openButton();
+		widget.pushAnim(function() {
+			hoveredButton = getMousePos()[0];
+			widget.openedButton = hoveredButton;
+			widget.unlockAnimMutex();
+			widget.pullAnim();
+		});
+	}
 
 	this.animMutexState = function()
 	{
@@ -78,6 +105,11 @@ var Button = function(Id, radius, widget)
 	this.DOMbtn = $('#btn' + this.Id);
 	this.radius = radius;
 	this.widget = widget;
+
+	this.DOMbtn.hover(function(){
+		setMouseButton(Id);
+		widget.openButton();
+	});
 
 	var sbtnRadius = getSubButtonsRadius();
 	this.sbtn = new Array();
@@ -114,36 +146,56 @@ var Button = function(Id, radius, widget)
 	this.toCenter = function(callback) {
 		this.left = 0;
 		this.top = 0;
-		this.animate(500, callback);
+		this.animate(animDur, callback);
 	}
 
 	this.toOriginal = function(callback) {
 		this.initPos();
-		this.animate(500, callback);
+		this.animate(animDur, callback);
 	}
 
 	this.openSBtns = function(callback) {
 		this.sbtn[0].left -= this.sbtn[0].radius;
 		this.sbtn[1].left += this.sbtn[0].radius;
-		this.sbtn[0].animate(500);
-		this.sbtn[1].animate(500, callback);
+		this.sbtn[0].animate(animDur);
+		this.sbtn[1].animate(animDur, callback);
 	}
 
 	this.closeSBtns = function(callback) {
 		this.sbtn[0].initPos();
 		this.sbtn[1].initPos();
-		this.sbtn[0].animate(500);
-		this.sbtn[1].animate(500, callback);
+		this.sbtn[0].animate(animDur);
+		this.sbtn[1].animate(animDur, callback);
 	}
 
-	this.openButton = function(callback) {
-		this.DOMbtn.queue(this.toCenter());
-		this.DOMbtn.queue(this.openSBtns(callback));
+	this.openButton = function(Id) {
+		var button = this;
+		var widget = this.widget;
+		widget.pushAnim(function(){
+			button.toCenter(function(){
+				widget.pullAnim();
+			})
+		});
+		widget.pushAnim(function(){
+			button.openSBtns(function(){
+				widget.pullAnim();
+			})
+		});
 	}
 
-	this.closeButton = function(callback) {
-		this.DOMbtn.queue(this.toOriginal());
-		this.DOMbtn.queue(this.closeSBtns(callback));
+	this.closeButton = function(Id) {
+		var button = this;
+		var widget = this.widget;
+		widget.pushAnim(function(){
+			button.closeSBtns(function(){
+				widget.pullAnim();
+			})
+		});
+		widget.pushAnim(function(){
+			button.toOriginal(function(){
+				widget.pullAnim();
+			})
+		});
 	}
 
 	this.animate = function(time, callback) 
@@ -201,7 +253,7 @@ var SubButton = function(Id, PId, radius, left, top, parentButton)
 
 	this.toOriginal = function(callback) {
 		this.initPos();
-		this.animate(500);
+		this.animate(animDur);
 	}
 
 	this.animate = function(time, callback)
@@ -256,5 +308,3 @@ function getMousePos()
 }
 
 var widget = createWidget();
-widget.pushAnim(widget.buttons[0].openButton());
-widget.pushAnim(widget.buttons[0].closeButton());

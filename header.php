@@ -12,7 +12,7 @@
 		<div class="col-xs-offset-0 col-sm-offset-0 col-md-offset-0 col-lg-offset-2 col-xs-12 col-sm-12 col-sm-7 col-lg-7">
 			<div class="row">
 				<div class="col-lg-offset-1" style="margin-top:20px">
-					<a href="http://www.forum-trium.fr"><button type="button" class="btn btn-success" aria-label="Left Align">
+					<a href="http://www.sirom.net/trium/site/index.php"><button type="button" class="btn btn-success" aria-label="Left Align">
 						<span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Le site entreprises
 					</button></a>
 				</div>
@@ -34,7 +34,7 @@
 global $pages;
 foreach ($pages as $actualPage) {
 	if (($actualPage["visible"] == true) && ($actualPage["name"] != "accueil")) {
-		echo '<li><a href="/' . $actualPage["name"] . '">' . strtoupper($actualPage["name"]) . '</a>
+		echo '<li><a href="/' . $actualPage["addr"] . '">' . strtoupper($actualPage["name"]) . '</a>
 			';
 		if ($actualPage["name"] == $page["name"]) {
 			echo '<div class="lisere_bleu" style="margin-left:-5px;margin-right:-5px;visibility:visible"></div></li>

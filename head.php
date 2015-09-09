@@ -1,21 +1,21 @@
 <?php
-function makeHead($pageName)
+function makeHead($page)
 {
 	echo '<!DOCTYPE html>
 				<html lang="fr">
 				<head>
 		';
 
-	makeTitle($pageName);
+	makeTitle($page);
 
 	echo '<link rel="icon" type="image/png" href="/logos/logo_trium_16x16.png" />
 				<meta charset="utf-8">
 		';
 
-	makeGeneralCss($pageName);
-	makePageCss($pageName);
-	makeKeywords($pageName);
-	makeDescription($pageName);
+	makeGeneralCss($page);
+	makePageCss($page);
+	makeKeywords($page);
+	makeDescription($page);
 
 	echo '<meta http-equiv="X-UA-Compatible" content="IE=edge">
 				<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,13 +30,13 @@ function makeHead($pageName)
 		';
 }
 
-function makeTitle($pageName)
+function makeTitle($page)
 {
 	global $pages;
-	echo '<title>' . $pages[$pageName]["title"] . '</title>';
+	echo '<title>' . $page["title"] . '</title>';
 }
 
-function makeGeneralCss($pageName)
+function makeGeneralCss($page)
 {
 	global $pages;
 	echo '<link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -47,10 +47,10 @@ function makeGeneralCss($pageName)
 		';
 }
 
-function makePageCss($pageName)
+function makePageCss($page)
 {
 	global $pages;
-	foreach ($pages[$pageName]["css"] as $cssFile) {
+	foreach ($page["css"] as $cssFile) {
 		echo '<link href="/css/' . $cssFile . '" rel="stylesheet">
 			';
 	}
@@ -59,17 +59,17 @@ function makePageCss($pageName)
 global $defaultKeywords;
 $defaultKeywords = "forum trium, le forum trium, forum-trium, forum-trium.com, forum-trium.fr, forum entreprises, ingénieur, école d'ingénieur, commerce, école de commerce, industrie, matériaux, ingénieur industriel, ingénieur des matériaux, ingénierie informatique, informatique, statistiques, ingénierie statistique, salon, salon trium, cereza conseil, paristech, forum centrale, forum centrale supelec, centrale, école centrale, école centrale paris, école centrale des arts et manufactures, supélec, paris, île de france, forum des télécommunications, forum des télécoms, forum, trium, entreprises, mines, ponts, enpc, ponts et chaussées, ensta, ensae, paristech";
 
-function makeKeywords($pageName)
+function makeKeywords($page)
 {
 	global $pages;
 	global $defaultKeywords;
-	echo "<meta name=\"keywords\" content=\"" . $defaultKeywords . $pages[$pageName]["keywords"] . "\">
+	echo "<meta name=\"keywords\" content=\"" . $defaultKeywords . $page["keywords"] . "\">
 		";
 }
 
-function makeDescription($pageName)
+function makeDescription($page)
 {
 	global $pages;
-	echo "<meta name=\"description\" content=\"" . $pages[$pageName]["description"] . "\">
+	echo "<meta name=\"description\" content=\"" . $page["description"] . "\">
 		";
 }

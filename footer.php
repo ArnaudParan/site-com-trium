@@ -10,7 +10,7 @@
 global $pages;
 foreach ($pages as $actualPage) {
 if (($actualPage["visible"] == true) && ($actualPage["name"] != "accueil")) {
-echo '<li><a href="/' . $actualPage["name"] . '">' . strtoupper($actualPage["name"]) . '</a>
+echo '<li><a href="/' . $actualPage["addr"] . '">' . strtoupper($actualPage["name"]) . '</a>
 	';
 }
 }
