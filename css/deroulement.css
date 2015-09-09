@@ -1,0 +1,45 @@
+.creneau {
+	color:black;
+}
+
+.creneau:hover, .creneau:focus {
+	color:grey;
+}
+
+.creneau:hover .tache, .creneau:focus .tache {
+	border-left: 2px solid grey;
+}
+
+.infobulle {
+	position:absolute;
+	margin-top:40px;
+	margin-left:-500px;
+	color:#09c;
+	background:rgba(0,0,0,.9);
+	padding:15px;
+	border-radius:3px;
+	/*box-shadow:0 0 2px rgba(0,0,0,.5);*/
+	transform:scale(0) rotate(-12deg);
+	transition:all .25s;
+	opacity:0;
+}
+
+.creneau:hover .infobulle, .creneau:focus .infobulle{
+	transform:scale(1) rotate(0);        
+	opacity:1;
+}
+
+
+
+.heure {
+	text-align:right;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+
+.tache {
+	border-left: 2px solid green;
+	text-align:left;
+	padding-top:20px;
+	padding-bottom:20px;
+}
