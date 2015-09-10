@@ -59,7 +59,7 @@ function charge_page ($nom_page)
 	}
 
 	if ($pageFound == false) {
-		charge_page("404");
+		header('Location: '.$url_base.'/404');
 	}
 }
 
@@ -96,7 +96,7 @@ function charge_onglet($nom_page, $nom_onglet)
 	}
 
 	if ($pageFound == false) {
-		charge_page("404");
+		header('Location: '.$url_base.'/404');
 	}
 }
 
