@@ -15,7 +15,6 @@ else{
 	$p2='';
 }
 
-echo $p1;
 
 $page=$p1;
 if(preg_match('#^$|index\.html#',$p1) && $p2==''){
