@@ -9,11 +9,13 @@ else{
 	$p1='index.html';
 }
 if(isset($_GET['page2'])){
-	$p2 = substr($_GET['page2'], 1);
+	$p2 = $_GET['page2'];
 }
 else{
 	$p2='';
 }
+
+echo $p1;
 
 $page=$p1;
 if(preg_match('#^$|index\.html#',$p1) && $p2==''){
