@@ -2,14 +2,14 @@
 include('config_serveur.php');
 include('pages.php');
 include ($racine . '/head.php');
-if(isset($_GET['eikjfdolDZFeS546'])){
-	$p1=$_GET['eikjfdolDZFeS546'];
+if(isset($_GET['page1'])){
+	$p1=$_GET['page1'];
 }
 else{
 	$p1='index.html';
 }
-if(isset($_GET['poEfurnj856oafer'])){
-	$p2 = substr($_GET['poEfurnj856oafer'], 1);
+if(isset($_GET['page2'])){
+	$p2 = substr($_GET['page2'], 1);
 }
 else{
 	$p2='';
