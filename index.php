@@ -21,10 +21,10 @@ if(preg_match('#^$|index\.html#',$p1) && $p2==''){
 	charge_page ('accueil');
 }
 elseif ($p2 == '') {
-	charge_page(substr($p1, 0, -5));
+	charge_page($p1);
 }
 else {
-	charge_onglet($p1, substr($p2, 0 , -5));
+	charge_onglet($p1,$p2);
 }
 
 function charge_page ($nom_page)

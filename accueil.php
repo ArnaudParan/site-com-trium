@@ -203,16 +203,16 @@
 				<h1>GALERIE</h1>
 				<div class="lisere_bleu"></div>
 				<div class="row">
-					<div class="col-sm-6">
+					<div class="col-sm-4">
 						<div class="row">
-							<img alt="Photo du forum 1" src="">
+							<img class="img" alt="Photo du forum 1" src="images/gallerie1.jpg">
 						</div>
-						<div class="row">
-							<img alt="Photo du forum 2" src="">
+						<div class="row" style="margin-top:10px">
+							<img class="img" alt="Photo du forum 2" src="images/gallerie2.jpg">
 						</div>
 					</div>
-					<div class="col-sm-6">
-						<img alt="Photo du forum 3" src="">
+					<div class="col-sm-8">
+						<img class="img" alt="Photo du forum 3" src="images/gallerie3.jpg">
 					</div>
 				</div>
 				<div class="lisere_bleu"></div>

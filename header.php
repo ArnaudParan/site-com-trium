@@ -6,7 +6,7 @@
 			<div class="col-md-6 col-xs-6"><a href="eng/"><img class="lang" src="/logos/english.png" alt="Anglais"/></a></div>
 		</div>
 		<div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
-			<img class="img" src="/logos/logo_trium.png" alt="FORUM TRIUM"/>
+			<a href="/"><img class="img" src="/logos/logo_trium.png" alt="FORUM TRIUM"/></a>
 		</div>
 		<!-- Le nav -->
 		<div class="col-xs-offset-0 col-sm-offset-0 col-md-offset-0 col-lg-offset-2 col-xs-12 col-sm-12 col-sm-7 col-lg-7">
