@@ -4,7 +4,18 @@ RewriteEngine On
 RewriteOptions Inherit
 RewriteBase /
 #RewriteCond %{REMOTE_ADDR} !127.0.0.1
-RewriteCond %{REQUEST_URI} !(^/plaquette\.pdf|^/index\.php.*$|^/css/.*$|^/js/.*$|^/bootstrap/.*$|^/images/.*$|^/liseres/.*$|^/logos/.*$)
-RewriteRule ^([^/]*)/?(.*)?$ /index.php?page1=$1&page2=$2 [L]
+
+RewriteRule ^index\.php$ - [L]
+RewriteRule ^plaquette\.pdf$ - [L]
+RewriteRule ^css/.*$ - [L]
+RewriteRule ^js/.*$ - [L]
+RewriteRule ^bootstrap/.*$ - [L]
+RewriteRule ^images/.*$ - [L]
+RewriteRule ^liseres/.*$ - [L]
+RewriteRule ^logos/.*$ - [L]
+
+RewriteRule ^([^/]*)$ /index.php?page1=$1 [L]
+RewriteRule ^([^/]*)/?([^/]*)?$ /index.php?page1=$1&page2=$2 [L]
+RewriteRule ^(.*)$ /index.php?chemin=$1 [L]
 
 </IfModule>
