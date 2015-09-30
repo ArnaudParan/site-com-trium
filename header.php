@@ -54,3 +54,23 @@ foreach ($pages as $actualPage) {
 	</header>
 	<div class="row" style="padding-top:20px;">
 	</div>
+<?php
+	if (isset($fatherPage)) {
+		echo '<div class="row"><div class="col-sm-offset-2 col-sm-8" style="padding-top:20px">
+			<div class="btn-group btn-group-justified" role="group" aria-label="justified button group">';
+		foreach ($fatherPage["tabs"] as $actualTab) {
+			if($page["name"] == $actualTab["name"]) {//TODO it is the active page
+				echo	'<div class="btn-group" role="group">
+						<a href="' . $actualTab["addr"] .'"><button type="button" class="btn btn-info">' . $actualTab["name"] .'</button></a>
+					</div>';
+			}
+			else {
+				echo	'<div class="btn-group" role="group">
+						<a href="' . $actualTab["addr"] .'"><button type="button" class="btn btn-default">' . $actualTab["name"] .'</button></a>
+					</div>';
+			}
+		}
+		echo 	'</div>
+		</div></div>';
+	}
+?>

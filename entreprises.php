@@ -26,7 +26,8 @@
 				<!-------------- Services ------------------>
 				<!--audit conseil services-->
 				<li class="zone_btn" id="zone_btn3"><button id="btn3" type="button" class="btn btn-default ent" aria-label="left-align">
-					AUDIT CONSEIL SERVICES
+					AUDIT CONSEIL<br/>
+					SERVICES
 				</button>
 				<button id="sbtn31" type="button" class="btn btn-default sent" aria-label="left-align">
 					GROUPE
@@ -38,7 +39,8 @@
 				<!-------------- Energie ------------------>
 				<!--énergie transport environnement-->
 				<li class="zone_btn" id="zone_btn4"><button id="btn4" type="button" class="btn btn-default ent" aria-label="left-align">
-					ENERGIE TRANSPORT ENVIRONNEMENT
+					ENERGIE TRANSPORT<br/>
+					ENVIRONNEMENT
 				</button>
 				<button id="sbtn41" type="button" class="btn btn-default sent" aria-label="left-align">
 					GROUPE
@@ -49,7 +51,8 @@
 				<div class="fond_btn" id="fond_btn4"></div></li>
 				<!-------------- Transports ------------------>
 				<li class="zone_btn" id="zone_btn5"><button id="btn5" type="button" class="btn btn-default ent" aria-label="left-align">
-					ECOLES ET SERVICES AUX JEUNES DIPLOMÉS
+					ECOLES, SERVICES<br/>
+					AUX JEUNES DIPLOMÉS
 				</button>
 				<button id="sbtn51" type="button" class="btn btn-default sent" aria-label="left-align">
 					GROUPE

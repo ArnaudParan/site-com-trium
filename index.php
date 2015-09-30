@@ -74,6 +74,7 @@ function charge_onglet($nom_page, $nom_onglet)
 		if ($pageObj["name"] == $nom_page && $pageObj["a_venir"] == false && $pageObj["tabs"][$nom_onglet]["name"] == $nom_onglet) {
 			$pageFound = true;
 			$page = $pageObj["tabs"][$nom_onglet];
+			$fatherPage = $pageObj;
 			makeHead($page);
 			echo ('<body id="page-top" >');
 			echo ('<div class="container-fluid">');

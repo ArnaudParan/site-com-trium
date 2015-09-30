@@ -40,6 +40,10 @@
 					Conférence d'honneur et cocktail de fin
 				</div>
 			</div>
+		</div>
+	</div>
+	<div class="col-sm-offset-5 col-sm-2">
+		<div class="row">
 			<div style="text-align:center;margin-bottom:10px">
 				19h00
 			</div>
