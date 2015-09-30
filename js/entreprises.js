@@ -3,6 +3,7 @@
 //the center of the widget
 
 var animDur = 300;
+var closingButton = 1;
 
 function createWidget()
 {
@@ -48,7 +49,7 @@ var Widget = function(width) {
 
 	this.updateStyle();
 
-	this.openButton = function()
+	this.openButton = function(Id)
 	{
 		var widget = this;
 		var hoveredButton = getMousePos()[0];
@@ -64,9 +65,17 @@ var Widget = function(width) {
 			hoveredButton = getMousePos()[0];
 			widget.pullAnim();
 		});
-		widget.buttons[hoveredButton - 1].openButton();
 		widget.pushAnim(function() {
-			hoveredButton = getMousePos()[0];
+			button = widget.buttons[hoveredButton - 1];
+			button.toCenter(function(){
+				widget.pullAnim();
+			})
+			button.openSBtns(function(){
+				widget.pullAnim();
+			})
+			widget.pullAnim();
+		});
+		widget.pushAnim(function() {
 			widget.openedButton = hoveredButton;
 			widget.unlockAnimMutex();
 			widget.pullAnim();
@@ -108,7 +117,7 @@ var Button = function(Id, radius, widget)
 
 	this.DOMbtn.hover(function(){
 		setMouseButton(Id);
-		widget.openButton();
+		widget.openButton(Id);
 	});
 
 	var sbtnRadius = getSubButtonsRadius();

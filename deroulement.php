@@ -2,13 +2,13 @@
 	<h2 style="text-align:center;margin-bottom:20px">
 		Déroulement du forum
 	</h2>
-	<div class="col-sm-offset-1 col-sm-10">
+	<div class="col-sm-offset-3 col-sm-6">
 		<div class="row">
 			<div style="text-align:center;margin-bottom:10px">
 				8h00
 			</div>
 			<div class="row creneau">
-				<div class="container"><span class="infobulle">Les petits déjeuners vous permettent de discuter dans un cadre détendu avec les différents acteurs des entreprises</span></div>
+				<div class="container"><div class="col-sm-5 col-sm-offset-4"><span class="infobulle">Les petits déjeuners vous permettent de discuter dans un cadre détendu avec les différents acteurs des entreprises</span></div></div>
 				<div class="col-sm-6 heure">
 					9h30
 				</div>
