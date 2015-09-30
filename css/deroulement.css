@@ -13,7 +13,7 @@
 .infobulle {
 	position:absolute;
 	margin-top:40px;
-	margin-left:-500px;
+	margin-left:500px;
 	color:#09c;
 	background:rgba(0,0,0,.9);
 	padding:15px;
@@ -22,6 +22,7 @@
 	transform:scale(0) rotate(-12deg);
 	transition:all .25s;
 	opacity:0;
+	z-index:1;
 }
 
 .creneau:hover .infobulle, .creneau:focus .infobulle{

@@ -8,7 +8,7 @@
 				8h00
 			</div>
 			<div class="row creneau">
-				<span class="infobulle">Les petits déjeuners vous permettent de discuter dans un cadre détendu avec les différents acteurs des entreprises</span>
+				<div class="container"><span class="infobulle">Les petits déjeuners vous permettent de discuter dans un cadre détendu avec les différents acteurs des entreprises</span></div>
 				<div class="col-sm-6 heure">
 					9h30
 				</div>
@@ -19,7 +19,7 @@
 				</div>
 			</div>
 			<div class="row creneau">
-				<span class="infobulle">Blabla</span>
+				<div class="container"><span class="infobulle">Blabla</span></div>
 				<div class="col-sm-6 heure">
 					10h30
 				</div>
@@ -28,7 +28,7 @@
 				</div>
 			</div>
 			<div class="row creneau">
-				<span class="infobulle">Blabla</span>
+				<div class="container"><span class="infobulle">Blabla</span></div>
 				<div class="col-sm-6 heure">
 					17h00
 				</div>
