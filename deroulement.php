@@ -2,7 +2,7 @@
 	<h2 style="text-align:center;margin-bottom:20px">
 		Déroulement du forum
 	</h2>
-	<div class="col-sm-offset-5 col-sm-1">
+	<div class="col-sm-offset-5 col-sm-2">
 		<div class="row">
 			<div style="text-align:center;margin-bottom:10px">
 				8h00
@@ -13,7 +13,7 @@
 		<div class="row">
 			<div class="row creneau">
 				<div class="container"><div class="col-sm-5 col-sm-offset-1"><span class="infobulle">Les petits déjeuners vous permettent de discuter dans un cadre détendu avec les différents acteurs des entreprises</span></div></div>
-				<div class="col-sm-1 heure">
+				<div class="col-sm-2 heure">
 					9h30
 				</div>
 				<div class="col-sm-6 tache">
@@ -24,7 +24,7 @@
 			</div>
 			<div class="row creneau">
 				<div class="container"><div class="col-sm-5 col-sm-offset-1"><span class="infobulle">Les petits déjeuners vous permettent de discuter dans un cadre détendu avec les différents acteurs des entreprises</span></div></div>
-				<div class="col-sm-1 heure">
+				<div class="col-sm-2 heure">
 					10h30
 				</div>
 				<div class="col-sm-6 tache">
@@ -33,7 +33,7 @@
 			</div>
 			<div class="row creneau">
 				<div class="container"><div class="col-sm-5 col-sm-offset-1"><span class="infobulle">Les petits déjeuners vous permettent de discuter dans un cadre détendu avec les différents acteurs des entreprises</span></div></div>
-				<div class="col-sm-1 heure">
+				<div class="col-sm-2 heure">
 					17h00
 				</div>
 				<div class="col-sm-6 tache">
