@@ -8,6 +8,7 @@
 				<li data-target="#monCarousel" data-slide-to="1"></li>
 				<li data-target="#monCarousel" data-slide-to="2"></li>
 				<li data-target="#monCarousel" data-slide-to="3"></li>
+				<li data-target="#monCarousel" data-slide-to="4"></li>
 			</ol>
 
 			<!--wrapper pour les slides-->
@@ -85,6 +86,25 @@
 							</div>
 							<div class="col-sm-8">
 								Fondée en 1942, l'École Nationale de la Statistique et de l'Administration Économique ParisTech assure une formation de haut niveau en économie, en statistique et en finance qui lui a permis d'acquérir une place spécifique et reconnue parmi les Grandes Écoles françaises.
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- slide 4 -->
+				<div class="item">
+					<img src="" alt=""/>
+					<div class="carousel-caption">
+					</div>
+					<div class="bloc_carousel col-sm-offset-2 col-sm-2" style="margin-top:60px;">
+						Vous intéressez ces entreprises, venez les découvrir.
+					</div>
+					<div class="bloc_carousel col-sm-offset-1 col-sm-5" style="margin-top:100px">
+						<div>
+							<div class="col-sm-4">
+								<a href="http://www.actuaris.fr/"><img class="img" src="/logos/logo_actuaris.png" alt="ENSAE"/></a>
+							</div>
+							<div class="col-sm-8">
+								Avec une équipe comptant plus de cent salariés, ACTUARIS conçoit et propose des solutions innovantes pour accompagner chaque année plus de 200 organismes assureurs – et 2000 utilisateurs de ses logiciels- dans le cadre de leurs chantiers techniques, actuariels, réglementaires et informatiques.<br/>
 							</div>
 						</div>
 					</div>
