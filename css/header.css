@@ -16,6 +16,7 @@
 
 	.nav_originel li{
 		margin-left:19px;
+		font-size : 18px;
 	}
 }
 
@@ -25,7 +26,8 @@
 	}
 
 	.nav_originel li{
-		margin-left:40px;
+		margin-left:19px;
+		font-size : 16px;
 	}
 }
 
@@ -35,7 +37,8 @@
 	}
 
 	.nav_originel li{
-		margin-left:40px;
+		margin-left:19px;
+		font-size : 16px;
 	}
 }
 
@@ -46,6 +49,7 @@
 
 	.nav_originel li{
 		margin-left:40px;
+		font-size : 18px;
 	}
 }
 
