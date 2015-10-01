@@ -23,7 +23,7 @@
 				</div>
 			</div>
 			<div class="row creneau">
-				<div class="container"><div class="col-sm-5 col-sm-offset-1"><span class="infobulle">Les petits déjeuners vous permettent de discuter dans un cadre détendu avec les différents acteurs des entreprises</span></div></div>
+				<div class="row"><div class="col-sm-9 col-sm-offset-3"><span class="infobulle">Les petits déjeuners vous permettent de discuter dans un cadre détendu avec les différents acteurs des entreprises</span></div></div>
 				<div class="col-sm-2 heure">
 					10h30
 				</div>
@@ -32,7 +32,7 @@
 				</div>
 			</div>
 			<div class="row creneau">
-				<div class="container"><div class="col-sm-5 col-sm-offset-1"><span class="infobulle">Les petits déjeuners vous permettent de discuter dans un cadre détendu avec les différents acteurs des entreprises</span></div></div>
+				<div class="row"><div class="col-sm-9 col-sm-offset-3"><span class="infobulle">Les petits déjeuners vous permettent de discuter dans un cadre détendu avec les différents acteurs des entreprises</span></div></div>
 				<div class="col-sm-2 heure">
 					17h00
 				</div>
