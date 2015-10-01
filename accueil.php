@@ -101,7 +101,7 @@
 					<div class="bloc_carousel col-sm-offset-1 col-sm-5" style="margin-top:100px">
 						<div>
 							<div class="col-sm-4">
-								<a href="http://www.actuaris.fr/"><img class="img" src="/logos/logo_actuaris.png" alt="ENSAE"/></a>
+								<a href="http://www.actuaris.fr/"><img class="img" src="/logos/logo_actuaris.png" alt="Atctuaris"/></a>
 							</div>
 							<div class="col-sm-8">
 								Avec une équipe comptant plus de cent salariés, ACTUARIS conçoit et propose des solutions innovantes pour accompagner chaque année plus de 200 organismes assureurs – et 2000 utilisateurs de ses logiciels- dans le cadre de leurs chantiers techniques, actuariels, réglementaires et informatiques.<br/>

@@ -66,14 +66,14 @@ $pages = array(
 	"ecoles"  => array(
 		"name" => "ecoles",
 		"title" => "Trium - Écoles",
-		"html" => "",
+		"html" => "ecoles.php",
 		"addr" => "ecoles.html",
 		"css" => array(),
 		"keywords" => "écoles, les écoles, ponts, enpc, les ponts, les ponts et chaussées, ensta, école nationale supérieure des techniques avancées, mines, mines paris, mines de paris, mines paristech, les mines de paris, les mines, ensae",
 		"description" => "Découvrez les écoles organisatrices",
 		"scripts" => array(),
 		"visible" => true,
-		"a_venir" => true
+		"a_venir" => false
 	),
 	"eleves"  => array(
 		"name" => "eleves",
