@@ -36,7 +36,7 @@ foreach ($pages as $actualPage) {
 	if (($actualPage["visible"] == true) && ($actualPage["name"] != "accueil")) {
 		echo '<li><a href="/' . $actualPage["addr"] . '">' . strtoupper($actualPage["name"]) . '</a>
 			';
-		if ($actualPage["name"] == $page["name"]) {
+		if ($actualPage["name"] == $page["name"] || (isset($fatherPage) && $fatherPage["name"] == $actualPage["name"])) {
 			echo '<div class="lisere_bleu" style="margin-left:-5px;margin-right:-5px;visibility:visible"></div></li>
 				';
 		}
@@ -50,10 +50,8 @@ foreach ($pages as $actualPage) {
 				</ul>
 			</nav>
 		</div>
-	<div class="lisere_banniere col-lg-12" style="padding-top:7px;margin-left:0px;margin-right:0px;"></div>
+	<div class="lisere_banniere col-sm-12" style="padding-top:7px;margin-left:0px;margin-right:0px;"></div>
 	</header>
-	<div class="row" style="padding-top:20px;">
-	</div>
 <?php
 	if (isset($fatherPage)) {
 		echo '<div class="row"><div class="col-sm-offset-2 col-sm-8" style="padding-top:20px">
