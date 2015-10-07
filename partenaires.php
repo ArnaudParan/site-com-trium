@@ -5,7 +5,7 @@
 				<h2 style="text-align:center">Presse</h2>
 				<div class="row">
 					<div class="col-sm-3">
-						<img src="" alt="L'Étudiant"/>
+						<a href="http://www.letudiant.fr/"><img src="" alt="L'Étudiant"/></a>
 					</div>
 					<div class="col-sm-9">
 						<h3>L'Étudiant</h3>
@@ -13,7 +13,7 @@
 				</div>
 				<div class="row">
 					<div class="col-sm-3 col-sm-push-9">
-						<img src="" alt="Studyrama"/>
+						<a href="http://www.studyrama.com/"><img src="" alt="Studyrama"/></a>
 					</div>
 					<div class="col-sm-9 col-sm-pull-3">
 						<h3>Studyrama</h3>
@@ -21,7 +21,7 @@
 				</div>
 				<div class="row">
 					<div class="col-sm-3">
-						<img src="" alt="Journal des Grandes Écoles"/>
+						<a href="http://journaldesgrandesecoles.com/"><img src="" alt="Journal des Grandes Écoles"/></a>
 					</div>
 					<div class="col-sm-9">
 						<h3>Journal des Grandes Écoles et Universités</h3>
@@ -32,7 +32,7 @@
 				<h2 style="text-align:center">Entreprises et Associations</h2>
 				<div class="row">
 					<div class="col-sm-3">
-						<img src="" alt="Intermines"/>
+						<a href="http://www.inter-mines.org/gene/main.php?sizeup_=&sizeup2009=&referer2=&poste=1366x768x24"><img src="" alt="Intermines"/></a>
 					</div>
 					<div class="col-sm-9">
 						<h3>Intermines</h3>
@@ -41,7 +41,7 @@
 				</div>
 				<div class="row">
 					<div class="col-sm-3 col-sm-push-9">
-						<img src="" alt="iQuesta"/>
+						<a href="http://www.iquesta.com/"><img src="" alt="iQuesta"/></a>
 					</div>
 					<div class="col-sm-9 col-sm-pull-3">
 						<h3>iQuesta</h3>
@@ -50,7 +50,7 @@
 				</div>
 				<div class="row">
 					<div class="col-sm-3">
-						<img src="" alt="JobTeaser"/>
+						<a href="http://www.jobteaser.com/fr"><img src="" alt="JobTeaser"/></a>
 					</div>
 					<div class="col-sm-9">
 						<h3>JobTeaser</h3>
@@ -59,7 +59,7 @@
 				</div>
 				<div class="row">
 					<div class="col-sm-3 col-sm-push-9">
-						<img src="" alt="DogFinance"/>
+						<a href="http://www.dogfinance.com/"><img src="" alt="DogFinance"/></a>
 					</div>
 					<div class="col-sm-9 col-sm-pull-3">
 						<h3>DogFinance</h3>
@@ -68,7 +68,7 @@
 				</div>
 				<div class="row">
 					<div class="col-sm-3">
-						<img src="" alt="RATP"/>
+						<a href="http://www.ratp.fr/"><img src="" alt="RATP"/></a>
 					</div>
 					<div class="col-sm-9">
 						<h3>RATP</h3>

@@ -140,7 +140,7 @@
 			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 cadre_bas">
 				<h1>ECOLES</h1>
 				<div class="lisere_bleu"></div>
-				<div class="row">
+				<div class="row" style="margin-top:20px">
 					<div class="col-xs-6 col-md-6 ecole">
 						<a href="/ecoles.html#enpc"><img class="img" src="/logos/logo_enpc.png" alt="ENPC"/></a>
 					</div>
@@ -156,34 +156,34 @@
 						<a href="/ecoles.html#ensae"><img class="img" src="/logos/logo_ensae.png" alt="ENSAE"/></a>
 					</div>
 				</div>
-				<div class="lisere_bleu"></div>
-				<div style="text-align:center">Plus de 3000 étudiants des meilleures écoles d’ingénieur françaises</div>
+				<div class="lisere_bleu" style="margin-top:20px"></div>
+				<div style="text-align:center;margin-top:20px">Plus de 3000 étudiants des meilleures écoles d’ingénieur françaises</div>
 			</div>
 			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 cadre_bas">
 				<h1>FORUM</h1>
 				<div class="lisere_bleu"></div>
-				<div class="row">
+				<div class="row" style="margin-top:20px">
 					<div class="col-md-12 cadre_image">
 						<img class="img" src="/logos/logo_trium.png" alt="FORUM TRIUM"/>
 					</div>
 				</div>
-				<div class="lisere_bleu"></div>
-				<div style="text-align:center">Une journée animée par des conférences, des tables rondes, des déjeuners-rencontre </div>
+				<div class="lisere_bleu" style="margin-top:20px"></div>
+				<div style="text-align:center;margin-top:20px">Une journée animée par des conférences, des tables rondes, des déjeuners-rencontre </div>
 			</div>
 			<div class="col-sm-offset-3 col-md-offset-0 col-xs-12 col-sm-6 col-md-4 col-lg-4 cadre_bas">
 				<h1>ENTREPRISES</h1>
 				<div class="lisere_bleu"></div>
-				<div class="row">
+				<div class="row" style="margin-top:20px">
 					<div class="col-md-12 cadre_image">
 						<a href="/entreprises.html#widget_ent"><img class="img" src="/images/widget_entreprises.png" alt="Entreprises"/></a>
 					</div>
 				</div>
-				<div class="lisere_bleu"></div>
-				<div style="text-align:center">Près de 200 entreprises de tous horizons </div>
+				<div class="lisere_bleu" style="margin-top:20px"></div>
+				<div style="text-align:center;margin-top:20px">Près de 200 entreprises de tous horizons </div>
 			</div>
 		</div>
 		<!-- twitter facebook et app -->
-		<div class="row">
+		<div class="row" style="margin-top:20px">
 			<div class="col-sm-offset-3 col-sm-6" style="color:grey;font-size:25px;text-align:center;font-weight:bold">
 				L'application permet de profiter à fond de l'évènement
 			</div>
@@ -206,7 +206,7 @@
 						</div>
 					</div>
 					<div class="col-sm-2">
-					<a href=""><img class="img" src="/logos/facebook.png" alt="Facebook"/></a>
+					<a href="https://www.facebook.com/Forum-Trium-220358747991521/timeline/"><img class="img" src="/logos/facebook.png" alt="Facebook"/></a>
 					</div>
 				</div>
 			</div>
@@ -216,7 +216,7 @@
 				Suivez nos entreprises et nous sur les réseaux sociaux
 			</div>
 		</div>
-		<div class="row" style="margin-top:20px"></div>
+		<div class="row" style="margin-top:40px"></div>
 		<!-- gallerie et la parole aux entreprises -->
 		<div class="row">
 			<div class="col-sm-7">

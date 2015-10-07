@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row" style="margin-top:50px">
 	<div class="col-lg-offset-3 col-lg-6 bloc_contact">
 		<div class="row">
 			<div class="col-lg-4">
@@ -9,10 +9,10 @@
 				Posez-nous vos questions sur twitter</h1>
 			</div>
 		</div>
-		<div class="lisere_bleu"></div>
+		<div class="lisere_bleu" style="margin-top:20px"></div>
 	</div>
 </div>
-<div class="row">
+<div class="row" style="margin-top:20px">
 	<div class="col-lg-offset-3 col-lg-6 bloc_contact">
 		<div class="row">
 			<div class="col-lg-4 col-lg-push-8">
@@ -23,10 +23,10 @@
 				<a href="mailto:contact@forum-trium.com">contact@forum-trium.com</a>
 			</div>
 		</div>
-		<div class="row" style="postition:absolute;bottom:0;"><div class="lisere_bleu"></div></div>
+		<div class="row" style="postition:absolute;bottom:0;margin-top:20px"><div class="lisere_bleu"></div></div>
 	</div>
 </div>
-<div class="row">
+<div class="row" style="margin-top:20px">
 	<div class="col-lg-offset-3 col-lg-6 bloc_contact">
 		<div class="row">
 			<div class="col-lg-4">
@@ -41,10 +41,10 @@
 				</address>
 			</div>
 		</div>
-		<div class="lisere_bleu"></div>
+		<div class="lisere_bleu" style="margin-top:20px"></div>
 	</div>
 </div>
-<div class="row">
+<div class="row" style="margin-top:20px">
 	<div class="col-lg-offset-3 col-lg-6 bloc_contact">
 		<div class="row">
 			<div class="col-lg-4 col-lg-push-8">
@@ -57,10 +57,10 @@
 				</address>
 			</div>
 		</div>
-		<div class="lisere_bleu"></div>
+		<div class="lisere_bleu" style="margin-top:20px"></div>
 	</div>
 </div>
-<div class="row">
+<div class="row" style="margin-top:20px">
 	<div class="col-lg-offset-3 col-lg-6 bloc_contact">
 		<div class="row">
 			<div class="col-lg-4">
@@ -73,6 +73,6 @@
 				</address>
 			</div>
 		</div>
-		<div class="lisere_bleu"></div>
+		<div class="lisere_bleu" style="margin-top:20px"></div>
 	</div>
 </div>
