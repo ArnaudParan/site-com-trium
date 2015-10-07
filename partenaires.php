@@ -5,7 +5,7 @@
 				<h2 style="text-align:center">Presse</h2>
 				<div class="row" style="margin-top:60px">
 					<div class="col-sm-4">
-						<a href="http://www.letudiant.fr/"><img class="img" src="logos/logo_letudiant.jpg" alt="L'Étudiant"/></a>
+						<a href="http://www.letudiant.fr/"><img style="margin-top:30px"class="img" src="logos/logo_letudiant.jpg" alt="L'Étudiant"/></a>
 					</div>
 					<div class="col-sm-8">
 						<h3>L'Étudiant</h3>
@@ -13,7 +13,7 @@
 				</div>
 				<div class="row" style="margin-top:40px">
 					<div class="col-sm-4 col-sm-push-8">
-						<a href="http://www.studyrama.com/"><img class="img" src="logos/logo_studyrama.jpg" alt="Studyrama"/></a>
+						<a href="http://www.studyrama.com/"><img style="margin-top:30px"class="img" src="logos/logo_studyrama.jpg" alt="Studyrama"/></a>
 					</div>
 					<div class="col-sm-8 col-sm-pull-4">
 						<h3>Studyrama</h3>
@@ -21,7 +21,7 @@
 				</div>
 				<div class="row" style="margin-top:40px">
 					<div class="col-sm-4">
-						<a href="http://journaldesgrandesecoles.com/"><img class="img" src="logos/logo_jdgeu.jpg" alt="Journal des Grandes Écoles"/></a>
+						<a href="http://journaldesgrandesecoles.com/"><img style="margin-top:30px"class="img" src="logos/logo_jdgeu.jpg" alt="Journal des Grandes Écoles"/></a>
 					</div>
 					<div class="col-sm-8">
 						<h3>Journal des Grandes Écoles et Universités</h3>
@@ -32,7 +32,7 @@
 				<h2 style="text-align:center">Entreprises et Associations</h2>
 				<div class="row" style="margin-top:60px">
 					<div class="col-sm-4">
-						<a href="http://www.inter-mines.org/gene/main.php?sizeup_=&sizeup2009=&referer2=&poste=1366x768x24"><img class="img" src="logos/logo_intermines.jpg" alt="Intermines"/></a>
+						<a href="http://www.inter-mines.org/gene/main.php?sizeup_=&sizeup2009=&referer2=&poste=1366x768x24"><img style="margin-top:30px"class="img" src="logos/logo_intermines.jpg" alt="Intermines"/></a>
 					</div>
 					<div class="col-sm-8">
 						<h3>Intermines</h3>
@@ -41,7 +41,7 @@
 				</div>
 				<div class="row" style="margin-top:40px">
 					<div class="col-sm-4 col-sm-push-8">
-						<a href="http://www.iquesta.com/"><img class="img" src="logos/logo_iquesta.jpg" alt="iQuesta"/></a>
+						<a href="http://www.iquesta.com/"><img style="margin-top:30px"class="img" src="logos/logo_iquesta.jpg" alt="iQuesta"/></a>
 					</div>
 					<div class="col-sm-8 col-sm-pull-4">
 						<h3>iQuesta</h3>
@@ -50,7 +50,7 @@
 				</div>
 				<div class="row" style="margin-top:40px">
 					<div class="col-sm-4">
-						<a href="http://www.jobteaser.com/fr"><img class="img" src="logos/logo_jobteaser.jpeg" alt="JobTeaser"/></a>
+						<a href="http://www.jobteaser.com/fr"><img style="margin-top:30px"class="img" src="logos/logo_jobteaser.jpeg" alt="JobTeaser"/></a>
 					</div>
 					<div class="col-sm-8">
 						<h3>JobTeaser</h3>
@@ -59,7 +59,7 @@
 				</div>
 				<div class="row" style="margin-top:40px">
 					<div class="col-sm-4 col-sm-push-8">
-						<a href="http://www.dogfinance.com/"><img class="img" src="logos/logo_dogfinance.jpeg" alt="DogFinance"/></a>
+						<a href="http://www.dogfinance.com/"><img style="margin-top:30px"class="img" src="logos/logo_dogfinance.jpeg" alt="DogFinance"/></a>
 					</div>
 					<div class="col-sm-8 col-sm-pull-4">
 						<h3>DogFinance</h3>
@@ -68,7 +68,7 @@
 				</div>
 				<div class="row" style="margin-top:40px">
 					<div class="col-sm-4">
-						<a href="http://www.ratp.fr/"><img class="img" src="logos/logo_ratp.png" alt="RATP"/></a>
+						<a href="http://www.ratp.fr/"><img style="margin-top:30px"class="img" src="logos/logo_ratp.png" alt="RATP"/></a>
 					</div>
 					<div class="col-sm-8">
 						<h3>RATP</h3>
