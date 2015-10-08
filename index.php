@@ -6,7 +6,7 @@ if(isset($_GET['page1'])){
 	$p1=$_GET['page1'];
 }
 else{
-	$p1='index.html';
+	$p1='404.html';
 }
 if(isset($_GET['page2'])){
 	$p2 = $_GET['page2'];
