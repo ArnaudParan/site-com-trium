@@ -2,11 +2,14 @@
 include('config_serveur.php');
 include('pages.php');
 include ($racine . '/head.php');
+if(isset($_GET['chemin'])){
+	$p1 = $_GET['chemin'];
+}
 if(isset($_GET['page1'])){
 	$p1=$_GET['page1'];
 }
 else{
-	$p1='404.html';
+	$p1='404';
 }
 if(isset($_GET['page2'])){
 	$p2 = $_GET['page2'];
