@@ -1,5 +1,5 @@
 <div class="row" style="margin-top:30px">
-	<div class="col-sm-offset-3 col-sm-6 bloc_contact">
+	<div style="margin-top:30px" class="col-sm-offset-3 col-sm-6 bloc_contact">
 		<div class="row">
 			<div class="col-sm-4 col-xs-8 col-xs-offset-2 col-sm-offset-0">
 				<a target="blank" href="http://www.enpc.fr/"><img class="img" src="/logos/logo_enpc.png" alt="ENPC"/></a>
