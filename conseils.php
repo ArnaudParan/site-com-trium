@@ -12,24 +12,24 @@
 	</div>
 </div>
 <div class="row">
-	<div class="col-sm-offset-2 col-sm-8">
+	<div class="col-sm-offset-2 col-sm-8 col-xs-12 col-xs-offset-0">
 		<div class="row" style="margin-top:40px"></div>
 		<div class="row">
-			<div class="col-sm-offset-0 col-sm-2">
+			<div class="col-sm-offset-0 col-sm-2 col-xs-2">
 				<a href=""><img class="img" src="/logos/twitter.png" alt="Twitter"/></a>
 			</div>
-			<div class="col-sm-8">
+			<div class="col-sm-8 col-xs-8">
 				<div class="row">
-					<div class="col-sm-6">
+					<div class="col-sm-6 col-xs-6">
 						<a href=""><img class="img" src="/logos/apple_store.png" alt="Apple Store"/></a>
 					</div>
-					<div class="col-sm-6">
+					<div class="col-sm-6 col-xs-6">
 						<a href=""><img class="img" src="/logos/play_store.png" alt="Play Store"/></a>
 					</div>
 				</div>
 			</div>
-			<div class="col-sm-2">
-			<a href=""><img class="img" src="/logos/facebook.png" alt="Facebook"/></a>
+			<div class="col-sm-2 col-xs-2">
+			<a href="https://www.facebook.com/Forum-Trium-220358747991521/timeline/"><img class="img" src="/logos/facebook.png" alt="Facebook"/></a>
 			</div>
 		</div>
 	</div>
@@ -46,13 +46,13 @@
 		Contactez-nous sur facebook, twitter, ou directement auprès des organisateurs de votre école !
 	</div>
 	<div class="col-sm-offset-1 col-sm-3">
-		<img alt="Image stock ici"/>
+		<img class="hidden-xs" alt="Image stock ici"/>
 	</div>
 </div>
 
 <div class="row" style="margin-top:60px">
 	<div class="col-sm-offset-2 col-sm-4">
-		<img alt="Image stock ici"/>
+		<img class="hidden-xs" alt="Image stock ici"/>
 	</div>
 	<div class="col-sm-offset-1 col-sm-3" style="background-color:#93E1F3;margin-top:20px;border-radius:30px;text-align:center;color:white;font-size:18px">
 	Mettez en ligne votre CV sur notre <a href="">cv-thèque</a> et faites-le réviser par un professionnel le jour du forum avec <span style="font-weight:bold">JobTeaser</span> !
@@ -64,6 +64,6 @@
 		Assistez aux conférences données par des entreprises pour connaître les nouvelles tendances dans leur domaine !
 	</div>
 	<div class="col-sm-offset-1 col-sm-3">
-		<img alt="Image stock ici"/>
+		<img class="hidden-xs" alt="Image stock ici"/>
 	</div>
 </div>

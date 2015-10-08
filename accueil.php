@@ -18,15 +18,15 @@
 					<img src="" alt=""/>
 					<div class="carousel-caption">
 					</div>
-					<div class="bloc_carousel col-sm-offset-2 col-sm-2" style="margin-top:60px;">
+					<div class="bloc_carousel col-sm-offset-2 col-sm-2 hidden-xs" style="margin-top:60px;">
 						Vous intéressez ces entreprises, venez les découvrir.
 					</div>
-					<div class="bloc_carousel col-sm-offset-1 col-sm-5" style="margin-top:100px">
+					<div class="bloc_carousel col-sm-offset-1 col-sm-5 ent-carousel">
 						<div>
 							<div class="col-sm-4">
 								<a href="/ecoles.html#enpc"><img class="img" src="/logos/logo_enpc.png" alt="ENPC"/></a>
 							</div>
-							<div class="col-sm-8">
+							<div class="col-sm-8 hidden-xs">
 								L'école des Ponts Paristech recrute chaque année parmi les meilleurs étudiants issus des classes préparatoires ou d'autres filières.<br/>
 								Depuis 1747, elle forme des ingénieurs qui excellent dans divers domaines tels le génie civil, les transports, la finance, le génie industriel, le génie mécanique, et l'informatique.
 							</div>
@@ -38,15 +38,15 @@
 					<img src="" alt=""/>
 					<div class="carousel-caption">
 					</div>
-					<div class="bloc_carousel col-sm-offset-2 col-sm-2" style="margin-top:60px;">
+					<div class="bloc_carousel col-sm-offset-2 col-sm-2 hidden-xs" style="margin-top:60px;">
 						Vous intéressez ces entreprises, venez les découvrir.
 					</div>
-					<div class="bloc_carousel col-sm-offset-1 col-sm-5" style="margin-top:100px">
+					<div class="bloc_carousel col-sm-offset-1 col-sm-5 ent-carousel">
 						<div>
 							<div class="col-sm-4">
 								<a href="/ecoles.html#ensta"><img class="img" src="/logos/logo_ensta.png" alt="ENSTA"/></a>
 							</div>
-							<div class="col-sm-8">
+							<div class="col-sm-8 hidden-xs">
 								l'École Nationale Supérieure de Techniques Avancées ParisTech est la plus jeune des trois écoles. Elle est née en 1970 de la fusion de quatre écoles d'application de l'École Polytechnique dont l'École du Génie Maritime fondée en 1741. Elle apporte à ses élèves ingénieurs les compétences leur permettant de concevoir, de réaliser et de diriger des projets industriels complexes.
 							</div>
 						</div>
@@ -57,15 +57,15 @@
 					<img src="" alt=""/>
 					<div class="carousel-caption">
 					</div>
-					<div class="bloc_carousel col-sm-offset-2 col-sm-2" style="margin-top:60px;">
+					<div class="bloc_carousel col-sm-offset-2 col-sm-2 hidden-xs" style="margin-top:60px;">
 						Vous intéressez ces entreprises, venez les découvrir.
 					</div>
-					<div class="bloc_carousel col-sm-offset-1 col-sm-5" style="margin-top:100px">
+					<div class="bloc_carousel col-sm-offset-1 col-sm-5 ent-carousel">
 						<div>
 							<div class="col-sm-4">
 								<a href="/ecoles.html#mines"><img class="img" src="/logos/logo_mines.png" alt="Mines"/></a>
 							</div>
-							<div class="col-sm-8">
+							<div class="col-sm-8 hidden-xs">
 								Fondée en 1783 pour former des ingénieurs des Mines, l'École des MINES ParisTech a su anticiper et s'adapter. La diversité des centres de recherche de l'École se retrouve dans la pluridisciplinarité des ingénieurs généralistes qu'elle forme et qui sont présents aussi bien dans les différents secteurs de l'industrie que dans la finance et le conseil.
 							</div>
 						</div>
@@ -76,15 +76,15 @@
 					<img src="" alt=""/>
 					<div class="carousel-caption">
 					</div>
-					<div class="bloc_carousel col-sm-offset-2 col-sm-2" style="margin-top:60px;">
+					<div class="bloc_carousel col-sm-offset-2 col-sm-2 hidden-xs" style="margin-top:60px;">
 						Vous intéressez ces entreprises, venez les découvrir.
 					</div>
-					<div class="bloc_carousel col-sm-offset-1 col-sm-5" style="margin-top:100px">
+					<div class="bloc_carousel col-sm-offset-1 col-sm-5 ent-carousel">
 						<div>
 							<div class="col-sm-4">
 								<a href="/ecoles.html#ensae"><img class="img" src="/logos/logo_ensae.png" alt="ENSAE"/></a>
 							</div>
-							<div class="col-sm-8">
+							<div class="col-sm-8 hidden-xs">
 								Fondée en 1942, l'École Nationale de la Statistique et de l'Administration Économique ParisTech assure une formation de haut niveau en économie, en statistique et en finance qui lui a permis d'acquérir une place spécifique et reconnue parmi les Grandes Écoles françaises.
 							</div>
 						</div>
@@ -95,15 +95,15 @@
 					<img src="" alt=""/>
 					<div class="carousel-caption">
 					</div>
-					<div class="bloc_carousel col-sm-offset-2 col-sm-2" style="margin-top:60px;">
+					<div class="bloc_carousel col-sm-offset-2 col-sm-2 hidden-xs" style="margin-top:60px;">
 						Vous intéressez ces entreprises, venez les découvrir.
 					</div>
-					<div class="bloc_carousel col-sm-offset-1 col-sm-5" style="margin-top:100px">
+					<div class="bloc_carousel col-sm-offset-1 col-sm-5 ent-carousel">
 						<div>
 							<div class="col-sm-4">
 								<a href="http://www.actuaris.fr/"><img class="img" src="/logos/logo_actuaris.png" alt="Atctuaris"/></a>
 							</div>
-							<div class="col-sm-8">
+							<div class="col-sm-8 hidden-xs">
 								Avec une équipe comptant plus de cent salariés, ACTUARIS conçoit et propose des solutions innovantes pour accompagner chaque année plus de 200 organismes assureurs – et 2000 utilisateurs de ses logiciels- dans le cadre de leurs chantiers techniques, actuariels, réglementaires et informatiques.<br/>
 							</div>
 						</div>
@@ -189,23 +189,23 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-sm-offset-2 col-sm-8">
+			<div class="col-sm-offset-2 col-sm-8 col-xs-12 col-xs-offset-0">
 				<div class="row" style="margin-top:40px"></div>
 				<div class="row">
-					<div class="col-sm-offset-0 col-sm-2">
+					<div class="col-sm-offset-0 col-sm-2 col-xs-2">
 						<a href=""><img class="img" src="/logos/twitter.png" alt="Twitter"/></a>
 					</div>
-					<div class="col-sm-8">
+					<div class="col-sm-8 col-xs-8">
 						<div class="row">
-							<div class="col-sm-6">
+							<div class="col-sm-6 col-xs-6">
 								<a href=""><img class="img" src="/logos/apple_store.png" alt="Apple Store"/></a>
 							</div>
-							<div class="col-sm-6">
+							<div class="col-sm-6 col-xs-6">
 								<a href=""><img class="img" src="/logos/play_store.png" alt="Play Store"/></a>
 							</div>
 						</div>
 					</div>
-					<div class="col-sm-2">
+					<div class="col-sm-2 col-xs-2">
 					<a href="https://www.facebook.com/Forum-Trium-220358747991521/timeline/"><img class="img" src="/logos/facebook.png" alt="Facebook"/></a>
 					</div>
 				</div>
@@ -223,7 +223,7 @@
 				<h1>GALERIE</h1>
 				<div class="lisere_bleu"></div>
 				<div class="row">
-					<div class="col-sm-4">
+					<div class="col-xs-4">
 						<div class="row">
 							<img class="img" alt="Photo du forum 1" src="images/gallerie1.jpg">
 						</div>
@@ -231,7 +231,7 @@
 							<img class="img" alt="Photo du forum 2" src="images/gallerie2.jpg">
 						</div>
 					</div>
-					<div class="col-sm-8">
+					<div class="col-xs-8">
 						<img class="img" alt="Photo du forum 3" src="images/gallerie3.jpg">
 					</div>
 				</div>

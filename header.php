@@ -9,7 +9,7 @@
 			<a href="/"><img class="img" src="/logos/logo_trium.png" alt="FORUM TRIUM"/></a>
 		</div>
 		<!-- Le nav -->
-		<div class="col-xs-offset-0 col-sm-offset-1 col-md-offset-0 col-lg-offset-2 col-xs-12 col-sm-12 col-md-8 col-lg-7">
+		<div class="col-sm-offset-1 col-md-offset-0 col-lg-offset-2 col-sm-12 col-md-8 col-lg-7 hidden-xs">
 			<div class="row">
 				<div class="col-lg-offset-1 col-sm-offset-4" style="margin-top:20px">
 					<a href="http://www.sirom.net/trium/site/index.php"><button type="button" class="btn btn-success" aria-label="Left Align">
@@ -50,7 +50,26 @@ foreach ($pages as $actualPage) {
 				</ul>
 			</nav>
 		</div>
-	<div class="lisere_banniere col-sm-12" style="padding-top:7px;margin-left:0px;margin-right:0px;"></div>
+		<div class="col-xs-12 visible-xs">
+			<ul class="nav nav-pills">
+				<li role="presentation">
+					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-exanded="false"><span class="glyphicon glyphicon-menu-hamburger"></span></button>
+						<ul class="dropdown-menu">
+							<li><a href="/">ACCUEIL</a></li>
+		<?php
+		global $pages;
+		foreach ($pages as $actualPage) {
+			if (($actualPage["visible"] == true) && ($actualPage["name"] != "accueil")) {
+				echo '<li><a href="/' . $actualPage["addr"] . '">' . strtoupper($actualPage["name"]) . '</a></li>
+					';
+			}
+		}
+		?>
+						</ul>
+				</li>
+			</ul>
+		</div>
+	<div class="lisere_banniere col-xs-12" style="padding-top:7px;margin-left:0px;margin-right:0px;"></div>
 	</header>
 <?php
 	if (isset($fatherPage)) {
