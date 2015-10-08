@@ -2,7 +2,7 @@
 	<div class="col-sm-offset-1 col-sm-10">
 		<div class="row">
 			<div class="col-sm-6" style="border-right: 1px solid grey">
-				<h2 style="text-align:center">Presse</h2>
+				<h2 style="text-align:center;font-family:SketchBlock;font-size:44px">Presse</h2>
 				<div class="row" style="margin-top:60px">
 					<div class="col-sm-4 col-xs-8 col-xs-offset-2 col-sm-offset-0">
 						<a href="http://www.letudiant.fr/"><img style="margin-top:30px"class="img" src="logos/logo_letudiant.jpg" alt="L'Étudiant"/></a>
@@ -30,7 +30,7 @@
 			</div>
 			<div class="visible-xs" style="background-color:black;padding-top:3px;margin-top:50px;margin-bottom:50px"></div>
 			<div class="col-sm-6" style="border-left: 1px solid grey">
-				<h2 style="text-align:center">Entreprises et Associations</h2>
+				<h2 style="text-align:center;font-family:SketchBlock;font-size:44px">Entreprises et Associations</h2>
 				<div class="row" style="margin-top:60px">
 					<div class="col-sm-4 col-xs-8 col-xs-offset-2 col-sm-offset-0">
 						<a href="http://www.inter-mines.org/gene/main.php?sizeup_=&sizeup2009=&referer2=&poste=1366x768x24"><img style="margin-top:30px"class="img" src="logos/logo_intermines.jpg" alt="Intermines"/></a>

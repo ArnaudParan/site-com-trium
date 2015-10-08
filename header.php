@@ -23,10 +23,10 @@
 					<li><a href="/">ACCUEIL</a>
 					<?php
 					if($page["name"]=='accueil'){
-						echo '<div class="lisere_bleu" style="margin-left:-5px;margin-right:-5px;visibility:visible"></div></li>
+						echo '<div class="lisere_header" style="margin-left:-5px;margin-right:-5px;visibility:visible"></div></li>
 							';
 					}else{
-						echo '<div class="lisere_bleu" style="margin-left:-5px;margin-right:-5px;visibility:hidden"></div></li>
+						echo '<div class="lisere_header" style="margin-left:-5px;margin-right:-5px;visibility:hidden"></div></li>
 							';
 					}
 					?>
@@ -37,11 +37,11 @@ foreach ($pages as $actualPage) {
 		echo '<li><a href="/' . $actualPage["addr"] . '">' . strtoupper($actualPage["name"]) . '</a>
 			';
 		if ($actualPage["name"] == $page["name"] || (isset($fatherPage) && $fatherPage["name"] == $actualPage["name"])) {
-			echo '<div class="lisere_bleu" style="margin-left:-5px;margin-right:-5px;visibility:visible"></div></li>
+			echo '<div class="lisere_header" style="margin-left:-5px;margin-right:-5px;visibility:visible"></div></li>
 				';
 		}
 		else {
-			echo '<div class="lisere_bleu" style="margin-left:-5px;margin-right:-5px;visibility:hidden"></div></li>
+			echo '<div class="lisere_header" style="margin-left:-5px;margin-right:-5px;visibility:hidden"></div></li>
 				';
 		}
 	}

@@ -184,7 +184,7 @@
 		</div>
 		<!-- twitter facebook et app -->
 		<div class="row" style="margin-top:20px">
-			<div class="col-sm-offset-3 col-sm-6" style="color:grey;font-size:25px;text-align:center;font-weight:bold">
+			<div class="col-sm-offset-3 col-sm-6" style="color:black;font-size:25px;text-align:center;font-weight:bold;font-family:Simplicity">
 				L'application permet de profiter à fond de l'évènement
 			</div>
 		</div>
@@ -212,7 +212,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-sm-offset-3 col-sm-6" style="color:grey;font-size:25px;text-align:center;font-weight:bold">
+			<div class="col-sm-offset-3 col-sm-6" style="color:black;font-size:25px;text-align:center;font-weight:bold;font-family:Simplicity">
 				Suivez nos entreprises et nous sur les réseaux sociaux
 			</div>
 		</div>
