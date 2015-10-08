@@ -1,7 +1,7 @@
 <div class="row" style="margin-top:40px;margin-bottom:40px">
 	<div class="col-sm-offset-1 col-sm-10">
 		<div class="row">
-			<div class="col-sm-6" style="border-right: 1px solid grey">
+			<div class="col-sm-6">
 				<h2 style="text-align:center;font-family:SketchBlock;font-size:44px">Presse</h2>
 				<div class="row" style="margin-top:60px">
 					<div class="col-sm-4 col-xs-8 col-xs-offset-2 col-sm-offset-0">
@@ -29,7 +29,7 @@
 				</div>
 			</div>
 			<div class="visible-xs" style="background-color:black;padding-top:3px;margin-top:50px;margin-bottom:50px"></div>
-			<div class="col-sm-6" style="border-left: 1px solid grey">
+			<div class="col-sm-6" style="border-left: 2px solid grey">
 				<h2 style="text-align:center;font-family:SketchBlock;font-size:44px">Entreprises et Associations</h2>
 				<div class="row" style="margin-top:60px">
 					<div class="col-sm-4 col-xs-8 col-xs-offset-2 col-sm-offset-0">
