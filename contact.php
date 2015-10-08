@@ -1,7 +1,7 @@
 <div class="row" style="margin-top:50px">
 	<div class="col-sm-offset-3 col-sm-6 bloc_contact">
 		<div class="row">
-			<div class="col-sm-4 col-xs-8 col-xs-offset-2">
+			<div class="col-sm-4 col-xs-8 col-xs-offset-2 col-sm-offset-0">
 				<img src="/images/buisness2.jpg" alt="Étudiants"/>
 			</div>
 			<div class="col-sm-8 col-xs-12">
@@ -12,10 +12,10 @@
 		<div class="lisere_bleu" style="margin-top:20px"></div>
 	</div>
 </div>
-<div class="row" style="margin-top:20px">
+<div class="row" style="margin-top:30px">
 	<div class="col-sm-offset-3 col-sm-6 bloc_contact">
 		<div class="row">
-			<div class="col-sm-4 col-sm-push-8 col-xs-8 col-xs-offset-2">
+			<div class="col-sm-4 col-sm-push-8 col-xs-8 col-xs-offset-2 col-sm-offset-0">
 				<img src="/images/buisness.jpg" alt="Entreprises"/>
 			</div>
 			<div class="col-sm-8 col-sm-pull-4 col-xs-12">
@@ -29,7 +29,7 @@
 <div class="row" style="margin-top:20px">
 	<div class="col-sm-offset-3 col-sm-6 bloc_contact">
 		<div class="row">
-			<div class="col-sm-4 col-xs-8 col-xs-offset-2">
+			<div class="col-sm-4 col-xs-8 col-xs-offset-2 col-sm-offset-0">
 				<img src="/logos/logo_trium.png" alt="Organisateurs"/>
 			</div>
 			<div class="col-sm-8 col-xs-12">
@@ -47,7 +47,7 @@
 <div class="row" style="margin-top:20px">
 	<div class="col-sm-offset-3 col-sm-6 bloc_contact">
 		<div class="row">
-			<div class="col-sm-4 col-sm-push-8 col-xs-8 col-xs-offset-2">
+			<div class="col-sm-4 col-sm-push-8 col-xs-8 col-xs-offset-2 col-sm-offset-0">
 				<img src="/logos/logo_trium.png" alt="Organisateurs"/>
 			</div>
 			<div class="col-sm-8 col-sm-pull-4 col-xs-12">
@@ -63,7 +63,7 @@
 <div class="row" style="margin-top:20px">
 	<div class="col-sm-offset-3 col-sm-6 bloc_contact">
 		<div class="row">
-			<div class="col-sm-4 col-xs-8 col-xs-offset-2">
+			<div class="col-sm-4 col-xs-8 col-xs-offset-2 col-sm-offset-0">
 				<img src="/logos/logo_trium.png" alt="Organisateurs"/>
 			</div>
 			<div class="col-sm-8 col-xs-12">

@@ -1,10 +1,10 @@
 <div class="row" style="margin-top:40px;margin-bottom:40px">
-	<div class="col-lg-offset-1 col-lg-10">
+	<div class="col-sm-offset-1 col-sm-10">
 		<div class="row">
-			<div class="col-lg-6" style="border-right: 1px solid grey">
+			<div class="col-sm-6" style="border-right: 1px solid grey">
 				<h2 style="text-align:center">Presse</h2>
 				<div class="row" style="margin-top:60px">
-					<div class="col-sm-4 col-xs-8 col-xs-offset-2">
+					<div class="col-sm-4 col-xs-8 col-xs-offset-2 col-sm-offset-0">
 						<a href="http://www.letudiant.fr/"><img style="margin-top:30px"class="img" src="logos/logo_letudiant.jpg" alt="L'Étudiant"/></a>
 					</div>
 					<div class="col-sm-8">
@@ -15,12 +15,12 @@
 					<div class="col-sm-4 col-sm-push-8">
 						<a href="http://www.studyrama.com/"><img style="margin-top:30px"class="img" src="logos/logo_studyrama.jpg" alt="Studyrama"/></a>
 					</div>
-					<div class="col-sm-8 col-sm-pull-4 col-xs-8 col-xs-offset-2">
+					<div class="col-sm-8 col-sm-pull-4 col-xs-8 col-xs-offset-2 col-sm-offset-0">
 						<h3>Studyrama</h3>
 					</div>
 				</div>
 				<div class="row" style="margin-top:40px">
-					<div class="col-sm-4 col-xs-8 col-xs-offset-2">
+					<div class="col-sm-4 col-xs-8 col-xs-offset-2 col-sm-offset-0">
 						<a href="http://journaldesgrandesecoles.com/"><img style="margin-top:30px"class="img" src="logos/logo_jdgeu.jpg" alt="Journal des Grandes Écoles"/></a>
 					</div>
 					<div class="col-sm-8">
@@ -28,11 +28,11 @@
 					</div>
 				</div>
 			</div>
-			<div style="background-color:black;padding-top:3px;margin-top:50px;margin-bottom:50px"></div>
-			<div class="col-lg-6" style="border-left: 1px solid grey">
+			<div class="visible-xs" style="background-color:black;padding-top:3px;margin-top:50px;margin-bottom:50px"></div>
+			<div class="col-sm-6" style="border-left: 1px solid grey">
 				<h2 style="text-align:center">Entreprises et Associations</h2>
 				<div class="row" style="margin-top:60px">
-					<div class="col-sm-4 col-xs-8 col-xs-offset-2">
+					<div class="col-sm-4 col-xs-8 col-xs-offset-2 col-sm-offset-0">
 						<a href="http://www.inter-mines.org/gene/main.php?sizeup_=&sizeup2009=&referer2=&poste=1366x768x24"><img style="margin-top:30px"class="img" src="logos/logo_intermines.jpg" alt="Intermines"/></a>
 					</div>
 					<div class="col-sm-8">
@@ -41,7 +41,7 @@
 					</div>
 				</div>
 				<div class="row" style="margin-top:40px">
-					<div class="col-sm-4 col-sm-push-8 col-xs-8 col-xs-offset-2">
+					<div class="col-sm-4 col-sm-push-8 col-xs-8 col-xs-offset-2 col-sm-offset-0">
 						<a href="http://www.iquesta.com/"><img style="margin-top:30px"class="img" src="logos/logo_iquesta.jpg" alt="iQuesta"/></a>
 					</div>
 					<div class="col-sm-8 col-sm-pull-4">
@@ -50,7 +50,7 @@
 					</div>
 				</div>
 				<div class="row" style="margin-top:40px">
-					<div class="col-sm-4 col-xs-8 col-xs-offset-2">
+					<div class="col-sm-4 col-xs-8 col-xs-offset-2 col-sm-offset-0">
 						<a href="http://www.jobteaser.com/fr"><img style="margin-top:30px"class="img" src="logos/logo_jobteaser.jpeg" alt="JobTeaser"/></a>
 					</div>
 					<div class="col-sm-8">
@@ -59,7 +59,7 @@
 					</div>
 				</div>
 				<div class="row" style="margin-top:40px">
-					<div class="col-sm-4 col-sm-push-8 col-xs-8 col-xs-offset-2">
+					<div class="col-sm-4 col-sm-push-8 col-xs-8 col-xs-offset-2 col-sm-offset-0">
 						<a href="http://www.dogfinance.com/"><img style="margin-top:30px"class="img" src="logos/logo_dogfinance.jpeg" alt="DogFinance"/></a>
 					</div>
 					<div class="col-sm-8 col-sm-pull-4">
@@ -68,7 +68,7 @@
 					</div>
 				</div>
 				<div class="row" style="margin-top:40px">
-					<div class="col-sm-4 col-xs-8 col-xs-offset-2">
+					<div class="col-sm-4 col-xs-8 col-xs-offset-2 col-sm-offset-0">
 						<a href="http://www.ratp.fr/"><img style="margin-top:30px"class="img" src="logos/logo_ratp.png" alt="RATP"/></a>
 					</div>
 					<div class="col-sm-8">
