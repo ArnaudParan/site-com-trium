@@ -2,7 +2,7 @@
 	<div class="col-sm-offset-3 col-sm-6 bloc_contact">
 		<div class="row">
 			<div class="col-sm-4 col-xs-8 col-xs-offset-2 col-sm-offset-0">
-				<img src="/images/buisness2.jpg" alt="Étudiants"/>
+				<img src="/images/buisness2.jpg" alt="Étudiants" style="margin-top:20px"/>
 			</div>
 			<div class="col-sm-8 col-xs-12">
 				<h1>Vous êtes étudiant?<br/>
