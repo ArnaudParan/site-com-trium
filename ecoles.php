@@ -1,7 +1,7 @@
 <div class="row" style="margin-top:30px">
 	<div class="col-sm-offset-3 col-sm-6 bloc_contact">
 		<div class="row">
-			<div class="col-sm-4 col-xs-8 col-xs-offset-2">
+			<div class="col-sm-4 col-xs-8 col-xs-offset-2 col-sm-offset-0">
 				<a target="blank" href="http://www.enpc.fr/"><img class="img" src="/logos/logo_enpc.png" alt="ENPC"/></a>
 			</div>
 			<div class="col-sm-8">
@@ -16,7 +16,7 @@
 <div class="row" style="margin-top:30px">
 	<div class="col-sm-offset-3 col-sm-6 bloc_contact">
 		<div class="row">
-			<div class="col-sm-4 col-sm-push-8 col-xs-8 col-xs-offset-2">
+			<div class="col-sm-4 col-sm-push-8 col-xs-8 col-xs-offset-2 col-sm-offset-0">
 				<a target="blank" href="https://www.mines-paristech.fr/"><img class="img" src="/logos/logo_mines.png" alt="Mines"/></a>
 			</div>
 			<div class="col-sm-8 col-sm-pull-4">
@@ -30,7 +30,7 @@
 <div class="row" style="margin-top:30px">
 	<div class="col-sm-offset-3 col-sm-6 bloc_contact">
 		<div class="row">
-			<div class="col-sm-4 col-xs-8 col-xs-offset-2">
+			<div class="col-sm-4 col-xs-8 col-xs-offset-2 col-sm-offset-0">
 				<a target="blank" href="https://www.ensta-paristech.fr/"><img class="img" src="/logos/logo_ensta.png" alt="ENSTA"/></a>
 			</div>
 			<div class="col-sm-8">
@@ -44,7 +44,7 @@
 <div class="row" style="margin-top:30px">
 	<div class="col-sm-offset-3 col-sm-6 bloc_contact">
 		<div class="row">
-			<div class="col-sm-4 col-sm-push-8 col-xs-8 col-xs-offset-2">
+			<div class="col-sm-4 col-sm-push-8 col-xs-8 col-xs-offset-2 col-sm-offset-0">
 				<a target="blank" href="http://www.ensae.fr"><img class="img" src="/logos/logo_ensae.png" alt="ENSAE"/></a>
 			</div>
 			<div class="col-sm-8 col-sm-pull-4">
