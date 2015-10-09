@@ -83,6 +83,14 @@
 						<h3>Alumneye</h3>
 					</div>
 				</div>
+				<div class="row" style="margin-top:40px">
+					<div class="col-sm-4 col-xs-8 col-xs-offset-2 col-sm-offset-0">
+						<a href=""><img style="margin-top:30px"class="img" src="logos/logo_happytrainees.png" alt="RATP"/></a>
+					</div>
+					<div class="col-sm-8">
+						<h3>Happy Trainees</h3>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
