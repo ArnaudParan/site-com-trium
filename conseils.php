@@ -12,7 +12,7 @@
 	</div>
 </div>
 <div class="row">
-	<div class="col-sm-offset-2 col-sm-8 col-xs-12 col-xs-offset-0">
+	<div class="col-sm-offset-1 col-sm-10"><div class="col-sm-offset-2 col-sm-8 col-xs-12 col-xs-offset-0">
 		<div class="row" style="margin-top:40px"></div>
 		<div class="row">
 			<div class="col-sm-offset-0 col-sm-2 col-xs-2">
@@ -32,7 +32,7 @@
 			<a href="https://www.facebook.com/Forum-Trium-220358747991521/timeline/"><img class="img" src="/logos/facebook.png" alt="Facebook"/></a>
 			</div>
 		</div>
-	</div>
+	</div></div>
 </div>
 <div class="row">
 	<div class="col-sm-offset-3 col-sm-6" style="color:grey;font-size:25px;text-align:center;font-weight:bold">
