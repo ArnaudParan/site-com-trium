@@ -92,3 +92,77 @@
 		color:white;
 	}
 }
+
+@media screen and (max-width:768px){
+	.fond_btn{
+		position:absolute;
+	}
+	.ent{
+		font-size:10px;
+		position:absolute;
+		text-align:center;
+		color:white;
+		z-index:1;
+		visibility:hidden;
+	}
+
+	.sent{
+		font-size:10px;
+		visibility:hidden;
+		position:absolute;
+		text-align:center;
+		color:white;
+		z-index:0;
+	}
+
+	#btn1,#sbtn11,#sbtn12,#sbtn13{
+		background-color:#31ce7c;
+	}
+
+	#btn2,#sbtn21,#sbtn22,#sbtn23{
+		background-color:#ffcc00;
+	}
+
+	#btn3,#sbtn31,#sbtn32,#sbtn33{
+		background-color:#ff6600;
+	}
+
+	#btn4,#sbtn41,#sbtn42,#sbtn43{
+		background-color:#ff66ff;
+	}
+
+	#btn5,#sbtn51,#sbtn52,#sbtn53{
+		background-color:#6699ff;
+	}
+
+	#btn6,#sbtn61,#sbtn62,#sbtn63{
+		background-color:#66fefe;
+	}
+}
+
+@media screen and (max-width:768px){
+	.ent, .fond_btn{
+		width:100px;
+		height:100px;
+		border-radius:50px;
+	}
+
+	.fond_btn{
+		z-index:-1;
+	}
+
+	.zone_btn{
+		position:absolute;
+		top:0px;
+		left:0px;
+	}
+
+	.sent{
+		width:60px;
+		height:60px;
+		border-radius:30px;
+	}
+	#widget_ent button:hover{
+		color:white;
+	}
+}
