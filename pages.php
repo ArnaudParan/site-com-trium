@@ -123,6 +123,18 @@ $pages = array(
 		"visible" => true,
 		"a_venir" => false
 	),
+	"besttriumever"  => array(
+		"name" => "besttriumever",
+		"title" => "Trium - Best Trium Ever",
+		"html" => "easterEgg.php",
+		"addr" => "besttriumever.html",
+		"css" => array("contact.css"),
+		"keywords" => "easter egg",
+		"description" => "Easter Egg",
+		"scripts" => array(),
+		"visible" => false,
+		"a_venir" => false
+	),
 	"404"  => array(
 		"name" => "404",
 		"title" => "Trium - Erreur 404",
