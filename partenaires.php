@@ -75,6 +75,14 @@
 						<h3>RATP</h3>
 					</div>
 				</div>
+				<div class="row" style="margin-top:40px">
+					<div class="col-sm-4 col-sm-push-8 col-xs-8 col-xs-offset-2 col-sm-offset-0">
+						<a href="http://www.alumneye.fr/"><img style="margin-top:30px"class="img" src="logos/logo_alumneye.png" alt="Alumneye"/></a>
+					</div>
+					<div class="col-sm-8 col-sm-pull-4">
+						<h3>Alumneye</h3>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
