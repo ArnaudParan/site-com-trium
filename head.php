@@ -26,6 +26,12 @@ function makeHead($page)
 					<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 				<![endif]-->
 				<meta name="viewport" content="width=device-width, initial-scale=1">
+				<meta property="og:url" content="http://www.forum-trium.com"/>
+				<meta property="og:type" content="website"/>
+				<meta property="og:title" content="Forum Trium"/>
+				<meta property="og:site_name" content="Forum Trium"/>
+				<meta property="og:description" content="Le site du Forum"/>
+				<meta property="og:image" content="logos/logo_trium.png"/>
 				</head>
 		';
 }
