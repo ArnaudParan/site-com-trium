@@ -246,23 +246,46 @@
 				</div>
 			</div>
 		</div>
+		<div class="row">
+			<div id="meilleures_entreprises" class="col-sm-12">
+			<!-- Widget container. The content will adapt responsively to the available width. You can set the height with data-height if needed. -->
+			<div id="mentreprises-reviews-container" data-forum="Forum Trium 2015" data-height="auto" style="border: 1px solid #eee;"></div>
+
+			<!-- Script to load the widget content. The containerIds must point to the widget container. -->
+			<script>
+			window.mentreprisesAsyncInit = function() {
+				Mentreprises.init({
+					lang: 'fr',
+						widgets: { containerIds: [ 'mentreprises-reviews-container' ] }
+				});
+			};
+			(function(d, s, id){
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) {return;}
+				js = d.createElement(s); js.id = id;
+				js.src = '//meilleures-entreprises.com/ext/api.js';
+				fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'mentreprises-js'));
+			</script>
+			</div>
+		</div>
 	</div>
 </div>
 
 <!-- timeline twitter -->
 <script>
 !function (d,s,id)
-{
-	var js,
-		fjs = d.getElementsByTagName (s)[0],
-		p = /^http:/.test (d.location) ? 'http' : 'https' ;
+	{
+		var js,
+			fjs = d.getElementsByTagName (s)[0],
+			p = /^http:/.test (d.location) ? 'http' : 'https' ;
 
-	if (!d.getElementById (id)) {
-		js = d.createElement (s);
-		js.id = id;
-		js.src = p + "://platform.twitter.com/widgets.js";
-		fjs.parentNode.insertBefore (js, fjs);
-	}
+		if (!d.getElementById (id)) {
+			js = d.createElement (s);
+			js.id = id;
+			js.src = p + "://platform.twitter.com/widgets.js";
+			fjs.parentNode.insertBefore (js, fjs);
+		}
 
-}(document,"script","twitter-wjs");
+	}(document,"script","twitter-wjs");
 </script>

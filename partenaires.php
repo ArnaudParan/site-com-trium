@@ -81,6 +81,7 @@
 					</div>
 					<div class="col-sm-8 col-sm-pull-4">
 						<h3>Alumneye</h3>
+						Alumneye est le spécialiste des entretiens en banques d'affaires et conseil en stratégie pour les étudiants. Alumneye répondra aux questions dans ce domaine et vous aidera à bien vous orienter. Les formateurs seront en plus présent pour relire et corriger vos CVs et lettres de motivation.
 					</div>
 				</div>
 				<div class="row" style="margin-top:40px">

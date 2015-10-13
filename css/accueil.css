@@ -1,3 +1,9 @@
+#meilleures_entreprises {
+	/*border-radius:24px;
+	border: solid grey 2px;*/
+	margin-top: 60px;
+}
+
 #monCarousel{
 	background:url('/images/fond_carousel.jpg') no-repeat center center;
 	height:400px;

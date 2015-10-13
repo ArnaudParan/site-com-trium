@@ -55,7 +55,7 @@
 		<img class="hidden-xs" alt="Image stock ici"/>
 	</div>
 	<div class="col-sm-offset-1 col-sm-3" style="background-color:#93E1F3;margin-top:20px;border-radius:30px;text-align:center;color:white;font-size:18px">
-	Mettez en ligne votre CV sur notre <a href="">cv-thèque</a> et faites-le réviser par un professionnel le jour du forum avec <span style="font-weight:bold">JobTeaser</span> !
+	Mettez en ligne votre CV sur notre <a href="http://embedded.jobteaser.com/fr/profils/nouveau?forum_subscription=6&event_id=7120">cv-thèque</a> et faites-le réviser par un professionnel le jour du forum avec <span style="font-weight:bold">JobTeaser</span> !
 	</div>
 </div>
 
