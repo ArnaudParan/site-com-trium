@@ -12,6 +12,8 @@
 				<li data-target="#monCarousel" data-slide-to="5"></li>
 				<li data-target="#monCarousel" data-slide-to="6"></li>
 				<li data-target="#monCarousel" data-slide-to="7"></li>
+				<li data-target="#monCarousel" data-slide-to="8"></li>
+				<li data-target="#monCarousel" data-slide-to="9"></li>
 			</ol>
 
 			<!--wrapper pour les slides-->
@@ -191,7 +193,7 @@
 					<div class="bloc_carousel col-sm-offset-1 col-sm-5 ent-carousel">
 						<div>
 							<div class="col-sm-4">
-								<a href="http://www.nexter-group.fr/"><img class="img" src="/logos/logo_nexter.xvg" alt="Nexter"/></a>
+								<a href="http://www.nexter-group.fr/"><img class="img" src="/logos/logo_nexter.svg" alt="Nexter"/></a>
 							</div>
 							<div class="col-sm-8 hidden-xs">
 							</div>
