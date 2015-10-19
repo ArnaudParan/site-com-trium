@@ -9,6 +9,9 @@
 				<li data-target="#monCarousel" data-slide-to="2"></li>
 				<li data-target="#monCarousel" data-slide-to="3"></li>
 				<li data-target="#monCarousel" data-slide-to="4"></li>
+				<li data-target="#monCarousel" data-slide-to="5"></li>
+				<li data-target="#monCarousel" data-slide-to="6"></li>
+				<li data-target="#monCarousel" data-slide-to="7"></li>
 			</ol>
 
 			<!--wrapper pour les slides-->
@@ -19,16 +22,15 @@
 					<div class="carousel-caption">
 					</div>
 					<div class="bloc_carousel col-sm-offset-2 col-sm-2 hidden-xs" style="margin-top:60px;">
-						Vous intéressez ces entreprises, venez les découvrir.
+						Venez nous voir le <?php global $date_trium; echo $date_trium; ?>.
 					</div>
 					<div class="bloc_carousel col-sm-offset-1 col-sm-5 ent-carousel">
 						<div>
 							<div class="col-sm-4">
-								<a href="/ecoles.html#enpc"><img class="img" src="/logos/logo_enpc.png" alt="ENPC"/></a>
+								<a href=""><img class="img" src="/logos/logo_trium.png" alt="Trium"/></a>
 							</div>
 							<div class="col-sm-8 hidden-xs">
-								L'école des Ponts Paristech recrute chaque année parmi les meilleurs étudiants issus des classes préparatoires ou d'autres filières.<br/>
-								Depuis 1747, elle forme des ingénieurs qui excellent dans divers domaines tels le génie civil, les transports, la finance, le génie industriel, le génie mécanique, et l'informatique.
+								Le forum Trium est un forum entreprises organisé par l'école nationale des ponts et chaussées, l'école des mines paristech et l'ensta, avec le partenariat de l'ensae. Il a lieu le <?php global $date_trium; echo $date_trium; ?> au parc des expositions de la porte de versailles.
 							</div>
 						</div>
 					</div>
@@ -44,10 +46,10 @@
 					<div class="bloc_carousel col-sm-offset-1 col-sm-5 ent-carousel">
 						<div>
 							<div class="col-sm-4">
-								<a href="/ecoles.html#ensta"><img class="img" src="/logos/logo_ensta.png" alt="ENSTA"/></a>
+								<a href="http://www.actuaris.fr/"><img class="img" src="/logos/logo_actuaris.png" alt="Atctuaris"/></a>
 							</div>
 							<div class="col-sm-8 hidden-xs">
-								l'École Nationale Supérieure de Techniques Avancées ParisTech est la plus jeune des trois écoles. Elle est née en 1970 de la fusion de quatre écoles d'application de l'École Polytechnique dont l'École du Génie Maritime fondée en 1741. Elle apporte à ses élèves ingénieurs les compétences leur permettant de concevoir, de réaliser et de diriger des projets industriels complexes.
+								Avec une équipe comptant plus de cent salariés, ACTUARIS conçoit et propose des solutions innovantes pour accompagner chaque année plus de 200 organismes assureurs – et 2000 utilisateurs de ses logiciels- dans le cadre de leurs chantiers techniques, actuariels, réglementaires et informatiques.<br/>
 							</div>
 						</div>
 					</div>
@@ -63,10 +65,9 @@
 					<div class="bloc_carousel col-sm-offset-1 col-sm-5 ent-carousel">
 						<div>
 							<div class="col-sm-4">
-								<a href="/ecoles.html#mines"><img class="img" src="/logos/logo_mines.png" alt="Mines"/></a>
+								<a href="http://corporate.fmlogistic.com/"><img class="img" src="/logos/logo_FM_logistic.png" alt="FM logistic"/></a>
 							</div>
 							<div class="col-sm-8 hidden-xs">
-								Fondée en 1783 pour former des ingénieurs des Mines, l'École des MINES ParisTech a su anticiper et s'adapter. La diversité des centres de recherche de l'École se retrouve dans la pluridisciplinarité des ingénieurs généralistes qu'elle forme et qui sont présents aussi bien dans les différents secteurs de l'industrie que dans la finance et le conseil.
 							</div>
 						</div>
 					</div>
@@ -82,10 +83,9 @@
 					<div class="bloc_carousel col-sm-offset-1 col-sm-5 ent-carousel">
 						<div>
 							<div class="col-sm-4">
-								<a href="/ecoles.html#ensae"><img class="img" src="/logos/logo_ensae.png" alt="ENSAE"/></a>
+								<a href="http://www.basystemes.com/"><img class="img" src="/logos/logo_ba_systemes.png" alt="BA systèmes"/></a>
 							</div>
 							<div class="col-sm-8 hidden-xs">
-								Fondée en 1942, l'École Nationale de la Statistique et de l'Administration Économique ParisTech assure une formation de haut niveau en économie, en statistique et en finance qui lui a permis d'acquérir une place spécifique et reconnue parmi les Grandes Écoles françaises.
 							</div>
 						</div>
 					</div>
@@ -101,10 +101,99 @@
 					<div class="bloc_carousel col-sm-offset-1 col-sm-5 ent-carousel">
 						<div>
 							<div class="col-sm-4">
-								<a href="http://www.actuaris.fr/"><img class="img" src="/logos/logo_actuaris.png" alt="Atctuaris"/></a>
+								<a href="http://www.defense.gouv.fr/marine/"><img class="img" src="/logos/logo_marine_nationale.png" alt="Marine Nationale"/></a>
 							</div>
 							<div class="col-sm-8 hidden-xs">
-								Avec une équipe comptant plus de cent salariés, ACTUARIS conçoit et propose des solutions innovantes pour accompagner chaque année plus de 200 organismes assureurs – et 2000 utilisateurs de ses logiciels- dans le cadre de leurs chantiers techniques, actuariels, réglementaires et informatiques.<br/>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- slide 5 -->
+				<div class="item">
+					<img src="" alt=""/>
+					<div class="carousel-caption">
+					</div>
+					<div class="bloc_carousel col-sm-offset-2 col-sm-2 hidden-xs" style="margin-top:60px;">
+						Vous intéressez ces entreprises, venez les découvrir.
+					</div>
+					<div class="bloc_carousel col-sm-offset-1 col-sm-5 ent-carousel">
+						<div>
+							<div class="col-sm-4">
+								<a href="http://sfil.fr/"><img class="img" src="/logos/logo_sfil.jpg" alt="SFIL"/></a>
+							</div>
+							<div class="col-sm-8 hidden-xs">
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- slide 6 -->
+				<div class="item">
+					<img src="" alt=""/>
+					<div class="carousel-caption">
+					</div>
+					<div class="bloc_carousel col-sm-offset-2 col-sm-2 hidden-xs" style="margin-top:60px;">
+						Vous intéressez ces entreprises, venez les découvrir.
+					</div>
+					<div class="bloc_carousel col-sm-offset-1 col-sm-5 ent-carousel">
+						<div>
+							<div class="col-sm-4">
+								<a href="http://www.ab-inbev.com/"><img class="img" src="/logos/logo_abinbev.png" alt="Ab inbev"/></a>
+							</div>
+							<div class="col-sm-8 hidden-xs">
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- slide 7 -->
+				<div class="item">
+					<img src="" alt=""/>
+					<div class="carousel-caption">
+					</div>
+					<div class="bloc_carousel col-sm-offset-2 col-sm-2 hidden-xs" style="margin-top:60px;">
+						Vous intéressez ces entreprises, venez les découvrir.
+					</div>
+					<div class="bloc_carousel col-sm-offset-1 col-sm-5 ent-carousel">
+						<div>
+							<div class="col-sm-4">
+								<a href="http://www.canalplus.fr/"><img class="img" src="/logos/logo_canal+.png" alt="Canal +"/></a>
+							</div>
+							<div class="col-sm-8 hidden-xs">
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- slide 8 -->
+				<div class="item">
+					<img src="" alt=""/>
+					<div class="carousel-caption">
+					</div>
+					<div class="bloc_carousel col-sm-offset-2 col-sm-2 hidden-xs" style="margin-top:60px;">
+						Vous intéressez ces entreprises, venez les découvrir.
+					</div>
+					<div class="bloc_carousel col-sm-offset-1 col-sm-5 ent-carousel">
+						<div>
+							<div class="col-sm-4">
+								<a href="http://www.efront.com/"><img class="img" src="/logos/logo_efront.png" alt="Efront"/></a>
+							</div>
+							<div class="col-sm-8 hidden-xs">
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- slide 9 -->
+				<div class="item">
+					<img src="" alt=""/>
+					<div class="carousel-caption">
+					</div>
+					<div class="bloc_carousel col-sm-offset-2 col-sm-2 hidden-xs" style="margin-top:60px;">
+						Vous intéressez ces entreprises, venez les découvrir.
+					</div>
+					<div class="bloc_carousel col-sm-offset-1 col-sm-5 ent-carousel">
+						<div>
+							<div class="col-sm-4">
+								<a href="http://www.nexter-group.fr/"><img class="img" src="/logos/logo_nexter.xvg" alt="Nexter"/></a>
+							</div>
+							<div class="col-sm-8 hidden-xs">
 							</div>
 						</div>
 					</div>
@@ -242,7 +331,7 @@
 				<h1>LA PAROLE AUX ENTREPRISES</h1>
 				<div class="lisere_bleu"></div>
 				<div class="col-sm-12" style="margin-top:20px">
-					<a class="twitter-timeline" href="https://twitter.com/ArnaudParan/lists/forumtrium" data-widget-id="606812665294528512">Tweets de https://twitter.com/ArnaudParan/lists/forumtrium</a>
+					<a class="twitter-timeline"  href="https://twitter.com/ArnaudParan/lists/forumtrium" data-widget-id="656211797935063040">Tweets de https://twitter.com/ArnaudParan/lists/forumtrium</a>
 				</div>
 			</div>
 		</div>
@@ -273,19 +362,6 @@
 </div>
 
 <!-- timeline twitter -->
-<script>
-!function (d,s,id)
-	{
-		var js,
-			fjs = d.getElementsByTagName (s)[0],
-			p = /^http:/.test (d.location) ? 'http' : 'https' ;
 
-		if (!d.getElementById (id)) {
-			js = d.createElement (s);
-			js.id = id;
-			js.src = p + "://platform.twitter.com/widgets.js";
-			fjs.parentNode.insertBefore (js, fjs);
-		}
-
-	}(document,"script","twitter-wjs");
-</script>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          

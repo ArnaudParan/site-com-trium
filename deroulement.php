@@ -78,7 +78,7 @@
 				</div>
 			</div>
 			<div class="row creneau">
-				<div class="row"><div class="col-sm-9 col-sm-offset-3 col-xs-9 col-xs-offset-2"><span class="infobulle">Bertrand Coulomb, Président d'honneur de Lafarge</span></div></div>
+				<div class="row"><div class="col-sm-9 col-sm-offset-3 col-xs-9 col-xs-offset-2"><span class="infobulle">Bertrand Collomb, Président d'honneur de Lafarge</span></div></div>
 				<div class="col-sm-2 col-xs-3 heure" style="color:grey">
 					17h15
 				</div>

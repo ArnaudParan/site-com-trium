@@ -2,6 +2,7 @@
 include('config_serveur.php');
 include('pages.php');
 include ($racine . '/head.php');
+include($racine . '/infos_edition.php');
 if(isset($_GET['chemin'])){
 	$p1 = $_GET['chemin'];
 }
