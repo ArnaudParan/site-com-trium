@@ -32,7 +32,7 @@
 								<a href=""><img class="img" src="/logos/logo_trium.png" alt="Trium"/></a>
 							</div>
 							<div class="col-sm-8 hidden-xs">
-								Le forum Trium est un forum entreprises organisé par l'école nationale des ponts et chaussées, l'école des mines paristech et l'ensta, avec le partenariat de l'ensae. Il a lieu le <b><?php global $date_trium; echo $date_trium; ?> au parc des expositions de la porte de versailles.</b>
+								Le forum Trium est un forum entreprises organisé par l'école des Ponts ParisTech, l'école des Mines ParisTech et l'Ensta ParisTech, avec le partenariat de l'Ensae ParisTech. Il a lieu le <b><?php global $date_trium; echo $date_trium; ?> au Parc des expositions de la Porte de Versailles.</b>
 							</div>
 						</div>
 					</div>
@@ -48,7 +48,7 @@
 					<div class="bloc_carousel col-sm-offset-1 col-sm-5 ent-carousel">
 						<div>
 							<div class="col-sm-4">
-								<a href="http://www.canalplus.fr/"><img class="img" src="/logos/logo_canal+.png" alt="Canal +"/></a>
+								<a href="http://www.vousmeritezcanalplus.com/"><img class="img" src="/logos/logo_canal+.png" alt="Canal +"/></a>
 							</div>
 							<div class="col-sm-8 hidden-xs">
 								The Canal + Group is a European leader in the Pay TV industry. Its impressive content and original productions are available to its subscribers on every screen and digital device both in Europe and other emerging markets - even on replay and demand!<br/>

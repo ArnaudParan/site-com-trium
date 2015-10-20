@@ -1,2 +1,2 @@
 <?php
-$date_trium = "jeudi 5 novembre 2015";
+$date_trium = "mercredi 4 novembre 2015";
