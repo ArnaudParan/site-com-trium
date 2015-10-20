@@ -23,8 +23,8 @@
 					<img src="" alt=""/>
 					<div class="carousel-caption">
 					</div>
-					<div class="bloc_carousel col-sm-offset-2 col-sm-2 hidden-xs" style="margin-top:60px;">
-						Venez nous voir le <?php global $date_trium; echo $date_trium; ?>.
+					<div class="bloc_carousel col-sm-offset-2 col-sm-2 hidden-xs" style="margin-top:60px;font-size:20px">
+						Le <b><?php global $date_trium; echo $date_trium; ?></b>.
 					</div>
 					<div class="bloc_carousel col-sm-offset-1 col-sm-5 ent-carousel">
 						<div>
@@ -32,12 +32,30 @@
 								<a href=""><img class="img" src="/logos/logo_trium.png" alt="Trium"/></a>
 							</div>
 							<div class="col-sm-8 hidden-xs">
-								Le forum Trium est un forum entreprises organisé par l'école nationale des ponts et chaussées, l'école des mines paristech et l'ensta, avec le partenariat de l'ensae. Il a lieu le <?php global $date_trium; echo $date_trium; ?> au parc des expositions de la porte de versailles.
+								Le forum Trium est un forum entreprises organisé par l'école nationale des ponts et chaussées, l'école des mines paristech et l'ensta, avec le partenariat de l'ensae. Il a lieu le <b><?php global $date_trium; echo $date_trium; ?> au parc des expositions de la porte de versailles.</b>
 							</div>
 						</div>
 					</div>
 				</div>
 				<!-- slide 1 -->
+				<div class="item">
+					<img src="" alt=""/>
+					<div class="carousel-caption">
+					</div>
+					<div class="bloc_carousel col-sm-offset-2 col-sm-2 hidden-xs" style="margin-top:60px;">
+						Vous intéressez ces entreprises, venez les découvrir.
+					</div>
+					<div class="bloc_carousel col-sm-offset-1 col-sm-5 ent-carousel">
+						<div>
+							<div class="col-sm-4">
+								<a href="http://www.canalplus.fr/"><img class="img" src="/logos/logo_canal+.png" alt="Canal +"/></a>
+							</div>
+							<div class="col-sm-8 hidden-xs">
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- slide 2 -->
 				<div class="item">
 					<img src="" alt=""/>
 					<div class="carousel-caption">
@@ -56,7 +74,7 @@
 						</div>
 					</div>
 				</div>
-				<!-- slide 2 -->
+				<!-- slide 3 -->
 				<div class="item">
 					<img src="" alt=""/>
 					<div class="carousel-caption">
@@ -74,7 +92,7 @@
 						</div>
 					</div>
 				</div>
-				<!-- slide 3 -->
+				<!-- slide 4 -->
 				<div class="item">
 					<img src="" alt=""/>
 					<div class="carousel-caption">
@@ -92,7 +110,7 @@
 						</div>
 					</div>
 				</div>
-				<!-- slide 4 -->
+				<!-- slide 5 -->
 				<div class="item">
 					<img src="" alt=""/>
 					<div class="carousel-caption">
@@ -110,7 +128,7 @@
 						</div>
 					</div>
 				</div>
-				<!-- slide 5 -->
+				<!-- slide 6 -->
 				<div class="item">
 					<img src="" alt=""/>
 					<div class="carousel-caption">
@@ -128,24 +146,6 @@
 						</div>
 					</div>
 				</div>
-				<!-- slide 6 -->
-				<div class="item">
-					<img src="" alt=""/>
-					<div class="carousel-caption">
-					</div>
-					<div class="bloc_carousel col-sm-offset-2 col-sm-2 hidden-xs" style="margin-top:60px;">
-						Vous intéressez ces entreprises, venez les découvrir.
-					</div>
-					<div class="bloc_carousel col-sm-offset-1 col-sm-5 ent-carousel">
-						<div>
-							<div class="col-sm-4">
-								<a href="http://www.ab-inbev.com/"><img class="img" src="/logos/logo_abinbev.png" alt="Ab inbev"/></a>
-							</div>
-							<div class="col-sm-8 hidden-xs">
-							</div>
-						</div>
-					</div>
-				</div>
 				<!-- slide 7 -->
 				<div class="item">
 					<img src="" alt=""/>
@@ -157,7 +157,7 @@
 					<div class="bloc_carousel col-sm-offset-1 col-sm-5 ent-carousel">
 						<div>
 							<div class="col-sm-4">
-								<a href="http://www.canalplus.fr/"><img class="img" src="/logos/logo_canal+.png" alt="Canal +"/></a>
+								<a href="http://www.ab-inbev.com/"><img class="img" src="/logos/logo_abinbev.png" alt="Ab inbev"/></a>
 							</div>
 							<div class="col-sm-8 hidden-xs">
 							</div>
@@ -335,29 +335,6 @@
 				<div class="col-sm-12" style="margin-top:20px">
 					<a class="twitter-timeline"  href="https://twitter.com/ArnaudParan/lists/forumtrium" data-widget-id="656211797935063040">Tweets de https://twitter.com/ArnaudParan/lists/forumtrium</a>
 				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div id="meilleures_entreprises" class="col-sm-12">
-			<!-- Widget container. The content will adapt responsively to the available width. You can set the height with data-height if needed. -->
-			<div id="mentreprises-reviews-container" data-forum="Forum Trium 2015" data-height="auto" style="border: 1px solid #eee;"></div>
-
-			<!-- Script to load the widget content. The containerIds must point to the widget container. -->
-			<script>
-			window.mentreprisesAsyncInit = function() {
-				Mentreprises.init({
-					lang: 'fr',
-						widgets: { containerIds: [ 'mentreprises-reviews-container' ] }
-				});
-			};
-			(function(d, s, id){
-				var js, fjs = d.getElementsByTagName(s)[0];
-				if (d.getElementById(id)) {return;}
-				js = d.createElement(s); js.id = id;
-				js.src = '//meilleures-entreprises.com/ext/api.js';
-				fjs.parentNode.insertBefore(js, fjs);
-			}(document, 'script', 'mentreprises-js'));
-			</script>
 			</div>
 		</div>
 	</div>

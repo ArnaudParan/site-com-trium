@@ -1,4 +1,27 @@
 <div class="row" style="margin-top:20px">
+	<div id="meilleures_entreprises" class="col-sm-offset-1 col-sm-10">
+	<!-- Widget container. The content will adapt responsively to the available width. You can set the height with data-height if needed. -->
+	<div id="mentreprises-reviews-container" data-forum="Forum Trium 2015" data-height="auto" style="border: 1px solid #eee;"></div>
+
+	<!-- Script to load the widget content. The containerIds must point to the widget container. -->
+	<script>
+	window.mentreprisesAsyncInit = function() {
+		Mentreprises.init({
+			lang: 'fr',
+				widgets: { containerIds: [ 'mentreprises-reviews-container' ] }
+		});
+	};
+	(function(d, s, id){
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) {return;}
+		js = d.createElement(s); js.id = id;
+		js.src = '//meilleures-entreprises.com/ext/api.js';
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'mentreprises-js'));
+	</script>
+	</div>
+</div>
+<div class="row">
 	<div class="col-sm-offset-4 col-sm-4" style="background-color:#5ded97;margin-top:20px;border-radius:30px;text-align:center;color:white;font-size:18px">
 		Bienvenue au forum Trium!<br/>
 		Le 4 novembre vous viendrez à la rencontre du monde professionnel. De nombreuses occasions se présenteront à vous pour trouver le stage ou l'emploi de vos rêves ou simplement de rencontrer les acteurs de votre future carrière.
