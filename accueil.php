@@ -51,6 +51,9 @@
 								<a href="http://www.canalplus.fr/"><img class="img" src="/logos/logo_canal+.png" alt="Canal +"/></a>
 							</div>
 							<div class="col-sm-8 hidden-xs">
+								The Canal + Group is a European leader in the Pay TV industry. Its impressive content and original productions are available to its subscribers on every screen and digital device both in Europe and other emerging markets - even on replay and demand!<br/>
+
+								 Canal+ has its roots in a culture of communication: the work environment is open and it’s team are young and friendly<br/>
 							</div>
 						</div>
 					</div>
