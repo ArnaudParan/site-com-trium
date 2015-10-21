@@ -42,7 +42,8 @@
 					<a href="http://www.airfrance.com/">Air France</a>
 					<a href="http://www.amadeus.com/">Amadeus</a>
 					<a href="https://www.kea-partners.com/">Kea&Partners</a>
-					<a href="http://www.schneider-electric.com/fr/fr/">Schneider Electric</a></span></div></div>
+					<a href="http://www.schneider-electric.com/fr/fr/">Schneider Electric</a>
+					<a href="http://www.lafargeholcim.com/">Lafarge Holcim</a></span></div></div>
 				<div class="col-sm-2 col-xs-3 heure" style="color:grey">
 					10h00
 				</div>
@@ -75,6 +76,15 @@
 				<div class="col-sm-6 col-xs-6 tache" style="color:grey">
 					Conférence
 					<a href="http://www.theodo.fr/fr/"><button class="btn btn-danger">Théodo</button></a>
+				</div>
+			</div>
+			<div class="row creneau">
+				<div class="col-sm-2 col-xs-3 heure" style="color:grey">
+					15h00
+				</div>
+				<div class="col-sm-6 col-xs-6 tache" style="color:grey">
+					Conférence
+					<a href="http://www.exxonmobil.com/"><button class="btn btn-danger">Exxon Mobil</button></a>
 				</div>
 			</div>
 			<div class="row creneau">
