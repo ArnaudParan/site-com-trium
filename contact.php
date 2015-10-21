@@ -54,6 +54,8 @@
 				<h1>Organisateurs:</h1>
 				<address>
 					<strong>Forum Trium Mines</strong><br/>
+					60, Boulevard Saint Michel<br/>
+					75272 PARIS Cedex 06
 				</address>
 			</div>
 		</div>
@@ -70,6 +72,8 @@
 				<h1>Organisateurs:</h1>
 				<address style="text-align:right">
 					<strong>Forum Trium ENSTA</strong><br/>
+					828, Boulevard des Maréchaux<br/>
+					91762 Palaiseau Cedex
 				</address>
 			</div>
 		</div>

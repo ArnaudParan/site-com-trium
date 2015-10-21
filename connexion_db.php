@@ -25,7 +25,7 @@ class CompaniesDbHandler {
 
 	function get_companies_by_sector($sectorName)
 	{
-		$sectorId = this->get_sector_id($sectorName);
+		$sectorId = $this->get_sector_id($sectorName);
 		$query = 'SELECT * FROM secteurs_entreprises WHERE nom_secteur = \'' . $sectorName . '\'';
 		$result = pg_query($query);
 		if(!$result) {
@@ -46,9 +46,9 @@ class CompaniesDbHandler {
 }
 
 class CompaniesIterator {
-	function __construct($sectorId)
+	function __construct($sectorId, $startup, $pack)
 	{
-		$this->companies = 'SELECT * FROM entreprises WHERE secteur = \'' . $sectorId . '\'';
+		$this->companies = 'SELECT * FROM entreprises WHERE secteur = \'' . $sectorId . '\' and pack = \'' . $pack . '\' and startup = \'' . $startup . '\'';
 		if(!$this->companies) {
 			//TODO error handling
 		}
@@ -59,13 +59,16 @@ class CompaniesIterator {
 		$company =  pg_fetch_array($companies, null, PGSQL_ASSOC);
 		if (!$company) {
 			pg_free_result($this->companies);
-			this->companies = False;
+			$this->companies = NULL;
 		}
 		return $company;
 	}
 
 	function __destruct()
 	{
-		if(
+		if ($this->companies != NULL) {
+			pg_free_result($this->companies);
+			$this->companies = NULL;
+		}
 	}
 }

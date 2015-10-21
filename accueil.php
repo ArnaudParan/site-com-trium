@@ -314,23 +314,13 @@
 		<!-- gallerie et la parole aux entreprises -->
 		<div class="row">
 			<div class="col-sm-7">
-				<h1>GALERIE</h1>
+				<h1>TIMELAPSE</h1>
 				<div class="lisere_bleu"></div>
 				<div class="row">
-					<div class="col-xs-4">
-						<div class="row">
-							<img class="img" alt="Photo du forum 1" src="images/gallerie1.jpg">
-						</div>
-						<div class="row" style="margin-top:10px">
-							<img class="img" alt="Photo du forum 2" src="images/gallerie2.jpg">
-						</div>
-					</div>
-					<div class="col-xs-8">
-						<img class="img" alt="Photo du forum 3" src="images/gallerie3.jpg">
-					</div>
+					<iframe class="col-xs-12" style="margin-top:20px;margin-bottom:20px" width="560" height="315" src="https://www.youtube.com/embed/-yIwxRCRa_w" frameborder="0" allowfullscreen></iframe>
 				</div>
 				<div class="lisere_bleu"></div>
-				<div style="text-align:center">Découvrez l'édition précédente en images</div>
+				<div style="text-align:center">Découvrez l'édition précédente</div>
 			</div>
 			<div class="col-sm-5">
 				<h1>LA PAROLE AUX ENTREPRISES</h1>
