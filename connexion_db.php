@@ -1,8 +1,16 @@
 <?php
+include('param_db.php');
+global $db_host;
+global $db_dbname;
+global $db_user;
+global $db_password;
+
 class CompaniesDbHandler {
 	function __construct()
 	{
-		$this->dbconn = pg_connect("host=forumtrivwcom.postgresql.db dbname=forumtrivwcom user=forumtrivwcom password=uRVHNy2uTkqz");
+		echo 'aaa';
+		$connection_request = 'host=' . $db_host . ' dbname=' . $db_dbname . ' user=' . $db_user . ' password=' . $db_password;
+		$this->dbconn = pg_connect($connection_request);
 		if (!$this->dbconn) {
 			die('Connexion impossible : ' . pg_last_error());
 		}
