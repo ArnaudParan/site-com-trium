@@ -114,6 +114,7 @@ var Button = function(Id, radius, widget)
 	this.DOMbtn = $('#btn' + this.Id);
 	this.radius = radius;
 	this.widget = widget;
+    this.openedSubButtonId = 0;
 
 	this.DOMbtn.hover(function(){
 		setMouseButton(Id);
@@ -152,32 +153,37 @@ var Button = function(Id, radius, widget)
 				'top': parseInt(this.top) + parseInt(this.widget.yCenter) - parseInt(this.radius) + 'px'});
 	}
 
-	this.toCenter = function(callback) {
+	this.toCenter = function(callback)
+    {
 		this.left = 0;
 		this.top = 0;
 		this.animate(animDur, callback);
 	}
 
-	this.toOriginal = function(callback) {
+	this.toOriginal = function(callback)
+    {
 		this.initPos();
 		this.animate(animDur, callback);
 	}
 
-	this.openSBtns = function(callback) {
+	this.openSBtns = function(callback)
+    {
 		this.sbtn[0].left -= this.sbtn[0].radius;
 		this.sbtn[1].left += this.sbtn[0].radius;
 		this.sbtn[0].animate(animDur);
 		this.sbtn[1].animate(animDur, callback);
 	}
 
-	this.closeSBtns = function(callback) {
+	this.closeSBtns = function(callback)
+    {
 		this.sbtn[0].initPos();
 		this.sbtn[1].initPos();
 		this.sbtn[0].animate(animDur);
 		this.sbtn[1].animate(animDur, callback);
 	}
 
-	this.openButton = function(Id) {
+	this.openButton = function(Id)
+    {
 		var button = this;
 		var widget = this.widget;
 		widget.pushAnim(function(){
@@ -192,9 +198,22 @@ var Button = function(Id, radius, widget)
 		});
 	}
 
-	this.closeButton = function(Id) {
+	this.closeButton = function(Id)
+    {
 		var button = this;
 		var widget = this.widget;
+        widget.pushAnim(function() {
+            if (button.openedSubButtonId != 0) {
+                var toClose = button.openedSubButtonId;
+                button.sbtn[toClose - 1].closeCompanies(function() {
+                    button.openedSubButtonId = 0;
+                    widget.pullAnim();
+                });
+            }
+            else {
+                widget.pullAnim();
+            }
+        });
 		widget.pushAnim(function(){
 			button.closeSBtns(function(){
 				widget.pullAnim();
@@ -206,6 +225,37 @@ var Button = function(Id, radius, widget)
 			})
 		});
 	}
+
+    this.openSubButton = function(Id)
+    {
+        var button = this;
+		var widget = this.widget;
+		if(widget.animMutexState() == MutexState.Busy || Id == button.openedSubButtonId) {
+            return;
+        }
+		widget.lockAnimMutex();
+        widget.pushAnim(function() {
+            if (button.openedSubButtonId != 0) {
+                var toClose = button.openedSubButtonId;
+                button.sbtn[toClose - 1].closeCompanies(function() {
+                    widget.pullAnim();
+                });
+            }
+            else {
+                widget.pullAnim();
+            }
+        });
+        widget.pushAnim(function() {
+            button.sbtn[Id - 1].openCompanies(function() {
+                widget.pullAnim();
+            });
+        });
+        widget.pushAnim(function() {
+            button.openedSubButtonId = Id;
+			widget.unlockAnimMutex();
+            widget.pullAnim();
+        });
+    }
 
 	this.animate = function(time, callback) 
 	{
@@ -270,6 +320,35 @@ var SubButton = function(Id, PId, radius, left, top, parentButton)
 		this.DOMsbtn.animate({'left': parseInt(this.left) + parseInt(this.parentButton.widget.xCenter) - parseInt(this.radius) + 'px',
 				'top': parseInt(this.top) + parseInt(this.parentButton.widget.yCenter) - parseInt(this.radius) + 'px'}, time, callback);
 	}
+
+	this.openCompanies = function(callback)
+	{
+		if (this.Id == 2) {
+			var type = "startup";
+		}
+		else {
+			var type = "groupe";
+		}
+		var selector = "." + type + "_secteur" + this.PId;
+		var domCompanies = $(selector);
+		domCompanies.fadeIn(400, function() {callback()});
+	}
+
+	this.closeCompanies = function(callback)
+	{
+		if (this.Id == 2) {
+			var type = "startup";
+		}
+		else {
+			var type = "groupe";
+		}
+		var selector = "." + type + "_secteur" + this.PId;
+		var domCompanies = $(selector);
+		domCompanies.fadeOut(400, function() {callback()});
+	}
+	var button = this.parentButton;
+    var id = this.Id;
+	this.DOMsbtn.hover(function(){button.openSubButton(id);});
 }
 
 function hexVertexPos(hexRadius, vertexId)

@@ -75,6 +75,7 @@
         </ul>
     </div>
 </div>
+<div class="row"><div class="col-sm-offset-1 col-sm-10">
 <?php include("connexion_db.php");
 global $corresp_bddCompanyId_htmlCompanyId;
 $corresp_bddCompanyId_htmlCompanyId = Array("1" => "2",
@@ -84,7 +85,7 @@ $corresp_bddCompanyId_htmlCompanyId = Array("1" => "2",
                                             "5" => "6",
                                             "6" => "5");
 $handler = new CompaniesDbHandler();
-for ($sectorId = 0; $sectorId < 7; $sectorId++) {
+for ($sectorId = 1; $sectorId < 7; $sectorId++) {
     print_pack_companies($handler, 'FALSE', (string)$sectorId);
     print_normal_companies($handler, 'FALSE', (string)$sectorId);
     print_pack_companies($handler, 'TRUE', (string)$sectorId);
@@ -96,50 +97,78 @@ function print_normal_companies($dbhandler, $startup, $sectorId)
     global $corresp_bddCompanyId_htmlCompanyId;
     $htmlSectorId = $corresp_bddCompanyId_htmlCompanyId[$sectorId];
     $iterator = new CompaniesIterator($dbhandler, $sectorId, $startup, 'FALSE');
-    print_companies($htmlSectorId, $iterator);
+    print_companies($htmlSectorId, $iterator, $startup);
 }
 
-function print_companies($htmlSectorId, $iterator)
+function print_companies($htmlSectorId, $iterator, $startup)
 {
     $company =  $iterator->iterate();
-    echo '<div class="row" style="margin-top:30px">';
+    if ($startup == 'TRUE') {
+        echo '  <div hidden class="row startup_secteur' . $htmlSectorId . '" style="margin-top:30px">
+';
+    }
+    else {
+        echo '  <div hidden class="row groupe_secteur' . $htmlSectorId . '" style="margin-top:30px">
+';
+    }
     while ($company != NULL) {
         $name = $company["company"];
         $website = $company["website"];
-        echo '<div class="col-sm-2 entreprise sector' . $htmlSectorId . '"><span class="nom_entreprise"><a href="'. $website . '">' . $name . '</a></span></div>';
+        echo '    <div class="col-sm-2 entreprise sector' . $htmlSectorId . '"><span class="nom_entreprise"><a href="'. $website . '">' . $name . '</a></span></div>
+';
         $company =  $iterator->iterate();
     }
-    echo '</div>';
+    echo '  </div>
+';
 }
 
-function print_companies_p($htmlSectorId, $iterator, $companiesNb)
+function print_companies_p($htmlSectorId, $iterator, $companiesNb, $startup)
 {
-    echo '<div class="row" style="margin-top:30px">';
+    if ($startup == 'TRUE') {
+        echo '  <div hidden class="row startup_secteur' . $htmlSectorId . '" style="margin-top:30px">
+';
+    }
+    else {
+        echo '  <div hidden class="row groupe_secteur' . $htmlSectorId . '" style="margin-top:30px">
+';
+    }
     $remainingCompaniesNb = $companiesNb % 3;
     $fullLineCompaniesNb = $companiesNb - $remainingCompaniesNb;
+    if ($remainingCompaniesNb == 1) {
+        echo '<div class="col-sm-12"><div class="row">
+';
+        $company =  $iterator->iterate();
+        $name = $company["company"];
+        $website = $company["website"];
+        echo '    <div class="col-sm-4 col-sm-offset-4 entreprise_pack sector' . $htmlSectorId . '"><span class="nom_entreprise"><a href="'. $website . '">' . $name . '</a></span></div>
+';
+        echo '</div></div>
+';
+    }
+    if ($remainingCompaniesNb == 2) {
+        echo '<div class="col-sm-12"><div class="row">';
+        $company =  $iterator->iterate();
+        $name = $company["company"];
+        $website = $company["website"];
+        echo '    <div class="col-sm-4 col-sm-offset-2 entreprise_pack sector' . $htmlSectorId . '"><span class="nom_entreprise"><a href="'. $website . '">' . $name . '</a></span></div>
+';
+        $company =  $iterator->iterate();
+        $name = $company["company"];
+        $website = $company["website"];
+        echo '    <div class="col-sm-4 entreprise_pack sector' . $htmlSectorId . '"><span class="nom_entreprise"><a href="'. $website . '">' . $name . '</a></span></div>
+';
+        echo '</div></div>
+';
+    }
     for ($companyId = 0; $companyId < $fullLineCompaniesNb; $companyId++) {
         $company =  $iterator->iterate();
         $name = $company["company"];
         $website = $company["website"];
-        echo '<div class="col-sm-4 entreprise_pack sector' . $htmlSectorId . '"><span class="nom_entreprise"><a href="'. $website . '">' . $name . '</a></span></div>';
+        echo '    <div class="col-sm-4 entreprise_pack sector' . $htmlSectorId . '"><span class="nom_entreprise"><a href="'. $website . '">' . $name . '</a></span></div>
+';
     }
-    if ($remainingCompaniesNb == 1) {
-        $company =  $iterator->iterate();
-        $name = $company["company"];
-        $website = $company["website"];
-        echo '<div class="col-sm-4 col-sm-offset-4 entreprise_pack sector' . $htmlSectorId . '"><span class="nom_entreprise"><a href="'. $website . '">' . $name . '</a></span></div>';
-    }
-    if ($remainingCompaniesNb == 2) {
-        $company =  $iterator->iterate();
-        $name = $company["company"];
-        $website = $company["website"];
-        echo '<div class="col-sm-4 col-sm-offset-2 entreprise_pack sector' . $htmlSectorId . '"><span class="nom_entreprise"><a href="'. $website . '">' . $name . '</a></span></div>';
-        $company =  $iterator->iterate();
-        $name = $company["company"];
-        $website = $company["website"];
-        echo '<div class="col-sm-4 entreprise_pack sector' . $htmlSectorId . '"><span class="nom_entreprise"><a href="'. $website . '">' . $name . '</a></span></div>';
-    }
-    echo '</div>';
+    echo '  </div>
+';
 }
 
 function print_pack_companies($dbhandler, $startup, $sectorId)
@@ -148,7 +177,7 @@ function print_pack_companies($dbhandler, $startup, $sectorId)
     $htmlSectorId = $corresp_bddCompanyId_htmlCompanyId[$sectorId];
     $companiesNb = count_pack_companies($dbhandler, $startup, $sectorId);
     $iterator = new CompaniesIterator($dbhandler, $sectorId, $startup, 'TRUE');
-    print_companies_p($htmlSectorId, $iterator, $companiesNb);
+    print_companies_p($htmlSectorId, $iterator, $companiesNb, $startup);
 }
 
 function count_pack_companies($dbhandler, $startup, $sectorId)
@@ -163,3 +192,4 @@ function count_pack_companies($dbhandler, $startup, $sectorId)
     return $companiesNb;
 }
 ?>
+</div></div>
