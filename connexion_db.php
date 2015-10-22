@@ -9,7 +9,6 @@ class CompaniesDbHandler {
 		global $db_user;
 		global $db_password;
 		$connexion_request = 'host=' . $db_host . ' dbname=' . $db_dbname . ' user=' . $db_user . ' password=' . $db_password;
-		echo $connexion_request;
 		$this->dbconn = pg_connect($connexion_request);
 		if (!$this->dbconn) {
 			die('Connexion impossible : ' . pg_last_error());
@@ -54,17 +53,22 @@ class CompaniesDbHandler {
 }
 
 class CompaniesIterator {
-	function __construct($sectorId, $startup, $pack)
+	function __construct($dbHandler, $sectorId, $startup, $pack)
 	{
-		$this->companies = 'SELECT * FROM entreprises WHERE secteur = \'' . $sectorId . '\' and pack = \'' . $pack . '\' and startup = \'' . $startup . '\'';
+		$query = 'SELECT * FROM entreprises WHERE sector = ' . $sectorId . ' and pack = ' . $pack . ' and startup = ' . $startup . ';';
+		$this->companies = pg_query($dbHandler->dbconn, $query);
 		if(!$this->companies) {
-			//TODO error handling
+            echo "Erreur dans la requête: " . pg_last_error();
+            $this->companies = NULL;
 		}
 	}
 
 	function iterate()
 	{
-		$company =  pg_fetch_array($companies, null, PGSQL_ASSOC);
+        if ($this->companies == NULL) {
+            return NULL;
+        }
+		$company =  pg_fetch_array($this->companies, null, PGSQL_ASSOC);
 		if (!$company) {
 			pg_free_result($this->companies);
 			$this->companies = NULL;

@@ -16,6 +16,32 @@
 	border-style:none;
 }
 
+.entreprise {
+    text-align:center;
+    height:140px;
+    line-height:120px;
+    border-radius:25px;
+    color:grey;
+    font-size:20px;
+    border:5px solid white;
+}
+
+.entreprise_pack {
+    text-align:center;
+    height:340px;
+    line-height:290px;
+    border-radius:25px;
+    color:grey;
+    font-size:20px;
+    border:5px solid white;
+}
+
+.nom_entreprise {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
 @keyframes hide{
 	from{opacity:1.0;}
 	to{opacity:0.0;}
@@ -41,27 +67,27 @@
 		z-index:0;
 	}
 
-	#btn1,#sbtn11,#sbtn12,#sbtn13{
+	#btn1,#sbtn11,#sbtn12,#sbtn13,.sector1{
 		background-color:#31ce7c;
 	}
 
-	#btn2,#sbtn21,#sbtn22,#sbtn23{
+	#btn2,#sbtn21,#sbtn22,#sbtn23,.sector2{
 		background-color:#ffcc00;
 	}
 
-	#btn3,#sbtn31,#sbtn32,#sbtn33{
+	#btn3,#sbtn31,#sbtn32,#sbtn33,.sector3{
 		background-color:#ff6600;
 	}
 
-	#btn4,#sbtn41,#sbtn42,#sbtn43{
+	#btn4,#sbtn41,#sbtn42,#sbtn43,.sector4{
 		background-color:#ff66ff;
 	}
 
-	#btn5,#sbtn51,#sbtn52,#sbtn53{
+	#btn5,#sbtn51,#sbtn52,#sbtn53,.sector5{
 		background-color:#6699ff;
 	}
 
-	#btn6,#sbtn61,#sbtn62,#sbtn63{
+	#btn6,#sbtn61,#sbtn62,#sbtn63,.sector6{
 		background-color:#66fefe;
 	}
 }
