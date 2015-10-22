@@ -8,9 +8,9 @@ global $db_password;
 class CompaniesDbHandler {
 	function __construct()
 	{
-		echo 'aaa';
-		$connection_request = 'host=' . $db_host . ' dbname=' . $db_dbname . ' user=' . $db_user . ' password=' . $db_password;
-		$this->dbconn = pg_connect($connection_request);
+		$connexion_request = 'host=' . $db_host . ' dbname=' . $db_dbname . ' user=' . $db_user . ' password=' . $db_password;
+		echo $connexion_request;
+		$this->dbconn = pg_connect($connexion_request);
 		if (!$this->dbconn) {
 			die('Connexion impossible : ' . pg_last_error());
 		}
