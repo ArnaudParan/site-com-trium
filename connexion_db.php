@@ -1,13 +1,13 @@
 <?php
 include('param_db.php');
-global $db_host;
-global $db_dbname;
-global $db_user;
-global $db_password;
 
 class CompaniesDbHandler {
 	function __construct()
 	{
+		global $db_host;
+		global $db_dbname;
+		global $db_user;
+		global $db_password;
 		$connexion_request = 'host=' . $db_host . ' dbname=' . $db_dbname . ' user=' . $db_user . ' password=' . $db_password;
 		echo $connexion_request;
 		$this->dbconn = pg_connect($connexion_request);
