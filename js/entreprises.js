@@ -229,6 +229,7 @@ var Button = function(Id, radius, widget)
     this.openSubButton = function(Id)
     {
         var button = this;
+        var subButton = this.sbtn[Id - 1];
 		var widget = this.widget;
 		if(widget.animMutexState() == MutexState.Busy || Id == button.openedSubButtonId) {
             return;
@@ -237,6 +238,9 @@ var Button = function(Id, radius, widget)
         widget.pushAnim(function() {
             if (button.openedSubButtonId != 0) {
                 var toClose = button.openedSubButtonId;
+                subButton.DOMsbtn.fadeOut(400, function(){
+                    subButton.DOMsbtn.fadeIn(400);
+                });
                 button.sbtn[toClose - 1].closeCompanies(function() {
                     widget.pullAnim();
                 });
