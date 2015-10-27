@@ -70,7 +70,7 @@ class CompaniesDbHandler {
 class CompaniesIterator {
 	function __construct($dbHandler, $sectorId, $startup, $pack)
 	{
-		$query = 'SELECT * FROM entreprises WHERE sector = ' . $sectorId . ' and pack = ' . $pack . ' and startup = ' . $startup . ';';
+		$query = 'SELECT * FROM entreprises WHERE sector = ' . $sectorId . ' and pack = ' . $pack . ' and startup = ' . $startup . ' ORDER BY company;';
 		$this->companies = pg_query($dbHandler->dbconn, $query);
 		if(!$this->companies) {
             echo "Erreur dans la requête: " . pg_last_error();
