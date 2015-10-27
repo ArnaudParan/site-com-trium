@@ -122,7 +122,7 @@ function print_companies($htmlSectorId, $iterator, $startup)
 ';
 }
 
-function print_companies_p($htmlSectorId, $iterator, $companiesNb, $startup)
+function print_companies_p($htmlSectorId, $iterator, $companiesNb, $startup, $handler)
 {
     if ($startup == 'TRUE') {
         echo '  <div hidden class="row startup_secteur' . $htmlSectorId . '" style="margin-top:30px">
@@ -140,7 +140,11 @@ function print_companies_p($htmlSectorId, $iterator, $companiesNb, $startup)
         $company =  $iterator->iterate();
         $name = $company["company"];
         $website = $company["website"];
-        echo '    <div class="col-sm-4 col-sm-offset-4 entreprise_pack sector' . $htmlSectorId . '"><span class="nom_entreprise"><a href="'. $website . '">' . $name . '</a></span></div>
+        $id = $company["id"];
+        $pack = $handler->get_pack($id);
+        $imageSrc = $pack["chemin_image"];
+        $message = $pack["message_carousel"];
+        echo '    <div class="col-sm-4 col-sm-offset-4 entreprise_pack sector' . $htmlSectorId . '"><a href="'. $website . '"><img class="logo_entreprise" alt="' . $name . '" src="' . $imageSrc . '"/></a></div>
 ';
         echo '</div></div>
 ';
@@ -150,12 +154,20 @@ function print_companies_p($htmlSectorId, $iterator, $companiesNb, $startup)
         $company =  $iterator->iterate();
         $name = $company["company"];
         $website = $company["website"];
-        echo '    <div class="col-sm-4 col-sm-offset-2 entreprise_pack sector' . $htmlSectorId . '"><span class="nom_entreprise"><a href="'. $website . '">' . $name . '</a></span></div>
+        $id = $company["id"];
+        $pack = $handler->get_pack($id);
+        $imageSrc = $pack["chemin_image"];
+        $message = $pack["message_carousel"];
+        echo '    <div class="col-sm-4 col-sm-offset-2 entreprise_pack sector' . $htmlSectorId . '"><a href="'. $website . '"><img class="logo_entreprise" alt="' . $name . '" src="' . $imageSrc . '"/></a></div>
 ';
         $company =  $iterator->iterate();
         $name = $company["company"];
         $website = $company["website"];
-        echo '    <div class="col-sm-4 entreprise_pack sector' . $htmlSectorId . '"><span class="nom_entreprise"><a href="'. $website . '">' . $name . '</a></span></div>
+        $id = $company["id"];
+        $pack = $handler->get_pack($id);
+        $imageSrc = $pack["chemin_image"];
+        $message = $pack["message_carousel"];
+        echo '    <div class="col-sm-4 entreprise_pack sector' . $htmlSectorId . '"><a href="'. $website . '"><img class="logo_entreprise" alt="' . $name . '" src="' . $imageSrc . '"/></a></div>
 ';
         echo '</div></div>
 ';
@@ -164,7 +176,11 @@ function print_companies_p($htmlSectorId, $iterator, $companiesNb, $startup)
         $company =  $iterator->iterate();
         $name = $company["company"];
         $website = $company["website"];
-        echo '    <div class="col-sm-4 entreprise_pack sector' . $htmlSectorId . '"><span class="nom_entreprise"><a href="'. $website . '">' . $name . '</a></span></div>
+        $id = $company["id"];
+        $pack = $handler->get_pack($id);
+        $imageSrc = $pack["chemin_image"];
+        $message = $pack["message_carousel"];
+        echo '    <div class="col-sm-4 entreprise_pack sector' . $htmlSectorId . '"><a href="'. $website . '"><img class="logo_entreprise" alt="' . $name . '" src="' . $imageSrc . '"/></a></div>
 ';
     }
     echo '  </div>
@@ -177,7 +193,7 @@ function print_pack_companies($dbhandler, $startup, $sectorId)
     $htmlSectorId = $corresp_bddCompanyId_htmlCompanyId[$sectorId];
     $companiesNb = count_pack_companies($dbhandler, $startup, $sectorId);
     $iterator = new CompaniesIterator($dbhandler, $sectorId, $startup, 'TRUE');
-    print_companies_p($htmlSectorId, $iterator, $companiesNb, $startup);
+    print_companies_p($htmlSectorId, $iterator, $companiesNb, $startup, $dbhandler);
 }
 
 function count_pack_companies($dbhandler, $startup, $sectorId)
