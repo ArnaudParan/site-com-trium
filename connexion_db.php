@@ -46,6 +46,21 @@ class CompaniesDbHandler {
 		return $secteur["id"];
 	}
 
+    function get_pack($companyId)
+    {
+		$query = 'SELECT * FROM carousel_packs WHERE id_entreprise = ' . $companyId . '';
+		$result = pg_query($this->dbconn, $query);
+		if(!$result) {
+			die('Échec de la récupération des packs dans la bdd');
+		}
+		$pack = pg_fetch_array($result, null, PGSQL_ASSOC);
+		pg_free_result($result);
+		if(!$pack) {
+			return False;
+		}
+		return $pack;
+    }
+
 	function __destruct()
 	{
 		pg_close($dbconn);
