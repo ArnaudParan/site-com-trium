@@ -5,15 +5,15 @@
 			<!-- indicateurs-->
 			<ol class="carousel-indicators">
 				<li data-target="#monCarousel" data-slide-to="0" class="active"></li>
-				<li data-target="#monCarousel" data-slide-to="1"></li>
-				<li data-target="#monCarousel" data-slide-to="2"></li>
-				<li data-target="#monCarousel" data-slide-to="3"></li>
-				<li data-target="#monCarousel" data-slide-to="4"></li>
-				<li data-target="#monCarousel" data-slide-to="5"></li>
-				<li data-target="#monCarousel" data-slide-to="6"></li>
-				<li data-target="#monCarousel" data-slide-to="7"></li>
-				<li data-target="#monCarousel" data-slide-to="8"></li>
-				<li data-target="#monCarousel" data-slide-to="9"></li>
+<?php
+include('connexion_db.php');
+$handler = new CompaniesDbHandler();
+$companiesNb = $handler->get_pack_companies_nb();
+for ($slideId = 1; $slideId <= $companiesNb; $slideId++) {
+    echo '				<li data-target="#monCarousel" data-slide-to="' . $slideId . '"></li>
+';
+}
+?>
 			</ol>
 
 			<!--wrapper pour les slides-->
@@ -58,8 +58,31 @@
 						</div>
 					</div>
 				</div>
-				<!-- slide 2 -->
-				<div class="item">
+<?php
+print_companies_carousel();
+
+function print_companies_carousel()
+{
+    $handler = new CompaniesDbHandler();
+    $iterator = new PackCompaniesIterator($handler);
+    $company = $iterator->iterate();
+    while ($company != NULL) {
+        $id = $company["id"];
+        $pack = $handler->get_pack($id);
+        $logo = $pack["chemin_image"];
+        $website = $company["website"];
+        $description = $pack["message_carousel"];
+        $name = $company["company"];
+        if ($id != 138) { //si ce n'est pas canal car il fallait les mettre en premier
+            print_company_carousel($logo, $website, $description, $name);
+        }
+        $company = $iterator->iterate();
+    }
+}
+
+function print_company_carousel($logo, $website, $description, $name)
+{
+    echo '				<div class="item">
 					<img src="" alt=""/>
 					<div class="carousel-caption">
 					</div>
@@ -69,140 +92,17 @@
 					<div class="bloc_carousel col-sm-offset-1 col-sm-5 ent-carousel">
 						<div>
 							<div class="col-sm-4">
-								<a href="http://www.actuaris.fr/"><img class="img" src="/logos/logo_actuaris.png" alt="Atctuaris"/></a>
+								<a href="' . $website . '"><img class="img" src="' . $logo . '" alt="' . $name . '"/></a>
 							</div>
 							<div class="col-sm-8 hidden-xs">
-								Avec une équipe comptant plus de cent salariés, ACTUARIS conçoit et propose des solutions innovantes pour accompagner chaque année plus de 200 organismes assureurs – et 2000 utilisateurs de ses logiciels- dans le cadre de leurs chantiers techniques, actuariels, réglementaires et informatiques.<br/>
+								' . $description . '
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- slide 3 -->
-				<div class="item">
-					<img src="" alt=""/>
-					<div class="carousel-caption">
-					</div>
-					<div class="bloc_carousel col-sm-offset-2 col-sm-2 hidden-xs" style="margin-top:60px;">
-						Vous intéressez ces entreprises, venez les découvrir.
-					</div>
-					<div class="bloc_carousel col-sm-offset-1 col-sm-5 ent-carousel">
-						<div>
-							<div class="col-sm-4">
-								<a href="http://corporate.fmlogistic.com/"><img class="img" src="/logos/logo_FM_logistic.png" alt="FM logistic"/></a>
-							</div>
-							<div class="col-sm-8 hidden-xs">
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- slide 4 -->
-				<div class="item">
-					<img src="" alt=""/>
-					<div class="carousel-caption">
-					</div>
-					<div class="bloc_carousel col-sm-offset-2 col-sm-2 hidden-xs" style="margin-top:60px;">
-						Vous intéressez ces entreprises, venez les découvrir.
-					</div>
-					<div class="bloc_carousel col-sm-offset-1 col-sm-5 ent-carousel">
-						<div>
-							<div class="col-sm-4">
-								<a href="http://www.basystemes.com/"><img class="img" src="/logos/logo_ba_systemes.png" alt="BA systèmes"/></a>
-							</div>
-							<div class="col-sm-8 hidden-xs">
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- slide 5 -->
-				<div class="item">
-					<img src="" alt=""/>
-					<div class="carousel-caption">
-					</div>
-					<div class="bloc_carousel col-sm-offset-2 col-sm-2 hidden-xs" style="margin-top:60px;">
-						Vous intéressez ces entreprises, venez les découvrir.
-					</div>
-					<div class="bloc_carousel col-sm-offset-1 col-sm-5 ent-carousel">
-						<div>
-							<div class="col-sm-4">
-								<a href="http://www.defense.gouv.fr/marine/"><img class="img" src="/logos/logo_marine_nationale.png" alt="Marine Nationale"/></a>
-							</div>
-							<div class="col-sm-8 hidden-xs">
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- slide 6 -->
-				<div class="item">
-					<img src="" alt=""/>
-					<div class="carousel-caption">
-					</div>
-					<div class="bloc_carousel col-sm-offset-2 col-sm-2 hidden-xs" style="margin-top:60px;">
-						Vous intéressez ces entreprises, venez les découvrir.
-					</div>
-					<div class="bloc_carousel col-sm-offset-1 col-sm-5 ent-carousel">
-						<div>
-							<div class="col-sm-4">
-								<a href="http://sfil.fr/"><img class="img" src="/logos/logo_sfil.jpg" alt="SFIL"/></a>
-							</div>
-							<div class="col-sm-8 hidden-xs">
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- slide 7 -->
-				<div class="item">
-					<img src="" alt=""/>
-					<div class="carousel-caption">
-					</div>
-					<div class="bloc_carousel col-sm-offset-2 col-sm-2 hidden-xs" style="margin-top:60px;">
-						Vous intéressez ces entreprises, venez les découvrir.
-					</div>
-					<div class="bloc_carousel col-sm-offset-1 col-sm-5 ent-carousel">
-						<div>
-							<div class="col-sm-4">
-								<a href="http://www.ab-inbev.com/"><img class="img" src="/logos/logo_abinbev.png" alt="Ab inbev"/></a>
-							</div>
-							<div class="col-sm-8 hidden-xs">
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- slide 8 -->
-				<div class="item">
-					<img src="" alt=""/>
-					<div class="carousel-caption">
-					</div>
-					<div class="bloc_carousel col-sm-offset-2 col-sm-2 hidden-xs" style="margin-top:60px;">
-						Vous intéressez ces entreprises, venez les découvrir.
-					</div>
-					<div class="bloc_carousel col-sm-offset-1 col-sm-5 ent-carousel">
-						<div>
-							<div class="col-sm-4">
-								<a href="http://www.efront.com/"><img class="img" src="/logos/logo_efront.png" alt="Efront"/></a>
-							</div>
-							<div class="col-sm-8 hidden-xs">
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- slide 9 -->
-				<div class="item">
-					<img src="" alt=""/>
-					<div class="carousel-caption">
-					</div>
-					<div class="bloc_carousel col-sm-offset-2 col-sm-2 hidden-xs" style="margin-top:60px;">
-						Vous intéressez ces entreprises, venez les découvrir.
-					</div>
-					<div class="bloc_carousel col-sm-offset-1 col-sm-5 ent-carousel">
-						<div>
-							<div class="col-sm-4">
-								<a href="http://www.nexter-group.fr/"><img class="img" src="/logos/logo_nexter.svg" alt="Nexter"/></a>
-							</div>
-							<div class="col-sm-8 hidden-xs">
-							</div>
-						</div>
-					</div>
-				</div>
+';
+}
+?>
 			</div>
 
 			<!--Controles-->

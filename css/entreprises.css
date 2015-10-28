@@ -37,6 +37,25 @@
     max-height:100%;
 }
 
+.infobulle {
+	position:absolute;
+	margin-top:-50px;
+	color:#09c;
+	background:rgba(0,0,0,.9);
+	padding:15px;
+	border-radius:3px;
+	/*box-shadow:0 0 2px rgba(0,0,0,.5);*/
+	transform:scale(0) rotate(-12deg);
+	transition:all .25s;
+	opacity:0;
+	z-index:1;
+}
+
+.entreprise_pack:hover .infobulle, .entreprise_pack:focus .infobulle{
+	transform:scale(1) rotate(0);        
+	opacity:1;
+}
+
 #widget_ent li{
 	display:inline-block;
 }

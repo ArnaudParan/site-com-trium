@@ -61,6 +61,16 @@ class CompaniesDbHandler {
 		return $pack;
     }
 
+    function get_pack_companies_nb()
+    {
+        $iterator = new PackCompaniesIterator($this);
+        $nbreEntreprises = 0;
+        while ($iterator->iterate() != NULL) {
+            $nbreEntreprises++;
+        }
+        return $nbreEntreprises;
+    }
+
 	function __destruct()
 	{
 		pg_close($dbconn);
@@ -71,6 +81,39 @@ class CompaniesIterator {
 	function __construct($dbHandler, $sectorId, $startup, $pack)
 	{
 		$query = 'SELECT * FROM entreprises WHERE sector = ' . $sectorId . ' and pack = ' . $pack . ' and startup = ' . $startup . ' ORDER BY company;';
+		$this->companies = pg_query($dbHandler->dbconn, $query);
+		if(!$this->companies) {
+            echo "Erreur dans la requête: " . pg_last_error();
+            $this->companies = NULL;
+		}
+	}
+
+	function iterate()
+	{
+        if ($this->companies == NULL) {
+            return NULL;
+        }
+		$company =  pg_fetch_array($this->companies, null, PGSQL_ASSOC);
+		if (!$company) {
+			pg_free_result($this->companies);
+			$this->companies = NULL;
+		}
+		return $company;
+	}
+
+	function __destruct()
+	{
+		if ($this->companies != NULL) {
+			pg_free_result($this->companies);
+			$this->companies = NULL;
+		}
+	}
+}
+
+class PackCompaniesIterator {
+	function __construct($dbHandler)
+	{
+		$query = 'SELECT * FROM entreprises WHERE pack = TRUE ORDER BY company;';
 		$this->companies = pg_query($dbHandler->dbconn, $query);
 		if(!$this->companies) {
             echo "Erreur dans la requête: " . pg_last_error();

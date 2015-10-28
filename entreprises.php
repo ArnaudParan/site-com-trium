@@ -138,52 +138,40 @@ function print_companies_p($htmlSectorId, $iterator, $companiesNb, $startup, $ha
         echo '<div class="col-sm-12"><div class="row">
 ';
         $company =  $iterator->iterate();
-        $name = $company["company"];
-        $website = $company["website"];
-        $id = $company["id"];
-        $pack = $handler->get_pack($id);
-        $imageSrc = $pack["chemin_image"];
-        $message = $pack["message_carousel"];
-        echo '    <div class="col-sm-4 col-sm-offset-4 entreprise_pack sector' . $htmlSectorId . '"><a href="'. $website . '"><img class="logo_entreprise" alt="' . $name . '" src="' . $imageSrc . '"/></a></div>
-';
+        print_one_pack_company($company, $handler, $htmlSectorId, 4, 4);
         echo '</div></div>
 ';
     }
     if ($remainingCompaniesNb == 2) {
         echo '<div class="col-sm-12"><div class="row">';
         $company =  $iterator->iterate();
-        $name = $company["company"];
-        $website = $company["website"];
-        $id = $company["id"];
-        $pack = $handler->get_pack($id);
-        $imageSrc = $pack["chemin_image"];
-        $message = $pack["message_carousel"];
-        echo '    <div class="col-sm-4 col-sm-offset-2 entreprise_pack sector' . $htmlSectorId . '"><a href="'. $website . '"><img class="logo_entreprise" alt="' . $name . '" src="' . $imageSrc . '"/></a></div>
-';
+        print_one_pack_company($company, $handler, $htmlSectorId, 4, 2);
+        print_one_pack_company($company, $handler, $htmlSectorId, 4, 0);
         $company =  $iterator->iterate();
-        $name = $company["company"];
-        $website = $company["website"];
-        $id = $company["id"];
-        $pack = $handler->get_pack($id);
-        $imageSrc = $pack["chemin_image"];
-        $message = $pack["message_carousel"];
-        echo '    <div class="col-sm-4 entreprise_pack sector' . $htmlSectorId . '"><a href="'. $website . '"><img class="logo_entreprise" alt="' . $name . '" src="' . $imageSrc . '"/></a></div>
-';
         echo '</div></div>
 ';
     }
     for ($companyId = 0; $companyId < $fullLineCompaniesNb; $companyId++) {
         $company =  $iterator->iterate();
+        print_one_pack_company($company, $handler, $htmlSectorId, 4, 0);
+    }
+    echo '  </div>
+';
+}
+
+function print_one_pack_company($company, $handler, $htmlSectorId, $blockSize, $blockOffset)
+{
         $name = $company["company"];
         $website = $company["website"];
         $id = $company["id"];
         $pack = $handler->get_pack($id);
         $imageSrc = $pack["chemin_image"];
         $message = $pack["message_carousel"];
-        echo '    <div class="col-sm-4 entreprise_pack sector' . $htmlSectorId . '"><a href="'. $website . '"><img class="logo_entreprise" alt="' . $name . '" src="' . $imageSrc . '"/></a></div>
-';
-    }
-    echo '  </div>
+        $block = 'col-sm-' . $blockSize;
+        $offset = ' col-sm-offset-' . $blockOffset;
+        echo '    <div class="' . $block . $offset . ' entreprise_pack sector' . $htmlSectorId . '">
+        <div class="row"><div class="col-sm-12"><a href="'. $website . '"><img class="logo_entreprise" alt="' . $name . '" src="' . $imageSrc . '"/></a></div></div>
+    </div>
 ';
 }
 
