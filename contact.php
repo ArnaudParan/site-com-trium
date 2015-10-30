@@ -6,7 +6,7 @@
 			</div>
 			<div class="col-sm-8 col-xs-12">
 				<h1>Vous êtes étudiant?<br/>
-				Posez-nous vos questions sur twitter</h1>
+				Posez-nous vos questions sur <a href="https://www.facebook.com/Forum-Trium-220358747991521/?ref=ts&fref=ts">facebook</a></h1>
 			</div>
 		</div>
 		<div class="lisere_bleu" style="margin-top:20px"></div>
