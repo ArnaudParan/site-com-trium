@@ -146,6 +146,7 @@ function print_companies_p($htmlSectorId, $iterator, $companiesNb, $startup, $ha
         echo '<div class="col-sm-12"><div class="row">';
         $company =  $iterator->iterate();
         print_one_pack_company($company, $handler, $htmlSectorId, 4, 2);
+        $company =  $iterator->iterate();
         print_one_pack_company($company, $handler, $htmlSectorId, 4, 0);
         $company =  $iterator->iterate();
         echo '</div></div>
