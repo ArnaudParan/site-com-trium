@@ -20,7 +20,9 @@
 					<a href="http://www.ekimetrics.com/">Ekimetrics</a>
 					<a href="http://www.lavoix.eu/fr">Lavoix</a>
 					<a href="http://fr.milliman.com/">Milliman</a>
-					<a href="http://www.theodo.fr/fr/">Theodo</a></span></div></div>
+					<a href="http://www.theodo.fr/fr/">Theodo</a>
+					<a href="http://www.regimbeau.eu/">Regimbeau</a>
+                    </span></div></div>
 				<div class="col-sm-2 col-xs-3 heure" style="color:grey">
 					9h00
 				</div>
@@ -43,7 +45,10 @@
 					<a href="http://www.amadeus.com/">Amadeus</a>
 					<a href="https://www.kea-partners.com/">Kea&Partners</a>
 					<a href="http://www.schneider-electric.com/fr/fr/">Schneider Electric</a>
-					<a href="http://www.lafargeholcim.com/">Lafarge Holcim</a></span></div></div>
+					<a href="http://www.lafargeholcim.com/">Lafarge Holcim</a>
+					<a href="http://www.sciencespo.fr/">Sciences Po</a>
+					<a href="http://www.basystemes.com/">BA Systèmes</a>
+                    </span></div></div>
 				<div class="col-sm-2 col-xs-3 heure" style="color:grey">
 					10h00
 				</div>
@@ -88,7 +93,7 @@
 				</div>
 			</div>
 			<div class="row creneau">
-				<div class="row"><div class="col-sm-9 col-sm-offset-3 col-xs-9 col-xs-offset-2"><span class="infobulle">Bertrand Collomb, Président d'honneur de Lafarge</span></div></div>
+				<div class="row"><div class="col-sm-9 col-sm-offset-3 col-xs-9 col-xs-offset-2"><span class="infobulle">Bertrand Collomb, Président d'honneur de LafargeHolcim</span></div></div>
 				<div class="col-sm-2 col-xs-3 heure" style="color:grey">
 					17h15
 				</div>
